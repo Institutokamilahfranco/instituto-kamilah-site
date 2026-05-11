@@ -380,6 +380,3 @@ export default function Home() {
     </main>
   )
 }
-```
-
-O visual ficará muito mais profissional, acolhedor e feminino.
