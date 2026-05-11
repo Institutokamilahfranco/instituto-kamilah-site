@@ -1,7 +1,3 @@
-# Novo conteúdo para `app/page.js`
-
-Copie TODO este código e substitua o conteúdo atual do arquivo `app/page.js`.
-
 ```javascript
 "use client"
 
@@ -385,12 +381,5 @@ export default function Home() {
   )
 }
 ```
-
-Depois de colar:
-
-1. Clique em `Commit changes`
-2. Confirme novamente
-3. Aguarde o Vercel publicar
-4. Atualize o site
 
 O visual ficará muito mais profissional, acolhedor e feminino.
