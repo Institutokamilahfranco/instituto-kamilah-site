@@ -31,7 +31,7 @@ export default function Home() {
           {/* TEXTO */}
           <div>
             <img
-            https://i.ibb.co/0jqmN9B9/Logo-instituto-Kamilah-Franco.jpg
+           src="/logo.png"
               alt="Instituto Kamilah Franco"
               style={{
                 width: "320px",
@@ -103,7 +103,7 @@ export default function Home() {
           {/* FOTO */}
           <div style={{ textAlign: "center" }}>
             <img
-             https://i.ibb.co/tMQFQTs9/Foto-prossional-2.png
+             src="/kamilah.png"
               alt="Kamilah Franco"
               style={{
                 width: "100%",
