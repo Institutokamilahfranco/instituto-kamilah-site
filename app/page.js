@@ -12,73 +12,109 @@ export default function Home() {
       {/* HERO */}
       <section
         style={{
-          padding: "100px 20px",
-          textAlign: "center",
-          background: "linear-gradient(to bottom, #FCFAF7, #F6F1EC)",
+          padding: "80px 20px",
+          background:
+            "linear-gradient(to bottom, #FCFAF7, #F6F1EC)",
         }}
       >
-        <img
-          src="https://i.imgur.com/8Km9tLL.png"
-          alt="Instituto Kamilah Franco"
+        <div
           style={{
-            width: "180px",
-            marginBottom: "30px",
-          }}
-        />
-
-        <h1
-          style={{
-            fontSize: "4rem",
-            marginBottom: "30px",
-            color: "#4B3B36",
-          }}
-        >
-          Instituto Kamilah Franco
-        </h1>
-
-        <p
-          style={{
-            fontSize: "1.2rem",
-            lineHeight: "2rem",
-            maxWidth: "900px",
+            maxWidth: "1300px",
             margin: "0 auto",
+            display: "grid",
+            gridTemplateColumns:
+              "repeat(auto-fit, minmax(320px, 1fr))",
+            gap: "50px",
+            alignItems: "center",
           }}
         >
-          O Instituto Kamilah Franco é um espaço de acolhimento,
-          desenvolvimento emocional e transformação feminina.
+          {/* TEXTO */}
+          <div>
+            <img
+              src="https://i.ibb.co/0pK7Q7r/logo.png"
+              alt="Instituto Kamilah Franco"
+              style={{
+                width: "320px",
+                marginBottom: "30px",
+              }}
+            />
 
-          <br /><br />
+            <h1
+              style={{
+                fontSize: "4rem",
+                lineHeight: "4.5rem",
+                color: "#4B3B36",
+                marginBottom: "30px",
+              }}
+            >
+              Instituto <br />
+              Kamilah Franco
+            </h1>
 
-          Criado para mulheres que desejam romper padrões de
-          autossabotagem, fortalecer sua estrutura emocional e
-          construir uma vida com mais clareza, posicionamento,
-          segurança e propósito.
+            <p
+              style={{
+                fontSize: "1.15rem",
+                lineHeight: "2rem",
+                color: "#4B3B36",
+                marginBottom: "40px",
+              }}
+            >
+              O Instituto Kamilah Franco é um espaço de
+              acolhimento, desenvolvimento emocional e
+              transformação feminina.
 
-          <br /><br />
+              <br />
+              <br />
 
-          Através de processos terapêuticos estratégicos, cada
-          atendimento é conduzido de forma individual,
-          respeitando a história, o momento e as necessidades
-          emocionais de cada mulher.
-        </p>
+              Criado para mulheres que desejam romper
+              padrões de autossabotagem, fortalecer sua
+              estrutura emocional e construir uma vida com
+              mais clareza, posicionamento, segurança e
+              propósito.
 
-        <a
-          href="https://wa.me/5546988042216"
-          target="_blank"
-          style={{
-            display: "inline-block",
-            marginTop: "40px",
-            backgroundColor: "#C8A46A",
-            color: "#fff",
-            padding: "15px 35px",
-            borderRadius: "40px",
-            textDecoration: "none",
-            fontWeight: "bold",
-            fontSize: "1rem",
-          }}
-        >
-          Agendar atendimento
-        </a>
+              <br />
+              <br />
+
+              Através de processos terapêuticos
+              estratégicos, cada atendimento é conduzido
+              de forma individual, respeitando a história,
+              o momento e as necessidades emocionais de
+              cada mulher.
+            </p>
+
+            <a
+              href="https://wa.me/5546988042216"
+              target="_blank"
+              style={{
+                display: "inline-block",
+                backgroundColor: "#C8A46A",
+                color: "#fff",
+                padding: "16px 35px",
+                borderRadius: "40px",
+                textDecoration: "none",
+                fontWeight: "bold",
+                fontSize: "1rem",
+              }}
+            >
+              Agendar Atendimento
+            </a>
+          </div>
+
+          {/* FOTO */}
+          <div style={{ textAlign: "center" }}>
+            <img
+              src="https://i.ibb.co/fv1hQfS/kamilah.jpg"
+              alt="Kamilah Franco"
+              style={{
+                width: "100%",
+                maxWidth: "500px",
+                borderRadius: "24px",
+                boxShadow:
+                  "0 15px 40px rgba(0,0,0,0.10)",
+              }}
+            />
+          </div>
+        </div>
       </section>
 
       {/* SOBRE */}
@@ -107,16 +143,18 @@ export default function Home() {
             fontSize: "1.1rem",
           }}
         >
-          O Instituto Kamilah Franco nasceu com o propósito de
-          acolher mulheres em seus processos de reconstrução
-          emocional, fortalecimento interno e expansão pessoal.
+          O Instituto Kamilah Franco nasceu com o
+          propósito de acolher mulheres em seus processos
+          de reconstrução emocional, fortalecimento
+          interno e expansão pessoal.
 
-          <br /><br />
+          <br />
+          <br />
 
-          Um espaço seguro para mulheres que desejam desenvolver
-          clareza emocional, fortalecer sua base interna e criar
-          uma vida mais alinhada com sua verdade, identidade e
-          propósito.
+          Um espaço seguro para mulheres que desejam
+          desenvolver clareza emocional, fortalecer sua
+          base interna e criar uma vida mais alinhada com
+          sua verdade, identidade e propósito.
         </p>
       </section>
 
@@ -139,7 +177,8 @@ export default function Home() {
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))",
+            gridTemplateColumns:
+              "repeat(auto-fit, minmax(280px, 1fr))",
             gap: "30px",
             maxWidth: "1200px",
             margin: "0 auto",
@@ -147,22 +186,26 @@ export default function Home() {
         >
           {[
             {
-              titulo: "Estrutura Emocional para Romper a Autossabotagem",
+              titulo:
+                "Estrutura Emocional para Romper a Autossabotagem",
               texto:
                 "Processo terapêutico estratégico para mulheres que desejam fortalecer sua base emocional, romper padrões limitantes e sustentar crescimento e posicionamento.",
             },
             {
-              titulo: "Acompanhamento Terapêutico Estratégico",
+              titulo:
+                "Acompanhamento Terapêutico Estratégico",
               texto:
                 "Atendimento terapêutico individual focado em desenvolvimento emocional, reconstrução interna e clareza para decisões e direcionamento pessoal.",
             },
             {
-              titulo: "Sustentação Emocional e Posicionamento",
+              titulo:
+                "Sustentação Emocional e Posicionamento",
               texto:
                 "Processo terapêutico voltado para mulheres que desejam desenvolver segurança emocional, clareza interna e fortalecimento pessoal.",
             },
             {
-              titulo: "Sessão Diagnóstica Terapêutica",
+              titulo:
+                "Sessão Diagnóstica Terapêutica",
               texto:
                 "Primeiro encontro para identificar padrões emocionais, autossabotagem e direcionar o processo terapêutico de forma estratégica.",
             },
@@ -173,7 +216,8 @@ export default function Home() {
                 backgroundColor: "#FCFAF7",
                 padding: "40px",
                 borderRadius: "20px",
-                boxShadow: "0 5px 20px rgba(0,0,0,0.05)",
+                boxShadow:
+                  "0 5px 20px rgba(0,0,0,0.05)",
               }}
             >
               <h3
@@ -210,34 +254,43 @@ export default function Home() {
             maxWidth: "1200px",
             margin: "0 auto",
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
+            gridTemplateColumns:
+              "repeat(auto-fit, minmax(300px, 1fr))",
             gap: "30px",
           }}
         >
           <div>
-            <h3 style={{ color: "#C8A46A" }}>Missão</h3>
+            <h3 style={{ color: "#C8A46A" }}>
+              Missão
+            </h3>
             <p style={{ lineHeight: "1.8rem" }}>
-              Acolher e direcionar mulheres em seus processos
-              emocionais, promovendo fortalecimento interno,
-              clareza emocional e transformação pessoal.
+              Acolher e direcionar mulheres em seus
+              processos emocionais, promovendo
+              fortalecimento interno, clareza emocional e
+              transformação pessoal.
             </p>
           </div>
 
           <div>
-            <h3 style={{ color: "#C8A46A" }}>Visão</h3>
+            <h3 style={{ color: "#C8A46A" }}>
+              Visão
+            </h3>
             <p style={{ lineHeight: "1.8rem" }}>
-              Ser referência em desenvolvimento emocional feminino,
-              ajudando mulheres a construírem vidas mais conscientes,
-              seguras e alinhadas com sua essência.
+              Ser referência em desenvolvimento emocional
+              feminino, ajudando mulheres a construírem
+              vidas mais conscientes, seguras e alinhadas
+              com sua essência.
             </p>
           </div>
 
           <div>
-            <h3 style={{ color: "#C8A46A" }}>Valores</h3>
+            <h3 style={{ color: "#C8A46A" }}>
+              Valores
+            </h3>
             <p style={{ lineHeight: "1.8rem" }}>
-              Acolhimento, ética, escuta, respeito à individualidade,
-              transformação emocional, verdade, clareza e expansão
-              feminina.
+              Acolhimento, ética, escuta, respeito à
+              individualidade, transformação emocional,
+              verdade, clareza e expansão feminina.
             </p>
           </div>
         </div>
