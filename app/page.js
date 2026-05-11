@@ -1,4 +1,3 @@
-```javascript
 "use client"
 
 import { motion } from "framer-motion"
@@ -13,7 +12,6 @@ export default function Home() {
         overflowX: "hidden",
       }}
     >
-      {/* HERO */}
       <section
         style={{
           minHeight: "100vh",
@@ -72,48 +70,25 @@ export default function Home() {
             >
               Um espaço terapêutico criado para mulheres que desejam
               romper padrões emocionais, superar a autosabotagem,
-              fortalecer a autoestima e viver com mais leveza,
-              merecimento e conexão consigo mesmas.
+              fortalecer a autoestima e viver com mais leveza.
             </p>
 
-            <div
+            <a
+              href="https://wa.me/5546988042216"
+              target="_blank"
               style={{
-                display: "flex",
-                gap: "20px",
-                flexWrap: "wrap",
+                backgroundColor: "#8c5e58",
+                color: "white",
+                padding: "16px 32px",
+                borderRadius: "14px",
+                textDecoration: "none",
+                fontWeight: "bold",
+                fontSize: "18px",
+                display: "inline-block",
               }}
             >
-              <a
-                href="https://wa.me/5546988042216"
-                target="_blank"
-                style={{
-                  backgroundColor: "#8c5e58",
-                  color: "white",
-                  padding: "16px 32px",
-                  borderRadius: "14px",
-                  textDecoration: "none",
-                  fontWeight: "bold",
-                  fontSize: "18px",
-                }}
-              >
-                Agendar Sessão
-              </a>
-
-              <a
-                href="#sobre"
-                style={{
-                  border: "2px solid #8c5e58",
-                  color: "#8c5e58",
-                  padding: "16px 32px",
-                  borderRadius: "14px",
-                  textDecoration: "none",
-                  fontWeight: "bold",
-                  fontSize: "18px",
-                }}
-              >
-                Conhecer o Instituto
-              </a>
-            </div>
+              Agendar Sessão
+            </a>
           </motion.div>
 
           <motion.div
@@ -130,16 +105,13 @@ export default function Home() {
                 maxWidth: "500px",
                 borderRadius: "30px",
                 boxShadow: "0 20px 40px rgba(0,0,0,0.15)",
-                objectFit: "cover",
               }}
             />
           </motion.div>
         </div>
       </section>
 
-      {/* SOBRE */}
       <section
-        id="sobre"
         style={{
           padding: "100px 20px",
           backgroundColor: "white",
@@ -147,65 +119,34 @@ export default function Home() {
       >
         <div
           style={{
-            maxWidth: "1100px",
+            maxWidth: "1000px",
             margin: "0 auto",
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
-            gap: "50px",
-            alignItems: "center",
+            textAlign: "center",
           }}
         >
-          <div>
-            <img
-              src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=1200&auto=format&fit=crop"
-              alt="Mulher em transformação"
-              style={{
-                width: "100%",
-                borderRadius: "25px",
-                objectFit: "cover",
-              }}
-            />
-          </div>
+          <h2
+            style={{
+              fontSize: "46px",
+              marginBottom: "30px",
+            }}
+          >
+            Um acolhimento profundo para mulheres
+          </h2>
 
-          <div>
-            <h2
-              style={{
-                fontSize: "46px",
-                marginBottom: "30px",
-              }}
-            >
-              Um acolhimento profundo para mulheres
-            </h2>
-
-            <p
-              style={{
-                fontSize: "20px",
-                lineHeight: "1.9",
-                marginBottom: "20px",
-              }}
-            >
-              O Instituto Kamilah Franco nasceu com o propósito de
-              auxiliar mulheres a compreenderem suas dores emocionais,
-              romperem ciclos repetitivos e reconstruírem sua relação
-              consigo mesmas.
-            </p>
-
-            <p
-              style={{
-                fontSize: "20px",
-                lineHeight: "1.9",
-              }}
-            >
-              Aqui você encontra um atendimento humanizado,
-              acolhedor e profundo, voltado para autoestima,
-              autosabotagem, emocional feminino, merecimento,
-              relacionamentos e expansão pessoal.
-            </p>
-          </div>
+          <p
+            style={{
+              fontSize: "20px",
+              lineHeight: "1.9",
+            }}
+          >
+            O Instituto Kamilah Franco nasceu com o propósito de
+            auxiliar mulheres a compreenderem suas dores emocionais,
+            romperem ciclos repetitivos e reconstruírem sua relação
+            consigo mesmas.
+          </p>
         </div>
       </section>
 
-      {/* ÁREAS */}
       <section
         style={{
           padding: "100px 20px",
@@ -220,7 +161,7 @@ export default function Home() {
               marginBottom: "70px",
             }}
           >
-            Áreas trabalhadas no processo terapêutico
+            Áreas trabalhadas
           </h2>
 
           <div
@@ -231,26 +172,10 @@ export default function Home() {
             }}
           >
             {[
-              {
-                titulo: "Autosabotagem Feminina",
-                texto:
-                  "Identificação e liberação de padrões emocionais que impedem o crescimento pessoal.",
-              },
-              {
-                titulo: "Autoestima e Merecimento",
-                texto:
-                  "Fortalecimento emocional e reconstrução da relação consigo mesma.",
-              },
-              {
-                titulo: "Relacionamentos",
-                texto:
-                  "Compreensão de padrões afetivos, dependência emocional e bloqueios emocionais.",
-              },
-              {
-                titulo: "Emocional Feminino",
-                texto:
-                  "Reconexão com sua essência, sensibilidade e força interior.",
-              },
+              "Autosabotagem Feminina",
+              "Autoestima",
+              "Relacionamentos",
+              "Emocional Feminino",
             ].map((item, index) => (
               <div
                 key={index}
@@ -258,34 +183,22 @@ export default function Home() {
                   backgroundColor: "white",
                   padding: "35px",
                   borderRadius: "24px",
-                  boxShadow: "0 10px 25px rgba(0,0,0,0.05)",
                 }}
               >
                 <h3
                   style={{
                     fontSize: "28px",
-                    marginBottom: "18px",
                     color: "#8c5e58",
                   }}
                 >
-                  {item.titulo}
+                  {item}
                 </h3>
-
-                <p
-                  style={{
-                    fontSize: "18px",
-                    lineHeight: "1.8",
-                  }}
-                >
-                  {item.texto}
-                </p>
               </div>
             ))}
           </div>
         </div>
       </section>
 
-      {/* FRASE */}
       <section
         style={{
           padding: "120px 20px",
@@ -301,62 +214,12 @@ export default function Home() {
               fontWeight: "normal",
             }}
           >
-            “Você não precisa continuar carregando dores,
-            padrões e histórias que já não pertencem à mulher
-            que está se tornando.”
+            “Você não precisa continuar carregando dores e padrões
+            que já não pertencem à mulher que está se tornando.”
           </h2>
         </div>
       </section>
 
-      {/* CTA */}
-      <section
-        style={{
-          padding: "100px 20px",
-          background:
-            "linear-gradient(180deg, #8c5e58 0%, #6f4944 100%)",
-          color: "white",
-          textAlign: "center",
-        }}
-      >
-        <div style={{ maxWidth: "900px", margin: "0 auto" }}>
-          <h2
-            style={{
-              fontSize: "50px",
-              marginBottom: "25px",
-            }}
-          >
-            Seu processo de transformação pode começar agora
-          </h2>
-
-          <p
-            style={{
-              fontSize: "22px",
-              lineHeight: "1.8",
-              marginBottom: "40px",
-            }}
-          >
-            Atendimento terapêutico on-line para mulheres de todo o Brasil.
-          </p>
-
-          <a
-            href="https://wa.me/5546988042216"
-            target="_blank"
-            style={{
-              backgroundColor: "white",
-              color: "#8c5e58",
-              padding: "18px 36px",
-              borderRadius: "14px",
-              textDecoration: "none",
-              fontWeight: "bold",
-              fontSize: "20px",
-            }}
-          >
-            Falar no WhatsApp
-          </a>
-        </div>
-      </section>
-
-      {/* FOOTER */}
       <footer
         style={{
           backgroundColor: "#4b3a37",
@@ -369,12 +232,8 @@ export default function Home() {
           Instituto Kamilah Franco
         </h3>
 
-        <p style={{ fontSize: "18px", lineHeight: "1.8" }}>
-          Estrutura emocional feminina e transformação emocional.
-        </p>
-
-        <p style={{ marginTop: "20px", opacity: 0.8 }}>
-          © 2026 Instituto Kamilah Franco
+        <p style={{ fontSize: "18px" }}>
+          Atendimento on-line para todo o Brasil
         </p>
       </footer>
     </main>
