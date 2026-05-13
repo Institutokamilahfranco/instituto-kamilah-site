@@ -31,7 +31,7 @@ export default function Home() {
           {/* TEXTO */}
           <div>
             <img
-           src="/logo.jpeg"
+              src="/logo.jpeg"
               alt="Instituto Kamilah Franco"
               style={{
                 width: "320px",
@@ -103,7 +103,7 @@ export default function Home() {
           {/* FOTO */}
           <div style={{ textAlign: "center" }}>
             <img
-             src="/kamilah.png"
+              src="/kamilah.png"
               alt="Kamilah Franco"
               style={{
                 width: "100%",
@@ -186,24 +186,28 @@ export default function Home() {
         >
           {[
             {
+              imagem: "/produto1.png",
               titulo:
                 "Estrutura Emocional para Romper a Autossabotagem",
               texto:
                 "Processo terapêutico estratégico para mulheres que desejam fortalecer sua base emocional, romper padrões limitantes e sustentar crescimento e posicionamento.",
             },
             {
+              imagem: "/produto2.png",
               titulo:
                 "Acompanhamento Terapêutico Estratégico",
               texto:
                 "Atendimento terapêutico individual focado em desenvolvimento emocional, reconstrução interna e clareza para decisões e direcionamento pessoal.",
             },
             {
+              imagem: "/produto3.png",
               titulo:
                 "Sustentação Emocional e Posicionamento",
               texto:
                 "Processo terapêutico voltado para mulheres que desejam desenvolver segurança emocional, clareza interna e fortalecimento pessoal.",
             },
             {
+              imagem: "/produto4.png",
               titulo:
                 "Sessão Diagnóstica Terapêutica",
               texto:
@@ -214,17 +218,28 @@ export default function Home() {
               key={index}
               style={{
                 backgroundColor: "#FCFAF7",
-                padding: "40px",
+                padding: "25px",
                 borderRadius: "20px",
                 boxShadow:
                   "0 5px 20px rgba(0,0,0,0.05)",
               }}
             >
+              <img
+                src={item.imagem}
+                alt={item.titulo}
+                style={{
+                  width: "100%",
+                  borderRadius: "16px",
+                  marginBottom: "20px",
+                }}
+              />
+
               <h3
                 style={{
                   marginBottom: "20px",
                   color: "#C8A46A",
                   lineHeight: "2rem",
+                  fontSize: "1.4rem",
                 }}
               >
                 {item.titulo}
@@ -263,6 +278,7 @@ export default function Home() {
             <h3 style={{ color: "#C8A46A" }}>
               Missão
             </h3>
+
             <p style={{ lineHeight: "1.8rem" }}>
               Acolher e direcionar mulheres em seus
               processos emocionais, promovendo
@@ -275,6 +291,7 @@ export default function Home() {
             <h3 style={{ color: "#C8A46A" }}>
               Visão
             </h3>
+
             <p style={{ lineHeight: "1.8rem" }}>
               Ser referência em desenvolvimento emocional
               feminino, ajudando mulheres a construírem
@@ -287,6 +304,7 @@ export default function Home() {
             <h3 style={{ color: "#C8A46A" }}>
               Valores
             </h3>
+
             <p style={{ lineHeight: "1.8rem" }}>
               Acolhimento, ética, escuta, respeito à
               individualidade, transformação emocional,
