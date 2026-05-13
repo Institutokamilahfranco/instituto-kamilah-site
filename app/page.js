@@ -39,7 +39,7 @@ export default function Home() {
           <div>
             <img
               src="/logo.jpeg"
-              alt="Instituto Kamilah Franco"
+              alt="INSTITUTO Kamilah Franco"
               style={{
                 width: "220px",
                 marginBottom: "20px",
