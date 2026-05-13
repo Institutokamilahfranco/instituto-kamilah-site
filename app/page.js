@@ -20,19 +20,19 @@ export default function Home() {
       {/* HERO */}
       <section
         style={{
-          padding: "80px 20px",
+          padding: "50px 20px",
           background:
             "linear-gradient(to bottom, #FCFAF7, #F6F1EC)",
         }}
       >
         <div
           style={{
-            maxWidth: "1300px",
+            maxWidth: "1200px",
             margin: "0 auto",
             display: "grid",
             gridTemplateColumns:
               "repeat(auto-fit, minmax(320px, 1fr))",
-            gap: "50px",
+            gap: "40px",
             alignItems: "center",
           }}
         >
@@ -41,17 +41,17 @@ export default function Home() {
               src="/logo.jpeg"
               alt="Instituto Kamilah Franco"
               style={{
-                width: "320px",
-                marginBottom: "30px",
+                width: "220px",
+                marginBottom: "20px",
               }}
             />
 
             <h1
               style={{
-                fontSize: "clamp(2.5rem, 8vw, 4rem)",
+                fontSize: "clamp(2.2rem, 7vw, 3.5rem)",
                 lineHeight: "1.1",
                 color: "#4B3B36",
-                marginBottom: "30px",
+                marginBottom: "25px",
               }}
             >
               Instituto <br />
@@ -60,33 +60,15 @@ export default function Home() {
 
             <p
               style={{
-                fontSize: "1.15rem",
-                lineHeight: "2rem",
+                fontSize: "1.05rem",
+                lineHeight: "1.9rem",
                 color: "#4B3B36",
-                marginBottom: "40px",
+                marginBottom: "35px",
               }}
             >
               O Instituto Kamilah Franco é um espaço de
               acolhimento, desenvolvimento emocional e
               transformação feminina.
-
-              <br />
-              <br />
-
-              Criado para mulheres que desejam romper
-              padrões de autossabotagem, fortalecer sua
-              estrutura emocional e construir uma vida com
-              mais clareza, posicionamento, segurança e
-              propósito.
-
-              <br />
-              <br />
-
-              Através de processos terapêuticos
-              estratégicos, cada atendimento é conduzido
-              de forma individual, respeitando a história,
-              o momento e as necessidades emocionais de
-              cada mulher.
             </p>
 
             <a
@@ -96,11 +78,11 @@ export default function Home() {
                 display: "inline-block",
                 backgroundColor: "#C8A46A",
                 color: "#fff",
-                padding: "16px 35px",
+                padding: "14px 30px",
                 borderRadius: "40px",
                 textDecoration: "none",
                 fontWeight: "bold",
-                fontSize: "1rem",
+                fontSize: "0.95rem",
               }}
             >
               Agendar Atendimento
@@ -113,7 +95,7 @@ export default function Home() {
               alt="Kamilah Franco"
               style={{
                 width: "100%",
-                maxWidth: "500px",
+                maxWidth: "420px",
                 borderRadius: "24px",
                 boxShadow:
                   "0 15px 40px rgba(0,0,0,0.10)",
@@ -126,15 +108,15 @@ export default function Home() {
       {/* SOBRE */}
       <section
         style={{
-          padding: "80px 20px",
+          padding: "70px 20px",
           backgroundColor: "#FCFAF7",
           textAlign: "center",
         }}
       >
         <h2
           style={{
-            fontSize: "2.5rem",
-            marginBottom: "30px",
+            fontSize: "2.3rem",
+            marginBottom: "25px",
           }}
         >
           Sobre o Instituto
@@ -142,38 +124,30 @@ export default function Home() {
 
         <p
           style={{
-            maxWidth: "900px",
+            maxWidth: "850px",
             margin: "0 auto",
-            lineHeight: "2rem",
-            fontSize: "1.1rem",
+            lineHeight: "1.9rem",
+            fontSize: "1rem",
           }}
         >
           O Instituto Kamilah Franco nasceu com o
           propósito de acolher mulheres em seus processos
-          de reconstrução emocional, fortalecimento
-          interno e expansão pessoal.
-
-          <br />
-          <br />
-
-          Um espaço seguro para mulheres que desejam
-          desenvolver clareza emocional, fortalecer sua
-          base interna e criar uma vida mais alinhada com
-          sua verdade, identidade e propósito.
+          de fortalecimento emocional, reconstrução
+          interna e expansão pessoal.
         </p>
       </section>
 
       {/* PROCESSOS */}
       <section
         style={{
-          padding: "80px 20px",
+          padding: "70px 20px",
         }}
       >
         <h2
           style={{
             textAlign: "center",
-            fontSize: "2.5rem",
-            marginBottom: "60px",
+            fontSize: "2.3rem",
+            marginBottom: "50px",
           }}
         >
           Processos Terapêuticos
@@ -193,30 +167,30 @@ export default function Home() {
             {
               imagem: "/produto1.png",
               titulo:
-                "Estrutura Emocional para Romper a Autossabotagem",
+                "Estrutura Emocional",
               texto:
-                "Processo terapêutico estratégico para mulheres que desejam fortalecer sua base emocional, romper padrões limitantes e sustentar crescimento e posicionamento.",
+                "Fortalecimento emocional para romper padrões limitantes.",
             },
             {
               imagem: "/produto2.png",
               titulo:
-                "Acompanhamento Terapêutico Estratégico",
+                "Acompanhamento Terapêutico",
               texto:
-                "Atendimento terapêutico individual focado em desenvolvimento emocional, reconstrução interna e clareza para decisões e direcionamento pessoal.",
+                "Processo terapêutico individual com direcionamento emocional.",
             },
             {
               imagem: "/produto3.png",
               titulo:
-                "Sustentação Emocional e Posicionamento",
+                "Posicionamento Emocional",
               texto:
-                "Processo terapêutico voltado para mulheres que desejam desenvolver segurança emocional, clareza interna e fortalecimento pessoal.",
+                "Desenvolvimento de segurança emocional e clareza interna.",
             },
             {
               imagem: "/produto4.png",
               titulo:
-                "Sessão Diagnóstica Terapêutica",
+                "Sessão Diagnóstica",
               texto:
-                "Primeiro encontro para identificar padrões emocionais, autossabotagem e direcionar o processo terapêutico de forma estratégica.",
+                "Identificação de padrões emocionais e direcionamento terapêutico.",
             },
           ].map((item, index) => (
             <div
@@ -242,10 +216,10 @@ export default function Home() {
 
               <h3
                 style={{
-                  marginBottom: "20px",
+                  marginBottom: "15px",
                   color: "#C8A46A",
-                  lineHeight: "2rem",
-                  fontSize: "1.4rem",
+                  lineHeight: "1.7rem",
+                  fontSize: "1.2rem",
                 }}
               >
                 {item.titulo}
@@ -253,7 +227,7 @@ export default function Home() {
 
               <p
                 style={{
-                  lineHeight: "1.8rem",
+                  lineHeight: "1.7rem",
                 }}
               >
                 {item.texto}
@@ -266,7 +240,7 @@ export default function Home() {
       {/* MISSÃO VISÃO E VALORES */}
       <section
         style={{
-          padding: "100px 20px",
+          padding: "70px 20px",
           backgroundColor: "#f8f3ef",
         }}
       >
@@ -279,174 +253,150 @@ export default function Home() {
           <h2
             style={{
               textAlign: "center",
-              fontSize: "48px",
+              fontSize: "38px",
               color: "#4b3b36",
-              marginBottom: "70px",
+              marginBottom: "50px",
               fontWeight: "600",
             }}
           >
             Missão, Visão e Valores
           </h2>
 
-          {/* MISSÃO */}
           <div
             style={{
-              display: "flex",
-              alignItems: "center",
-              gap: "50px",
-              marginBottom: "80px",
-              flexWrap: "wrap",
+              display: "grid",
+              gridTemplateColumns:
+                "repeat(auto-fit, minmax(300px, 1fr))",
+              gap: "30px",
             }}
           >
-            <img
-              src="/missao.png"
-              alt="Missão Instituto Kamilah Franco"
+            {/* MISSÃO */}
+            <div
               style={{
-                width: "500px",
+                backgroundColor: "#fff",
                 borderRadius: "24px",
+                overflow: "hidden",
                 boxShadow:
-                  "0 10px 30px rgba(0,0,0,0.08)",
-                flex: "1",
-                minWidth: "300px",
-              }}
-            />
-
-            <div
-              style={{
-                flex: "1",
-                minWidth: "300px",
+                  "0 10px 30px rgba(0,0,0,0.05)",
               }}
             >
-              <h3
+              <img
+                src="/missao.png"
+                alt="Missão"
                 style={{
-                  fontSize: "40px",
-                  color: "#b38b59",
-                  marginBottom: "20px",
+                  width: "100%",
+                  height: "220px",
+                  objectFit: "cover",
                 }}
-              >
-                Missão
-              </h3>
+              />
 
-              <p
-                style={{
-                  fontSize: "22px",
-                  lineHeight: "1.8",
-                  color: "#5b4b45",
-                }}
-              >
-                Acolher e direcionar mulheres em seus
-                processos emocionais, promovendo
-                fortalecimento interno, clareza emocional,
-                posicionamento e transformação pessoal.
-              </p>
-            </div>
-          </div>
+              <div style={{ padding: "25px" }}>
+                <h3
+                  style={{
+                    color: "#b38b59",
+                    fontSize: "28px",
+                    marginBottom: "12px",
+                  }}
+                >
+                  Missão
+                </h3>
 
-          {/* VISÃO */}
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: "50px",
-              marginBottom: "80px",
-              flexWrap: "wrap-reverse",
-            }}
-          >
-            <div
-              style={{
-                flex: "1",
-                minWidth: "300px",
-              }}
-            >
-              <h3
-                style={{
-                  fontSize: "40px",
-                  color: "#b38b59",
-                  marginBottom: "20px",
-                }}
-              >
-                Visão
-              </h3>
-
-              <p
-                style={{
-                  fontSize: "22px",
-                  lineHeight: "1.8",
-                  color: "#5b4b45",
-                }}
-              >
-                Ser referência em desenvolvimento
-                emocional feminino, auxiliando mulheres a
-                romper padrões de autossabotagem,
-                fortalecer sua identidade emocional e
-                construir uma vida com mais verdade,
-                segurança e propósito.
-              </p>
+                <p
+                  style={{
+                    lineHeight: "1.7",
+                    color: "#5b4b45",
+                  }}
+                >
+                  Acolher e direcionar mulheres em seus
+                  processos emocionais.
+                </p>
+              </div>
             </div>
 
-            <img
-              src="/visao.png"
-              alt="Visão Instituto Kamilah Franco"
-              style={{
-                width: "500px",
-                borderRadius: "24px",
-                boxShadow:
-                  "0 10px 30px rgba(0,0,0,0.08)",
-                flex: "1",
-                minWidth: "300px",
-              }}
-            />
-          </div>
-
-          {/* VALORES */}
-          <div
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: "50px",
-              flexWrap: "wrap",
-            }}
-          >
-            <img
-              src="/valores.png"
-              alt="Valores Instituto Kamilah Franco"
-              style={{
-                width: "500px",
-                borderRadius: "24px",
-                boxShadow:
-                  "0 10px 30px rgba(0,0,0,0.08)",
-                flex: "1",
-                minWidth: "300px",
-              }}
-            />
-
+            {/* VISÃO */}
             <div
               style={{
-                flex: "1",
-                minWidth: "300px",
+                backgroundColor: "#fff",
+                borderRadius: "24px",
+                overflow: "hidden",
+                boxShadow:
+                  "0 10px 30px rgba(0,0,0,0.05)",
               }}
             >
-              <h3
+              <img
+                src="/visao.png"
+                alt="Visão"
                 style={{
-                  fontSize: "40px",
-                  color: "#b38b59",
-                  marginBottom: "20px",
+                  width: "100%",
+                  height: "220px",
+                  objectFit: "cover",
                 }}
-              >
-                Valores
-              </h3>
+              />
 
-              <p
+              <div style={{ padding: "25px" }}>
+                <h3
+                  style={{
+                    color: "#b38b59",
+                    fontSize: "28px",
+                    marginBottom: "12px",
+                  }}
+                >
+                  Visão
+                </h3>
+
+                <p
+                  style={{
+                    lineHeight: "1.7",
+                    color: "#5b4b45",
+                  }}
+                >
+                  Ser referência em desenvolvimento
+                  emocional feminino.
+                </p>
+              </div>
+            </div>
+
+            {/* VALORES */}
+            <div
+              style={{
+                backgroundColor: "#fff",
+                borderRadius: "24px",
+                overflow: "hidden",
+                boxShadow:
+                  "0 10px 30px rgba(0,0,0,0.05)",
+              }}
+            >
+              <img
+                src="/valores.png"
+                alt="Valores"
                 style={{
-                  fontSize: "22px",
-                  lineHeight: "1.8",
-                  color: "#5b4b45",
+                  width: "100%",
+                  height: "220px",
+                  objectFit: "cover",
                 }}
-              >
-                Acolhimento, ética, escuta, respeito à
-                individualidade, transformação emocional,
-                verdade, clareza e expansão feminina.
-              </p>
+              />
+
+              <div style={{ padding: "25px" }}>
+                <h3
+                  style={{
+                    color: "#b38b59",
+                    fontSize: "28px",
+                    marginBottom: "12px",
+                  }}
+                >
+                  Valores
+                </h3>
+
+                <p
+                  style={{
+                    lineHeight: "1.7",
+                    color: "#5b4b45",
+                  }}
+                >
+                  Ética, acolhimento, escuta, clareza e
+                  expansão feminina.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -455,7 +405,7 @@ export default function Home() {
       {/* FORMULÁRIO */}
       <section
         style={{
-          padding: "100px 20px",
+          padding: "80px 20px",
           backgroundColor: "#FCFAF7",
         }}
       >
@@ -464,7 +414,7 @@ export default function Home() {
             maxWidth: "800px",
             margin: "0 auto",
             backgroundColor: "#fff",
-            padding: "50px",
+            padding: "40px",
             borderRadius: "30px",
             boxShadow:
               "0 10px 30px rgba(0,0,0,0.05)",
@@ -473,27 +423,15 @@ export default function Home() {
           <h2
             style={{
               textAlign: "center",
-              fontSize: "42px",
+              fontSize: "36px",
               marginBottom: "20px",
             }}
           >
             Agende seu atendimento
           </h2>
 
-          <p
-            style={{
-              textAlign: "center",
-              marginBottom: "40px",
-              lineHeight: "1.8",
-            }}
-          >
-            Preencha seus dados e entraremos em contato
-            para direcionar o melhor acompanhamento para
-            você.
-          </p>
-
           <form
-            action="https://formsubmit.co/SEUEMAIL@gmail.com"
+            action="https://formsubmit.co/kamilahfranco.comunicacao@gmail.com"
             method="POST"
             style={{
               display: "flex",
@@ -527,8 +465,8 @@ export default function Home() {
 
             <textarea
               name="mensagem"
-              placeholder="Conte brevemente o que você deseja trabalhar"
-              rows="6"
+              placeholder="Como podemos te ajudar?"
+              rows="5"
               style={inputStyle}
             />
 
@@ -554,14 +492,14 @@ export default function Home() {
       {/* CONTATO */}
       <section
         style={{
-          padding: "80px 20px",
+          padding: "70px 20px",
           textAlign: "center",
         }}
       >
         <h2
           style={{
-            fontSize: "2.5rem",
-            marginBottom: "30px",
+            fontSize: "2.3rem",
+            marginBottom: "25px",
           }}
         >
           Contato
@@ -571,7 +509,7 @@ export default function Home() {
           WhatsApp: (46) 98804-2216
         </p>
 
-        <p style={{ marginBottom: "40px" }}>
+        <p style={{ marginBottom: "35px" }}>
           Instagram: @instituto.kamilah.franco
         </p>
 
@@ -582,7 +520,7 @@ export default function Home() {
             display: "inline-block",
             backgroundColor: "#4B3B36",
             color: "#fff",
-            padding: "15px 35px",
+            padding: "14px 30px",
             borderRadius: "40px",
             textDecoration: "none",
             fontWeight: "bold",
@@ -592,7 +530,7 @@ export default function Home() {
         </a>
       </section>
 
-      {/* BOTÃO FIXO WHATSAPP */}
+      {/* BOTÃO FIXO */}
       <a
         href="https://wa.me/5546988042216"
         target="_blank"
@@ -602,13 +540,13 @@ export default function Home() {
           right: "25px",
           backgroundColor: "#25D366",
           color: "#fff",
-          width: "65px",
-          height: "65px",
+          width: "60px",
+          height: "60px",
           borderRadius: "50%",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
-          fontSize: "30px",
+          fontSize: "28px",
           textDecoration: "none",
           boxShadow:
             "0 8px 25px rgba(0,0,0,0.20)",
