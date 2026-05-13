@@ -39,6 +39,8 @@ export default function Home() {
           <div>
             <img
               src="/logo.jpeg"
+<div style={{ textAlign: "FLEX" }}>
+width: "100%",
               alt="INSTITUTO Kamilah Franco"
               style={{
                 width: "800px",
@@ -91,13 +93,13 @@ Através de um acompanhamento estratégico e humanizado, trabalhamos o desenvolv
             </a>
           </div>
 
-          <div style={{ textAlign: "center" }}>
+          <div style={{ textAlign: "FLEX" }}>
             <img
               src="/kamilah.png"
               alt="Kamilah Franco"
               style={{
                 width: "100%",
-                maxWidth: "220px",
+                maxWidth: "420px",
                 borderRadius: "24px",
                 boxShadow:
                   "0 15px 40px rgba(0,0,0,0.10)",
