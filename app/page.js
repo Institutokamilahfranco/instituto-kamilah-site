@@ -59,7 +59,7 @@ export default function Home() {
                   alt="Instituto Kamilah Franco"
                   style={{
                     width: "100%",
-                    maxWidth: "350px",
+                    maxWidth: "800px",
                   }}
                 />
               </div>
@@ -126,9 +126,9 @@ export default function Home() {
               <img
                 src="/kamilah.png"
                 alt="Kamilah Franco"
-                style={{
+                style={{ textAlign: "FLEX" }}>
                   width: "100%",
-                  maxWidth: "420px",
+                  maxWidth: "380px",
                   borderRadius: "24px",
                   boxShadow:
                     "0 15px 40px rgba(0,0,0,0.10)",
@@ -491,7 +491,7 @@ export default function Home() {
             fontWeight: "bold",
           }}
         >
-          Entrar em contato
+          Entre em contato para agendamento ou duvidas 
         </a>
       </section>
 
