@@ -116,27 +116,24 @@ export default function Home() {
 
             {/* FOTO */}
             <div
-              style={{
-                flex: "1",
-                minWidth: "300px",
-                textAlign: "center",
-              }}
-            >
-              <img
-                src="/kamilah.png"
-                alt="Kamilah Franco"
-                style={{ textAlign: "FLEX" }}>
-                  width: "100%",
-                  maxWidth: "380px",
-                  borderRadius: "24px",
-                  boxShadow:
-                    "0 15px 40px rgba(0,0,0,0.10)",
-                }}
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+  style={{
+    flex: "1",
+    minWidth: "300px",
+    textAlign: "center",
+    marginTop: "60px",
+  }}
+>
+  <img
+    src="/kamilah.png"
+    alt="Kamilah Franco"
+    style={{
+      width: "100%",
+      maxWidth: "320px",
+      borderRadius: "24px",
+      boxShadow: "0 15px 40px rgba(0,0,0,0.10)",
+    }}
+  />
+</div>
 
       {/* SOBRE */}
       <section
