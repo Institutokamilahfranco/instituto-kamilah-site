@@ -41,7 +41,7 @@ export default function Home() {
               src="/logo.jpeg"
               alt="INSTITUTO Kamilah Franco"
               style={{
-                width: "460px",
+                width: "800px",
                 marginBottom: "40px",
               }}
             />
@@ -97,7 +97,7 @@ Através de um acompanhamento estratégico e humanizado, trabalhamos o desenvolv
               alt="Kamilah Franco"
               style={{
                 width: "100%",
-                maxWidth: "420px",
+                maxWidth: "220px",
                 borderRadius: "24px",
                 boxShadow:
                   "0 15px 40px rgba(0,0,0,0.10)",
