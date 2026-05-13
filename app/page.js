@@ -257,59 +257,192 @@ export default function Home() {
         </div>
       </section>
 
-      {/* MISSÃO */}
+      {/* MISSÃO VISÃO E VALORES */}
+
       <section
         style={{
-          padding: "80px 20px",
-          backgroundColor: "#FCFAF7",
+          padding: "100px 20px",
+          backgroundColor: "#f8f3ef",
         }}
       >
         <div
           style={{
             maxWidth: "1200px",
             margin: "0 auto",
-            display: "grid",
-            gridTemplateColumns:
-              "repeat(auto-fit, minmax(300px, 1fr))",
-            gap: "30px",
           }}
         >
-          <div>
-            <h3 style={{ color: "#C8A46A" }}>
-              Missão
-            </h3>
+          <h2
+            style={{
+              textAlign: "center",
+              fontSize: "48px",
+              color: "#4b3b36",
+              marginBottom: "70px",
+              fontWeight: "600",
+            }}
+          >
+            Missão, Visão e Valores
+          </h2>
 
-            <p style={{ lineHeight: "1.8rem" }}>
-              Acolher e direcionar mulheres em seus
-              processos emocionais, promovendo
-              fortalecimento interno, clareza emocional e
-              transformação pessoal.
-            </p>
+          {/* MISSÃO */}
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "50px",
+              marginBottom: "80px",
+              flexWrap: "wrap",
+            }}
+          >
+            <img
+              src="/missao.png"
+              alt="Missão Instituto Kamilah Franco"
+              style={{
+                width: "500px",
+                borderRadius: "24px",
+                boxShadow:
+                  "0 10px 30px rgba(0,0,0,0.08)",
+                flex: "1",
+                minWidth: "300px",
+              }}
+            />
+
+            <div
+              style={{
+                flex: "1",
+                minWidth: "300px",
+              }}
+            >
+              <h3
+                style={{
+                  fontSize: "40px",
+                  color: "#b38b59",
+                  marginBottom: "20px",
+                }}
+              >
+                Missão
+              </h3>
+
+              <p
+                style={{
+                  fontSize: "22px",
+                  lineHeight: "1.8",
+                  color: "#5b4b45",
+                }}
+              >
+                Acolher e direcionar mulheres em seus
+                processos emocionais, promovendo
+                fortalecimento interno, clareza emocional,
+                posicionamento e transformação pessoal.
+              </p>
+            </div>
           </div>
 
-          <div>
-            <h3 style={{ color: "#C8A46A" }}>
-              Visão
-            </h3>
+          {/* VISÃO */}
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "50px",
+              marginBottom: "80px",
+              flexWrap: "wrap-reverse",
+            }}
+          >
+            <div
+              style={{
+                flex: "1",
+                minWidth: "300px",
+              }}
+            >
+              <h3
+                style={{
+                  fontSize: "40px",
+                  color: "#b38b59",
+                  marginBottom: "20px",
+                }}
+              >
+                Visão
+              </h3>
 
-            <p style={{ lineHeight: "1.8rem" }}>
-              Ser referência em desenvolvimento emocional
-              feminino, ajudando mulheres a construírem
-              vidas mais conscientes, seguras e alinhadas
-              com sua essência.
-            </p>
+              <p
+                style={{
+                  fontSize: "22px",
+                  lineHeight: "1.8",
+                  color: "#5b4b45",
+                }}
+              >
+                Ser referência em desenvolvimento
+                emocional feminino, auxiliando mulheres a
+                romper padrões de autossabotagem,
+                fortalecer sua identidade emocional e
+                construir uma vida com mais verdade,
+                segurança e propósito.
+              </p>
+            </div>
+
+            <img
+              src="/visao.png"
+              alt="Visão Instituto Kamilah Franco"
+              style={{
+                width: "500px",
+                borderRadius: "24px",
+                boxShadow:
+                  "0 10px 30px rgba(0,0,0,0.08)",
+                flex: "1",
+                minWidth: "300px",
+              }}
+            />
           </div>
 
-          <div>
-            <h3 style={{ color: "#C8A46A" }}>
-              Valores
-            </h3>
+          {/* VALORES */}
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "50px",
+              flexWrap: "wrap",
+            }}
+          >
+            <img
+              src="/valores.png"
+              alt="Valores Instituto Kamilah Franco"
+              style={{
+                width: "500px",
+                borderRadius: "24px",
+                boxShadow:
+                  "0 10px 30px rgba(0,0,0,0.08)",
+                flex: "1",
+                minWidth: "300px",
+              }}
+            />
 
-            <p style={{ lineHeight: "1.8rem" }}>
-              Acolhimento, ética, escuta, respeito à
-              individualidade, transformação emocional,
-              verdade, clareza e expansão feminina.
-            </p>
+            <div
+              style={{
+                flex: "1",
+                minWidth: "300px",
+              }}
+            >
+              <h3
+                style={{
+                  fontSize: "40px",
+                  color: "#b38b59",
+                  marginBottom: "20px",
+                }}
+              >
+                Valores
+              </h3>
+
+              <p
+                style={{
+                  fontSize: "22px",
+                  lineHeight: "1.8",
+                  color: "#5b4b45",
+                }}
+              >
+                Acolhimento, ética, escuta, respeito à
+                individualidade, transformação emocional,
+                verdade, clareza e expansão feminina.
+              </p>
+            </div>
           </div>
         </div>
       </section>
