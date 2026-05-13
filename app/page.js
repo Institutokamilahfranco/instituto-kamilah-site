@@ -1,3 +1,11 @@
+const inputStyle = {
+  padding: "18px",
+  borderRadius: "14px",
+  border: "1px solid #DDD",
+  fontSize: "16px",
+  outline: "none",
+}
+
 export default function Home() {
   return (
     <main
@@ -28,7 +36,6 @@ export default function Home() {
             alignItems: "center",
           }}
         >
-          {/* TEXTO */}
           <div>
             <img
               src="/logo.jpeg"
@@ -41,8 +48,8 @@ export default function Home() {
 
             <h1
               style={{
-                fontSize: "4rem",
-                lineHeight: "4.5rem",
+                fontSize: "clamp(2.5rem, 8vw, 4rem)",
+                lineHeight: "1.1",
                 color: "#4B3B36",
                 marginBottom: "30px",
               }}
@@ -100,7 +107,6 @@ export default function Home() {
             </a>
           </div>
 
-          {/* FOTO */}
           <div style={{ textAlign: "center" }}>
             <img
               src="/kamilah.png"
@@ -222,6 +228,15 @@ export default function Home() {
                 borderRadius: "20px",
                 boxShadow:
                   "0 5px 20px rgba(0,0,0,0.05)",
+                transition: "all 0.4s ease",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform =
+                  "translateY(-10px)"
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform =
+                  "translateY(0px)"
               }}
             >
               <img
@@ -447,6 +462,107 @@ export default function Home() {
         </div>
       </section>
 
+      {/* FORMULÁRIO */}
+
+      <section
+        style={{
+          padding: "100px 20px",
+          backgroundColor: "#FCFAF7",
+        }}
+      >
+        <div
+          style={{
+            maxWidth: "800px",
+            margin: "0 auto",
+            backgroundColor: "#fff",
+            padding: "50px",
+            borderRadius: "30px",
+            boxShadow:
+              "0 10px 30px rgba(0,0,0,0.05)",
+          }}
+        >
+          <h2
+            style={{
+              textAlign: "center",
+              fontSize: "42px",
+              marginBottom: "20px",
+              color: "#4B3B36",
+            }}
+          >
+            Agende seu atendimento
+          </h2>
+
+          <p
+            style={{
+              textAlign: "center",
+              marginBottom: "40px",
+              lineHeight: "1.8",
+            }}
+          >
+            Preencha seus dados e entraremos em contato
+            para direcionar o melhor acompanhamento para
+            você.
+          </p>
+
+          <form
+            action="https://formsubmit.co/seuemail@gmail.com"
+            method="POST"
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              gap: "20px",
+            }}
+          >
+            <input
+              type="text"
+              name="nome"
+              placeholder="Seu nome"
+              required
+              style={inputStyle}
+            />
+
+            <input
+              type="email"
+              name="email"
+              placeholder="Seu e-mail"
+              required
+              style={inputStyle}
+            />
+
+            <input
+              type="tel"
+              name="telefone"
+              placeholder="Seu WhatsApp"
+              required
+              style={inputStyle}
+            />
+
+            <textarea
+              name="mensagem"
+              placeholder="Conte brevemente o que você deseja trabalhar"
+              rows="6"
+              style={inputStyle}
+            />
+
+            <button
+              type="submit"
+              style={{
+                backgroundColor: "#C8A46A",
+                color: "#fff",
+                padding: "18px",
+                border: "none",
+                borderRadius: "40px",
+                fontSize: "18px",
+                cursor: "pointer",
+                fontWeight: "bold",
+              }}
+            >
+              Enviar solicitação
+            </button>
+          </form>
+        </div>
+      </section>
+
       {/* CONTATO */}
       <section
         style={{
@@ -487,6 +603,33 @@ export default function Home() {
           Entrar em contato
         </a>
       </section>
+
+      {/* BOTÃO WHATSAPP FIXO */}
+
+      <a
+        href="https://wa.me/5546988042216"
+        target="_blank"
+        style={{
+          position: "fixed",
+          bottom: "25px",
+          right: "25px",
+          backgroundColor: "#25D366",
+          color: "#fff",
+          width: "65px",
+          height: "65px",
+          borderRadius: "50%",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          fontSize: "30px",
+          textDecoration: "none",
+          boxShadow:
+            "0 8px 25px rgba(0,0,0,0.20)",
+          zIndex: "999",
+        }}
+      >
+        💬
+      </a>
     </main>
-  );
+  )
 }
