@@ -66,9 +66,11 @@ export default function Home() {
                 marginBottom: "35px",
               }}
             >
-              O Instituto Kamilah Franco é um espaço de
-              acolhimento, desenvolvimento emocional e
-              transformação feminina.
+            O Instituto Kamilah Franco nasceu com o propósito de acolher mulheres em seus processos de fortalecimento emocional, reconstrução interna e transformação pessoal.
+
+Mais do que um espaço terapêutico, o instituto foi criado para auxiliar mulheres que se sentem emocionalmente sobrecarregadas, desconectadas de si mesmas ou presas em padrões de autossabotagem que impedem crescimento, clareza e posicionamento.
+
+Através de um acompanhamento estratégico e humanizado, trabalhamos o desenvolvimento emocional feminino de forma profunda, promovendo consciência, sustentação interna, segurança emocional e fortalecimento para decisões, relações e construção de uma vida com mais propósito.
             </p>
 
             <a
@@ -130,10 +132,11 @@ export default function Home() {
             fontSize: "1rem",
           }}
         >
-          O Instituto Kamilah Franco nasceu com o
-          propósito de acolher mulheres em seus processos
-          de fortalecimento emocional, reconstrução
-          interna e expansão pessoal.
+          O Instituto Kamilah Franco é um espaço dedicado ao desenvolvimento emocional feminino, criado para acolher mulheres que desejam compreender seus padrões internos, fortalecer sua estrutura emocional e construir uma vida mais alinhada com sua essência, propósito e verdade.
+
+Muitas mulheres sabem o que precisam fazer, mas emocionalmente não conseguem sustentar decisões, posicionamentos, limites, crescimento ou relações saudáveis. O instituto nasce justamente para trabalhar essa base emocional que frequentemente permanece invisível, mas impacta diretamente todas as áreas da vida.
+
+Aqui, cada processo é conduzido de forma estratégica, individualizada e humanizada, respeitando a história, os limites e o momento emocional de cada mulher. O objetivo não é apenas promover entendimento emocional, mas desenvolver sustentação interna, clareza, segurança e fortalecimento para mudanças reais e consistentes..
         </p>
       </section>
 
@@ -307,8 +310,7 @@ export default function Home() {
                     color: "#5b4b45",
                   }}
                 >
-                  Acolher e direcionar mulheres em seus
-                  processos emocionais.
+                  Promover fortalecimento emocional e desenvolvimento interno para mulheres que desejam romper padrões de autossabotagem, construir segurança emocional e viver com mais clareza, posicionamento, autenticidade e propósito..
                 </p>
               </div>
             </div>
@@ -350,8 +352,7 @@ export default function Home() {
                     color: "#5b4b45",
                   }}
                 >
-                  Ser referência em desenvolvimento
-                  emocional feminino.
+                 Ser referência no desenvolvimento emocional feminino, oferecendo processos terapêuticos humanizados, estratégicos e transformadores que auxiliem mulheres a reconstruírem sua base emocional e fortalecerem sua relação consigo mesmas.
                 </p>
               </div>
             </div>
@@ -393,8 +394,7 @@ export default function Home() {
                     color: "#5b4b45",
                   }}
                 >
-                  Ética, acolhimento, escuta, clareza e
-                  expansão feminina.
+                 Acolhimento, escuta, ética, profundidade, autenticidade, respeito aos processos individuais, desenvolvimento consciente, fortalecimento emocional e compromisso com transformações reais e sustentáveis.
                 </p>
               </div>
             </div>
@@ -427,7 +427,7 @@ export default function Home() {
               marginBottom: "20px",
             }}
           >
-            Agende seu atendimento
+            Se você sente que está vivendo ciclos repetitivos, dificuldades emocionais, insegurança, autossabotagem ou deseja fortalecer sua estrutura emocional para viver com mais clareza e sustentação interna, entre em contato e agende seu atendimento.
           </h2>
 
           <form
