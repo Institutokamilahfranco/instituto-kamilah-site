@@ -62,7 +62,6 @@ export default function Home() {
                     maxWidth: "800px",
                   }}
                 />
-              </div>
 
               <h1
                 style={{
