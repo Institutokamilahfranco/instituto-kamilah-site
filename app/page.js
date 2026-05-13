@@ -29,82 +29,112 @@ export default function Home() {
           style={{
             maxWidth: "1200px",
             margin: "0 auto",
-            display: "grid",
-            gridTemplateColumns:
-              "repeat(auto-fit, minmax(320px, 1fr))",
-            gap: "40px",
-            alignItems: "center",
           }}
         >
-          <div>
-            <img
-              src="/logo.jpeg"
-<div style={{ textAlign: "FLEX" }}>
-width: "100%",
-              alt="INSTITUTO Kamilah Franco"
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-between",
+              gap: "50px",
+              flexWrap: "wrap",
+            }}
+          >
+            {/* TEXTO */}
+            <div
               style={{
-                width: "800px",
-                marginBottom: "40px",
-              }}
-            />
-
-            <h1
-              style={{
-                fontSize: "clamp(2.2rem, 7vw, 3.5rem)",
-                lineHeight: "1.1",
-                color: "#4B3B36",
-                marginBottom: "25px",
+                flex: "1",
+                minWidth: "320px",
               }}
             >
-              Instituto <br />
-              Kamilah Franco
-            </h1>
+              {/* LOGO */}
+              <div
+                style={{
+                  textAlign: "center",
+                  marginBottom: "30px",
+                }}
+              >
+                <img
+                  src="/logo.jpeg"
+                  alt="Instituto Kamilah Franco"
+                  style={{
+                    width: "100%",
+                    maxWidth: "350px",
+                  }}
+                />
+              </div>
 
-            <p
+              <h1
+                style={{
+                  fontSize: "clamp(2.2rem, 7vw, 3.5rem)",
+                  lineHeight: "1.1",
+                  color: "#4B3B36",
+                  marginBottom: "25px",
+                }}
+              >
+                Instituto <br />
+                Kamilah Franco
+              </h1>
+
+              <p
+                style={{
+                  fontSize: "1.05rem",
+                  lineHeight: "1.9rem",
+                  color: "#4B3B36",
+                  marginBottom: "35px",
+                }}
+              >
+                O Instituto Kamilah Franco nasceu com o propósito de acolher mulheres em seus processos de fortalecimento emocional, reconstrução interna e transformação pessoal.
+
+                <br />
+                <br />
+
+                Mais do que um espaço terapêutico, o instituto foi criado para auxiliar mulheres que se sentem emocionalmente sobrecarregadas, desconectadas de si mesmas ou presas em padrões de autossabotagem que impedem crescimento, clareza e posicionamento.
+
+                <br />
+                <br />
+
+                Através de um acompanhamento estratégico e humanizado, trabalhamos o desenvolvimento emocional feminino de forma profunda, promovendo consciência, sustentação interna, segurança emocional e fortalecimento para decisões, relações e construção de uma vida com mais propósito.
+              </p>
+
+              <a
+                href="https://wa.me/5546988042216"
+                target="_blank"
+                style={{
+                  display: "inline-block",
+                  backgroundColor: "#C8A46A",
+                  color: "#fff",
+                  padding: "14px 30px",
+                  borderRadius: "40px",
+                  textDecoration: "none",
+                  fontWeight: "bold",
+                  fontSize: "0.95rem",
+                }}
+              >
+                Agendar Atendimento
+              </a>
+            </div>
+
+            {/* FOTO */}
+            <div
               style={{
-                fontSize: "1.05rem",
-                lineHeight: "1.9rem",
-                color: "#4B3B36",
-                marginBottom: "35px",
+                flex: "1",
+                minWidth: "300px",
+                textAlign: "center",
               }}
             >
-            O Instituto Kamilah Franco nasceu com o propósito de acolher mulheres em seus processos de fortalecimento emocional, reconstrução interna e transformação pessoal.
-
-Mais do que um espaço terapêutico, o instituto foi criado para auxiliar mulheres que se sentem emocionalmente sobrecarregadas, desconectadas de si mesmas ou presas em padrões de autossabotagem que impedem crescimento, clareza e posicionamento.
-
-Através de um acompanhamento estratégico e humanizado, trabalhamos o desenvolvimento emocional feminino de forma profunda, promovendo consciência, sustentação interna, segurança emocional e fortalecimento para decisões, relações e construção de uma vida com mais propósito.
-            </p>
-
-            <a
-              href="https://wa.me/5546988042216"
-              target="_blank"
-              style={{
-                display: "inline-block",
-                backgroundColor: "#C8A46A",
-                color: "#fff",
-                padding: "14px 30px",
-                borderRadius: "40px",
-                textDecoration: "none",
-                fontWeight: "bold",
-                fontSize: "0.95rem",
-              }}
-            >
-              Agendar Atendimento
-            </a>
-          </div>
-
-          <div style={{ textAlign: "FLEX" }}>
-            <img
-              src="/kamilah.png"
-              alt="Kamilah Franco"
-              style={{
-                width: "100%",
-                maxWidth: "420px",
-                borderRadius: "24px",
-                boxShadow:
-                  "0 15px 40px rgba(0,0,0,0.10)",
-              }}
-            />
+              <img
+                src="/kamilah.png"
+                alt="Kamilah Franco"
+                style={{
+                  width: "100%",
+                  maxWidth: "420px",
+                  borderRadius: "24px",
+                  boxShadow:
+                    "0 15px 40px rgba(0,0,0,0.10)",
+                }}
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -136,9 +166,15 @@ Através de um acompanhamento estratégico e humanizado, trabalhamos o desenvolv
         >
           O Instituto Kamilah Franco é um espaço dedicado ao desenvolvimento emocional feminino, criado para acolher mulheres que desejam compreender seus padrões internos, fortalecer sua estrutura emocional e construir uma vida mais alinhada com sua essência, propósito e verdade.
 
-Muitas mulheres sabem o que precisam fazer, mas emocionalmente não conseguem sustentar decisões, posicionamentos, limites, crescimento ou relações saudáveis. O instituto nasce justamente para trabalhar essa base emocional que frequentemente permanece invisível, mas impacta diretamente todas as áreas da vida.
+          <br />
+          <br />
 
-Aqui, cada processo é conduzido de forma estratégica, individualizada e humanizada, respeitando a história, os limites e o momento emocional de cada mulher. O objetivo não é apenas promover entendimento emocional, mas desenvolver sustentação interna, clareza, segurança e fortalecimento para mudanças reais e consistentes..
+          Muitas mulheres sabem o que precisam fazer, mas emocionalmente não conseguem sustentar decisões, posicionamentos, limites, crescimento ou relações saudáveis. O instituto nasce justamente para trabalhar essa base emocional que frequentemente permanece invisível, mas impacta diretamente todas as áreas da vida.
+
+          <br />
+          <br />
+
+          Aqui, cada processo é conduzido de forma estratégica, individualizada e humanizada, respeitando a história, os limites e o momento emocional de cada mulher.
         </p>
       </section>
 
@@ -181,21 +217,21 @@ Aqui, cada processo é conduzido de forma estratégica, individualizada e humani
               titulo:
                 "Acompanhamento Terapêutico Estratégico",
               texto:
-                "Atendimento terapêutico individual focado em desenvolvimento emocional, sustentação interna e reconstrução de padrões emocionais que impedem avanço e consistência.",
+                "Atendimento terapêutico individual focado em desenvolvimento emocional, sustentação interna e reconstrução de padrões emocionais.",
             },
             {
               imagem: "/produto3.png",
               titulo:
                 "Sustentação Emocional e Posicionamento",
               texto:
-                "Processo terapêutico para mulheres que desejam desenvolver mais clareza, segurança emocional e sustentação para decisões, crescimento e posicionamento pessoal.",
+                "Processo terapêutico para mulheres que desejam desenvolver mais clareza, segurança emocional e sustentação para decisões.",
             },
             {
               imagem: "/produto4.png",
               titulo:
                 "Sessão Diagnóstico Terapêutico",
               texto:
-                "Primeiro encontro para identificar padrões emocionais, autossabotagem e definir direcionamento estratégico para o acompanhamento terapêutico.",
+                "Primeiro encontro para identificar padrões emocionais, autossabotagem e definir direcionamento estratégico.",
             },
           ].map((item, index) => (
             <div
@@ -206,7 +242,7 @@ Aqui, cada processo é conduzido de forma estratégica, individualizada e humani
                 borderRadius: "20px",
                 boxShadow:
                   "0 5px 20px rgba(0,0,0,0.05)",
-                transition: "all 0.4s ease",
+                transition: "0.3s",
               }}
             >
               <img
@@ -223,8 +259,7 @@ Aqui, cada processo é conduzido de forma estratégica, individualizada e humani
                 style={{
                   marginBottom: "15px",
                   color: "#C8A46A",
-                  lineHeight: "1.7rem",
-                  fontSize: "1.2rem",
+                  lineHeight: "1.6rem",
                 }}
               >
                 {item.titulo}
@@ -249,34 +284,48 @@ Aqui, cada processo é conduzido de forma estratégica, individualizada e humani
           backgroundColor: "#f8f3ef",
         }}
       >
+        <h2
+          style={{
+            textAlign: "center",
+            fontSize: "38px",
+            marginBottom: "50px",
+          }}
+        >
+          Missão, Visão e Valores
+        </h2>
+
         <div
           style={{
+            display: "grid",
+            gridTemplateColumns:
+              "repeat(auto-fit, minmax(300px, 1fr))",
+            gap: "30px",
             maxWidth: "1200px",
             margin: "0 auto",
           }}
         >
-          <h2
-            style={{
-              textAlign: "center",
-              fontSize: "38px",
-              color: "#4b3b36",
-              marginBottom: "50px",
-              fontWeight: "600",
-            }}
-          >
-            Missão, Visão e Valores
-          </h2>
-
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns:
-                "repeat(auto-fit, minmax(300px, 1fr))",
-              gap: "30px",
-            }}
-          >
-            {/* MISSÃO */}
+          {[
+            {
+              imagem: "/missao.png",
+              titulo: "Missão",
+              texto:
+                "Promover fortalecimento emocional e desenvolvimento interno para mulheres que desejam romper padrões de autossabotagem.",
+            },
+            {
+              imagem: "/visao.png",
+              titulo: "Visão",
+              texto:
+                "Ser referência no desenvolvimento emocional feminino através de processos terapêuticos humanizados.",
+            },
+            {
+              imagem: "/valores.png",
+              titulo: "Valores",
+              texto:
+                "Acolhimento, ética, autenticidade, fortalecimento emocional e respeito aos processos individuais.",
+            },
+          ].map((item, index) => (
             <div
+              key={index}
               style={{
                 backgroundColor: "#fff",
                 borderRadius: "24px",
@@ -286,8 +335,8 @@ Aqui, cada processo é conduzido de forma estratégica, individualizada e humani
               }}
             >
               <img
-                src="/missao.png"
-                alt="Missão"
+                src={item.imagem}
+                alt={item.titulo}
                 style={{
                   width: "100%",
                   height: "220px",
@@ -299,108 +348,22 @@ Aqui, cada processo é conduzido de forma estratégica, individualizada e humani
                 <h3
                   style={{
                     color: "#b38b59",
-                    fontSize: "28px",
                     marginBottom: "12px",
                   }}
                 >
-                  Missão
+                  {item.titulo}
                 </h3>
 
                 <p
                   style={{
                     lineHeight: "1.7",
-                    color: "#5b4b45",
                   }}
                 >
-                  Promover fortalecimento emocional e desenvolvimento interno para mulheres que desejam romper padrões de autossabotagem, construir segurança emocional e viver com mais clareza, posicionamento, autenticidade e propósito..
+                  {item.texto}
                 </p>
               </div>
             </div>
-
-            {/* VISÃO */}
-            <div
-              style={{
-                backgroundColor: "#fff",
-                borderRadius: "24px",
-                overflow: "hidden",
-                boxShadow:
-                  "0 10px 30px rgba(0,0,0,0.05)",
-              }}
-            >
-              <img
-                src="/visao.png"
-                alt="Visão"
-                style={{
-                  width: "100%",
-                  height: "220px",
-                  objectFit: "cover",
-                }}
-              />
-
-              <div style={{ padding: "25px" }}>
-                <h3
-                  style={{
-                    color: "#b38b59",
-                    fontSize: "28px",
-                    marginBottom: "12px",
-                  }}
-                >
-                  Visão
-                </h3>
-
-                <p
-                  style={{
-                    lineHeight: "1.7",
-                    color: "#5b4b45",
-                  }}
-                >
-                 Ser referência no desenvolvimento emocional feminino, oferecendo processos terapêuticos humanizados, estratégicos e transformadores que auxiliem mulheres a reconstruírem sua base emocional e fortalecerem sua relação consigo mesmas.
-                </p>
-              </div>
-            </div>
-
-            {/* VALORES */}
-            <div
-              style={{
-                backgroundColor: "#fff",
-                borderRadius: "24px",
-                overflow: "hidden",
-                boxShadow:
-                  "0 10px 30px rgba(0,0,0,0.05)",
-              }}
-            >
-              <img
-                src="/valores.png"
-                alt="Valores"
-                style={{
-                  width: "100%",
-                  height: "220px",
-                  objectFit: "cover",
-                }}
-              />
-
-              <div style={{ padding: "25px" }}>
-                <h3
-                  style={{
-                    color: "#b38b59",
-                    fontSize: "28px",
-                    marginBottom: "12px",
-                  }}
-                >
-                  Valores
-                </h3>
-
-                <p
-                  style={{
-                    lineHeight: "1.7",
-                    color: "#5b4b45",
-                  }}
-                >
-                 Acolhimento, escuta, ética, profundidade, autenticidade, respeito aos processos individuais, desenvolvimento consciente, fortalecimento emocional e compromisso com transformações reais e sustentáveis.
-                </p>
-              </div>
-            </div>
-          </div>
+          ))}
         </div>
       </section>
 
@@ -429,7 +392,7 @@ Aqui, cada processo é conduzido de forma estratégica, individualizada e humani
               marginBottom: "20px",
             }}
           >
-            Se você sente que está vivendo ciclos repetitivos, dificuldades emocionais, insegurança, autossabotagem ou deseja fortalecer sua estrutura emocional para viver com mais clareza e sustentação interna, entre em contato e agende seu atendimento.
+            Entre em contato
           </h2>
 
           <form
