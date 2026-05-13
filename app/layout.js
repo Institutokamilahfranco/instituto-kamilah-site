@@ -1,59 +1,34 @@
+import Script from "next/script"
+
 export const metadata = {
   title:
     "Instituto Kamilah Franco | Desenvolvimento Emocional Feminino",
 
   description:
-    "O Instituto Kamilah Franco é um espaço de acolhimento, fortalecimento emocional e transformação feminina. Processos terapêuticos estratégicos para mulheres que desejam romper padrões de autossabotagem e desenvolver clareza, posicionamento e segurança emocional.",
-
-  keywords: [
-    "terapia feminina",
-    "desenvolvimento emocional",
-    "autossabotagem feminina",
-    "fortalecimento emocional",
-    "instituto terapêutico",
-    "clareza emocional",
-    "terapia online",
-    "desenvolvimento pessoal feminino",
-    "Kamilah Franco",
-  ],
-
-  authors: [{ name: "Instituto Kamilah Franco" }],
-
-  creator: "Instituto Kamilah Franco",
-
-  openGraph: {
-    title:
-      "Instituto Kamilah Franco | Desenvolvimento Emocional Feminino",
-
-    description:
-      "Acolhimento emocional, fortalecimento interno e transformação feminina.",
-
-    url: "https://institutokamilahfranco.com.br",
-
-    siteName: "Instituto Kamilah Franco",
-
-    images: [
-      {
-        url: "/logo.jpeg",
-        width: 1200,
-        height: 630,
-        alt: "Instituto Kamilah Franco",
-      },
-    ],
-
-    locale: "pt_BR",
-    type: "website",
-  },
-
-  icons: {
-    icon: "/favicon.ico",
-  },
+    "Instituto especializado em fortalecimento emocional feminino, transformação pessoal e desenvolvimento emocional estratégico.",
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
-      <body>{children}</body>
+      <body>
+        {children}
+
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
+          strategy="afterInteractive"
+        />
+
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-63Z21L7XGT');
+          `}
+        </Script>
+      </body>
     </html>
   )
 }
