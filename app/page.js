@@ -170,30 +170,30 @@ Aqui, cada processo é conduzido de forma estratégica, individualizada e humani
             {
               imagem: "/produto1.png",
               titulo:
-                "Estrutura Emocional",
+                "Estrutura Emocional Para romper a autossabotagem",
               texto:
-                "Fortalecimento emocional para romper padrões limitantes.",
+                "Acompanhamento terapêutico estratégico para mulheres que sabem o que precisam fazer, mas não conseguem sustentar decisões, posicionamento e crescimento.",
             },
             {
               imagem: "/produto2.png",
               titulo:
-                "Acompanhamento Terapêutico",
+                "Acompanhamento Terapêutico Estratégico",
               texto:
-                "Processo terapêutico individual com direcionamento emocional.",
+                "Atendimento terapêutico individual focado em desenvolvimento emocional, sustentação interna e reconstrução de padrões emocionais que impedem avanço e consistência.",
             },
             {
               imagem: "/produto3.png",
               titulo:
-                "Posicionamento Emocional",
+                "Sustentação Emocional e Posicionamento",
               texto:
-                "Desenvolvimento de segurança emocional e clareza interna.",
+                "Processo terapêutico para mulheres que desejam desenvolver mais clareza, segurança emocional e sustentação para decisões, crescimento e posicionamento pessoal.",
             },
             {
               imagem: "/produto4.png",
               titulo:
-                "Sessão Diagnóstica",
+                "Sessão Diagnóstico Terapêutico",
               texto:
-                "Identificação de padrões emocionais e direcionamento terapêutico.",
+                "Primeiro encontro para identificar padrões emocionais, autossabotagem e definir direcionamento estratégico para o acompanhamento terapêutico.",
             },
           ].map((item, index) => (
             <div
