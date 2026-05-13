@@ -6,6 +6,10 @@ export const metadata = {
 
   description:
     "Instituto especializado em fortalecimento emocional feminino, transformação pessoal e desenvolvimento emocional estratégico.",
+
+  icons: {
+    icon: "/favicon.ico",
+  },
 }
 
 export default function RootLayout({ children }) {
@@ -15,7 +19,7 @@ export default function RootLayout({ children }) {
         {children}
 
         <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"
+          src="https://www.googletagmanager.com/gtag/js?id=G-63Z21L7XGT"
           strategy="afterInteractive"
         />
 
