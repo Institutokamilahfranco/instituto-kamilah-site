@@ -491,7 +491,7 @@ export default function Home() {
         </a>
       </section>
 
-      {/* BOTÃO FIXO */}
+           {/* BOTÃO FIXO */}
       <a
         href="https://wa.me/5546988042216"
         target="_blank"
