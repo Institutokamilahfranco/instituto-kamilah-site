@@ -41,8 +41,8 @@ export default function Home() {
               src="/logo.jpeg"
               alt="INSTITUTO Kamilah Franco"
               style={{
-                width: "220px",
-                marginBottom: "20px",
+                width: "460px",
+                marginBottom: "40px",
               }}
             />
 
