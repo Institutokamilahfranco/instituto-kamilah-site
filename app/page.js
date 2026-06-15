@@ -21,7 +21,7 @@ export default function Home() {
     margin: "0 auto",
   }}
 >
-<section
+<div
   style={{
     display: "flex",
     alignItems: "center",
@@ -55,6 +55,8 @@ export default function Home() {
     filter: "drop-shadow(0 10px 25px rgba(0,0,0,0.08))",
   }}
 />
+ </div>
+  
  <p
   style={{
     fontSize: "1.25rem",
