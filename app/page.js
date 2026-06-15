@@ -114,19 +114,20 @@ export default function Home() {
   {/* LOGO */}
   <div
     style={{
-      flex: "0 0 240px",
+      flex: "0 0 320px",
       display: "flex",
       justifyContent: "center",
+         alignItems: "center", 
     }}
   >
     <Image
       src="/logo.jpeg"
       alt="Instituto Kamilah Franco"
-      width={220}
-      height={220}
+      width={300}
+      height={300}
       style={{
         width: "100%",
-        maxWidth: "220px",
+        maxWidth: "300px",
         height: "auto",
       }}
     />
