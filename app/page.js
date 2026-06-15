@@ -63,19 +63,20 @@ useEffect(() => {
   }}
 >
   <Image
-  src="/logo.jpeg"
-  alt="Instituto Kamilah Franco"
-  width={280}
-  height={280}
-  style={{
-    width: "100%",
-    maxWidth: "280px",
-    height: "auto",
-    filter: "drop-shadow(0 10px 25px rgba(0,0,0,0.08))",
-  }}
-/>
+    src="/logo.jpeg"
+    alt="Instituto Kamilah Franco"
+    width={280}
+    height={280}
+    style={{
+      width: "100%",
+      maxWidth: "280px",
+      height: "auto",
+      filter: "drop-shadow(0 10px 25px rgba(0,0,0,0.08))",
+    }}
+  />
 </div>
-</div>
+
+</div> {/* FECHA O FLEX DO TÍTULO + LOGO */}
 
 <p
   style={{
@@ -134,7 +135,7 @@ useEffect(() => {
       >
         Conheça o Instituto
       </a>
-    </div>     
+      
 </section>
 
 {/* DORES DA CLIENTE */}
