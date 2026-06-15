@@ -74,15 +74,9 @@ useEffect(() => {
     filter: "drop-shadow(0 10px 25px rgba(0,0,0,0.08))",
   }}
 />
- </div>  // FECHA TÍTULO + LOGO
+</div>
 
-<p>
-  ...
-</p>
-
-<p>
-  ...
-</p>
+<p
   style={{
     fontSize: "1.25rem",
     lineHeight: "2.2rem",
@@ -102,8 +96,7 @@ useEffect(() => {
   }}
 >
   Por meio de um acompanhamento integrativo que considera o ser humano como um todo — corpo, mente e espírito — cada processo é conduzido de forma individualizada, promovendo desenvolvimento emocional, alinhamento energético e transformações profundas e sustentáveis.
-</p>   
-
+</p>
     <div
       style={{
         display: "flex",
@@ -140,8 +133,8 @@ useEffect(() => {
       >
         Conheça o Instituto
       </a>
-    </div>   // fecha os botões
-</div>   // fecha o bloco do HERO
+    </div>   
+</div>   
 </section>
 
 {/* DORES DA CLIENTE */}
