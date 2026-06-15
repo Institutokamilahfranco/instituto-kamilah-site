@@ -48,8 +48,8 @@ useEffect(() => {
     style={{
       order: isMobile ? 2 : 1,
       flex: 1,
-      fontSize: "clamp(2rem, 3.5vw, 3.4rem)",
-      lineHeight: "1.2",
+      fontSize: "clamp(2rem, 3vw, 3rem)",
+      lineHeight: "1",
       color: "#4A3732",
       margin: 0,
     }}
