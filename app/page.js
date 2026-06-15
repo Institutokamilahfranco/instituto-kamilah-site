@@ -75,6 +75,7 @@ useEffect(() => {
   }}
 />
 </div>
+</div>
 
 <p
   style={{
@@ -133,8 +134,7 @@ useEffect(() => {
       >
         Conheça o Instituto
       </a>
-    </div>   
-</div>   
+    </div>     
 </section>
 
 {/* DORES DA CLIENTE */}
