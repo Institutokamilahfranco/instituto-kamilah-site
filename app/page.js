@@ -29,7 +29,6 @@ export default function Home() {
         {/* TEXTO */}
         <div style={{ flex: 1, minWidth: "320px" }}>
   {/* título, descrição e botão */}
-</div>
 
 <div
   style={{
