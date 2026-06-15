@@ -76,7 +76,7 @@ useEffect(() => {
   />
 </div>
 
-</div> {/* FECHA O FLEX DO TÍTULO + LOGO */}
+</div> 
 
 <p
   style={{
