@@ -58,7 +58,7 @@ export default function Home() {
               color: "#4A3732",
             }}
           >
-            Fortalecimento emocional para mulheres que desejam viver com mais clareza, segurança e propósito.
+            Fortalecimento emocional para mulheres que desejam viver com mais leveza, clareza, segurança e propósito. Deixando para traz a procrastinação e a autossabotagem. 
           </h1>
 
           <p
