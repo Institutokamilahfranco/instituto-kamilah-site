@@ -26,10 +26,37 @@ export default function Home() {
     margin: "0 auto",
   }}
 >
-        {/* TEXTO */}
-        <div style={{ flex: 1, minWidth: "320px" }}>
-  {/* título, descrição e botão */}
+{/* TEXTO */}
+<div
+  style={{
+    flex: 1,
+    minWidth: "320px",
+    maxWidth: "760px",
+  }}
+>
+  <h1
+    style={{
+      fontSize: "clamp(2rem, 4vw, 3rem)",
+      lineHeight: "1.15",
+      marginBottom: "30px",
+      color: "#4A3732",
+      maxWidth: "850px",
+    }}
+  >
+    Fortalecimento emocional para mulheres que desejam viver com mais leveza,
+    clareza, segurança e propósito, deixando para tras a procrastinação e a autossabotagem. 
+  </h1>
 
+  <p>...</p>
+
+  <p>...</p>
+
+  <div>
+    {/* botões */}
+  </div>
+</div>
+
+{/* LOGO */}
 <div
   style={{
     flex: "0 0 260px",
@@ -40,11 +67,11 @@ export default function Home() {
   <Image
     src="/logo.jpeg"
     alt="Instituto Kamilah Franco"
-    width={240}
-    height={240}
+    width={220}
+    height={220}
     style={{
       width: "100%",
-      maxWidth: "240px",
+      maxWidth: "220px",
       height: "auto",
     }}
   />
@@ -52,7 +79,7 @@ export default function Home() {
 
           <h1
             style={{
-              fontSize: "clamp(2rem, 5vw, 3.2rem)",
+              fontSize: "clamp(2rem, 4vw, 3rem)",
               lineHeight: "1.1",
               marginBottom: "25px",
               color: "#4A3732",
@@ -63,13 +90,17 @@ export default function Home() {
 
           <p
             style={{
-              fontSize: "1.15rem",
-              lineHeight: "2rem",
+              fontSize: "1.25rem",
+              lineHeight: "2.3rem",
               marginBottom: "20px",
             }}
           >
-            O Instituto Kamilah Franco é um espaço dedicado ao desenvolvimento emocional feminino, oferecendo um acompanhamento integrativo que considera o ser humano como um todo: corpo, mente e espírito.
-          </p>
+           O Instituto Kamilah Franco nasceu para acolher mulheres que desejam compreender sua história, fortalecer sua estrutura emocional e construir uma vida mais alinhada à sua essência.
+
+Através de um acompanhamento integrativo que considera o ser humano como um todo — corpo, mente e espírito — cada processo é conduzido de forma individualizada, respeitando a singularidade, o momento e as necessidades de cada mulher.
+
+Mais do que promover mudanças externas, o trabalho desenvolvido busca favorecer transformações profundas e sustentáveis, integrando desenvolvimento emocional, consciência de padrões e alinhamento energético para que cada mulher possa viver com mais clareza, segurança, leveza e propósito.
+
 
           <p
             style={{
