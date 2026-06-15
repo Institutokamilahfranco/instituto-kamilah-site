@@ -135,6 +135,8 @@ useEffect(() => {
       >
         Conheça o Instituto
       </a>
+
+    </div>   {/* FECHA O DIV DOS BOTÕES */}
       
 </section>
 
