@@ -132,11 +132,14 @@ export default function Home() {
     />
   </div>
 </section>
-        style={{
-          padding: "100px 8%",
-          backgroundColor: "#EFE7DF",
-        }}
-      >
+
+{/* DORES DA CLIENTE */}
+<section
+  style={{
+    padding: "100px 8%",
+    backgroundColor: "#EFE7DF",
+  }}
+>
         <div
           style={{
             maxWidth: "1100px",
