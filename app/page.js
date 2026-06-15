@@ -21,7 +21,7 @@ export default function Home() {
         </p>
 
         <a
-          href="https://wa.me/SEUNUMERO"
+          href="https://wa.me/46988042216"
           target="_blank"
           rel="noopener noreferrer"
           style={{
