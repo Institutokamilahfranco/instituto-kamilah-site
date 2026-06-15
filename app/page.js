@@ -26,17 +26,23 @@ export default function Home() {
       >
         {/* TEXTO */}
         <div style={{ flex: 1, minWidth: "320px", maxWidth: "650px" }}>
-          <Image
-            src="/logo.jpeg"
-            alt="Instituto Kamilah Franco"
-            width={180}
-            height={180}
-            style={{ marginBottom: "30px" }}
-          />
+        <Image
+  src="/logo.jpeg"
+  alt="Instituto Kamilah Franco"
+  width={380}
+  height={380}
+  style={{
+    width: "100%",
+    maxWidth: "360px",
+    height: "auto",
+    marginBottom: "40px",
+    filter: "drop-shadow(0 10px 20px rgba(0,0,0,0.08))",
+  }}
+/>
 
           <h1
             style={{
-              fontSize: "clamp(2.3rem, 6vw, 4.2rem)",
+              fontSize: "clamp(2rem, 5vw, 3.2rem)",
               lineHeight: "1.1",
               marginBottom: "25px",
               color: "#4A3732",
@@ -104,28 +110,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* FOTO */}
-        <div
-          style={{
-            flex: 1,
-            minWidth: "300px",
-            textAlign: "center",
-          }}
-        >
-          <Image
-            src="/kamilah.png"
-            alt="Kamilah Franco"
-            width={500}
-            height={650}
-            style={{
-              width: "100%",
-              maxWidth: "500px",
-              height: "auto",
-              borderRadius: "30px",
-              boxShadow: "0 20px 45px rgba(0,0,0,0.12)",
-            }}
-          />
-        </div>
       </section>
 
       {/* DORES DA CLIENTE */}
@@ -365,25 +349,25 @@ export default function Home() {
           {[
             {
               imagem: "/produto1.png",
-              titulo: "Estrutura Emocional",
+              titulo: "Estrutura Emocional para romper a autossabotagem",
               texto:
                 "Um acompanhamento para mulheres que desejam fortalecer sua estrutura interna e romper padrões que limitam seu crescimento.",
             },
             {
               imagem: "/produto2.png",
-              titulo: "Acompanhamento Terapêutico",
+              titulo: "Acompanhamento Terapêutico Estratégico",
               texto:
                 "Processos individualizados para promover consciência, equilíbrio e desenvolvimento emocional.",
             },
             {
               imagem: "/produto3.png",
-              titulo: "Fortalecimento Interno",
+              titulo: "Sustentação Emocional e Posicionamento",
               texto:
                 "Desenvolvimento de recursos emocionais para viver com mais clareza, autonomia e segurança.",
             },
             {
               imagem: "/produto4.png",
-              titulo: "Sessão Diagnóstica",
+              titulo: "Sessão Diagnóstico Terapêutico",
               texto:
                 "Um primeiro encontro para compreender padrões, necessidades e possibilidades de transformação.",
             },
