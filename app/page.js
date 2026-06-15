@@ -74,9 +74,15 @@ useEffect(() => {
     filter: "drop-shadow(0 10px 25px rgba(0,0,0,0.08))",
   }}
 />
- </div>
-  
- <p
+ </div>  // FECHA TÍTULO + LOGO
+
+<p>
+  ...
+</p>
+
+<p>
+  ...
+</p>
   style={{
     fontSize: "1.25rem",
     lineHeight: "2.2rem",
@@ -134,8 +140,8 @@ useEffect(() => {
       >
         Conheça o Instituto
       </a>
-    </div>
-
+    </div>   // fecha os botões
+</div>   // fecha o bloco do HERO
 </section>
 
 {/* DORES DA CLIENTE */}
