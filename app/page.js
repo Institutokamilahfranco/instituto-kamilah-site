@@ -13,6 +13,16 @@ export default function Home() {
 {/* HERO */}
 <section
   style={{
+    minHeight: "85vh",
+    padding: "80px 8%",
+    background:
+      "linear-gradient(to bottom, #FCFAF7 0%, #F5F1EC 100%)",
+    maxWidth: "1400px",
+    margin: "0 auto",
+  }}
+>
+<section
+  style={{
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
@@ -34,18 +44,17 @@ export default function Home() {
   </h1>
 
   <Image
-    src="/logo.jpeg"
-    alt="Instituto Kamilah Franco"
-    width={280}
-    height={280}
-    style={{
-      width: "100%",
-      maxWidth: "280px",
-      height: "auto",
-      filter: "drop-shadow(0 10px 25px rgba(0,0,0,0.08))",
-    }}
-  />
-</div>
+  src="/logo.jpeg"
+  alt="Instituto Kamilah Franco"
+  width={280}
+  height={280}
+  style={{
+    width: "100%",
+    maxWidth: "280px",
+    height: "auto",
+    filter: "drop-shadow(0 10px 25px rgba(0,0,0,0.08))",
+  }}
+/>
  <p
   style={{
     fontSize: "1.25rem",
