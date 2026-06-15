@@ -10,14 +10,14 @@ export default function Home() {
         overflowX: "hidden",
       }}
     >
-     {/* HERO */}
+{/* HERO */}
 <section
   style={{
     minHeight: "85vh",
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
-    padding: "60px 8%",
+    padding: "80px 8%",
     gap: "50px",
     flexWrap: "wrap",
     background:
@@ -26,135 +26,112 @@ export default function Home() {
     margin: "0 auto",
   }}
 >
-{/* TEXTO */}
-<div
-  style={{
-    flex: 1,
-    minWidth: "320px",
-    maxWidth: "760px",
-  }}
->
-  <h1
+  {/* TEXTO */}
+  <div
     style={{
-      fontSize: "clamp(2rem, 4vw, 3rem)",
-      lineHeight: "1.15",
-      marginBottom: "30px",
-      color: "#4A3732",
-      maxWidth: "850px",
+      flex: 1,
+      minWidth: "320px",
+      maxWidth: "760px",
     }}
   >
-    Fortalecimento emocional para mulheres que desejam viver com mais leveza,
-    clareza, segurança e propósito, deixando para tras a procrastinação e a autossabotagem. 
-  </h1>
+    <h1
+      style={{
+        fontSize: "clamp(2rem, 4vw, 3rem)",
+        lineHeight: "1.15",
+        marginBottom: "30px",
+        color: "#4A3732",
+      }}
+    >
+      Fortalecimento emocional para mulheres que desejam viver com mais leveza,
+      clareza, segurança e propósito, deixando para trás a procrastinação e a
+      autossabotagem.
+    </h1>
 
-  <p>...</p>
+    <p
+      style={{
+        fontSize: "1.25rem",
+        lineHeight: "2.3rem",
+        marginBottom: "25px",
+      }}
+    >
+      O Instituto Kamilah Franco nasceu para acolher mulheres que desejam
+      compreender sua história, fortalecer sua estrutura emocional e construir
+      uma vida mais alinhada à sua essência.
+    </p>
 
-  <p>...</p>
+    <p
+      style={{
+        fontSize: "1.15rem",
+        lineHeight: "2rem",
+        marginBottom: "35px",
+      }}
+    >
+      Através de um acompanhamento integrativo que considera o ser humano como
+      um todo — corpo, mente e espírito — cada processo é conduzido de forma
+      individualizada, integrando desenvolvimento emocional e alinhamento
+      energético para promover transformações profundas e sustentáveis.
+    </p>
 
-  <div>
-    {/* botões */}
+    <div
+      style={{
+        display: "flex",
+        gap: "15px",
+        flexWrap: "wrap",
+      }}
+    >
+      <a
+        href="https://wa.me/5546988042216?text=Olá%20Kamilah,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações."
+        target="_blank"
+        rel="noopener noreferrer"
+        style={{
+          backgroundColor: "#B08B57",
+          color: "#fff",
+          padding: "16px 30px",
+          borderRadius: "50px",
+          textDecoration: "none",
+          fontWeight: "bold",
+        }}
+      >
+        Agendar Atendimento
+      </a>
+
+      <a
+        href="#instituto"
+        style={{
+          border: "1px solid #B08B57",
+          color: "#B08B57",
+          padding: "16px 30px",
+          borderRadius: "50px",
+          textDecoration: "none",
+          fontWeight: "bold",
+        }}
+      >
+        Conheça o Instituto
+      </a>
+    </div>
   </div>
-</div>
 
-{/* LOGO */}
-<div
-  style={{
-    flex: "0 0 260px",
-    display: "flex",
-    justifyContent: "center",
-  }}
->
-  <Image
-    src="/logo.jpeg"
-    alt="Instituto Kamilah Franco"
-    width={220}
-    height={220}
+  {/* LOGO */}
+  <div
     style={{
-      width: "100%",
-      maxWidth: "220px",
-      height: "auto",
+      flex: "0 0 240px",
+      display: "flex",
+      justifyContent: "center",
     }}
-  />
-</div>
-
-          <h1
-            style={{
-              fontSize: "clamp(2rem, 4vw, 3rem)",
-              lineHeight: "1.1",
-              marginBottom: "25px",
-              color: "#4A3732",
-            }}
-          >
-            Fortalecimento emocional para mulheres que desejam viver com mais leveza, clareza, segurança e propósito. Deixando para traz a procrastinação e a autossabotagem. 
-          </h1>
-
-          <p
-            style={{
-              fontSize: "1.25rem",
-              lineHeight: "2.3rem",
-              marginBottom: "20px",
-            }}
-          >
-           O Instituto Kamilah Franco nasceu para acolher mulheres que desejam compreender sua história, fortalecer sua estrutura emocional e construir uma vida mais alinhada à sua essência.
-
-Através de um acompanhamento integrativo que considera o ser humano como um todo — corpo, mente e espírito — cada processo é conduzido de forma individualizada, respeitando a singularidade, o momento e as necessidades de cada mulher.
-
-Mais do que promover mudanças externas, o trabalho desenvolvido busca favorecer transformações profundas e sustentáveis, integrando desenvolvimento emocional, consciência de padrões e alinhamento energético para que cada mulher possa viver com mais clareza, segurança, leveza e propósito.
-
-
-          <p
-            style={{
-              fontSize: "1.05rem",
-              lineHeight: "1.9rem",
-              marginBottom: "35px",
-            }}
-          >
-            Cada processo é conduzido de forma individualizada, promovendo fortalecimento interno, consciência emocional e alinhamento energético para que cada mulher possa construir uma vida mais alinhada com sua essência.
-          </p>
-
-          <div
-            style={{
-              display: "flex",
-              gap: "15px",
-              flexWrap: "wrap",
-            }}
-          >
-            <a
-              href="https://wa.me/5546988042216?text=Olá%20Kamilah,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações."
-              target="_blank"
-              rel="noopener noreferrer"
-              style={{
-                backgroundColor: "#B08B57",
-                color: "#fff",
-                padding: "16px 30px",
-                borderRadius: "50px",
-                textDecoration: "none",
-                fontWeight: "bold",
-              }}
-            >
-              Agendar Atendimento
-            </a>
-
-            <a
-              href="#instituto"
-              style={{
-                border: "1px solid #B08B57",
-                color: "#B08B57",
-                padding: "16px 30px",
-                borderRadius: "50px",
-                textDecoration: "none",
-                fontWeight: "bold",
-              }}
-            >
-              Conheça o Instituto
-            </a>
-          </div>
-        </div>
-
-      </section>
-
-      {/* DORES DA CLIENTE */}
-      <section
+  >
+    <Image
+      src="/logo.jpeg"
+      alt="Instituto Kamilah Franco"
+      width={220}
+      height={220}
+      style={{
+        width: "100%",
+        maxWidth: "220px",
+        height: "auto",
+      }}
+    />
+  </div>
+</section>
         style={{
           padding: "100px 8%",
           backgroundColor: "#EFE7DF",
