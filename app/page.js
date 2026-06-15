@@ -11,7 +11,7 @@ export default function Home() {
       }}
     >
 {/* HERO */}
-<div
+<section
   style={{
     display: "flex",
     alignItems: "center",
@@ -105,29 +105,7 @@ export default function Home() {
         Conheça o Instituto
       </a>
     </div>
-  </div>
 
-  {/* LOGO */}
-  <div
-    style={{
-      flex: "0 0 320px",
-      display: "flex",
-      justifyContent: "center",
-         alignItems: "center", 
-    }}
-  >
-    <Image
-      src="/logo.jpeg"
-      alt="Instituto Kamilah Franco"
-      width={300}
-      height={300}
-      style={{
-        width: "100%",
-        maxWidth: "300px",
-        height: "auto",
-      }}
-    />
-  </div>
 </section>
 
 {/* DORES DA CLIENTE */}
