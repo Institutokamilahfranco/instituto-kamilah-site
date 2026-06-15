@@ -56,7 +56,7 @@ useEffect(() => {
       margin: 0,
     }}
   >
-    Fortalecimento emocional para mulheres que desejam viver com mais leveza, clareza, segurança e propósito, deixando para trás a procrastinação e a autossabotagem.
+    Fortalecimento emocional para mulheres que desejam viver com mais leveza, clareza, segurança e propósito.
   </h1>
       
 <div
@@ -212,6 +212,85 @@ Mais do que promover mudanças externas, o propósito é favorecer uma vida mais
           </div>
         </div>
       </section>
+
+{/* PARA QUEM É */}
+<section
+  style={{
+    padding: "100px 8%",
+    backgroundColor: "#FCFAF7",
+  }}
+>
+  <div
+    style={{
+      maxWidth: "1200px",
+      margin: "0 auto",
+      textAlign: "center",
+    }}
+  >
+    <h2
+      style={{
+        fontSize: "2.8rem",
+        marginBottom: "20px",
+        color: "#4A3732",
+      }}
+    >
+      Para quem é este acompanhamento?
+    </h2>
+
+    <p
+      style={{
+        fontSize: "1.1rem",
+        lineHeight: "2rem",
+        maxWidth: "850px",
+        margin: "0 auto 50px auto",
+        color: "#6B5B56",
+      }}
+    >
+      Este processo foi pensado para mulheres que desejam fortalecer sua estrutura emocional, desenvolver um posicionamento mais consciente e construir uma vida alinhada à sua essência.
+    </p>
+
+    <div
+      style={{
+        display: "grid",
+        gridTemplateColumns:
+          "repeat(auto-fit, minmax(300px, 1fr))",
+        gap: "25px",
+      }}
+    >
+      {[
+        "Vivem sobrecarga emocional e sentem que carregam o mundo nas costas.",
+        "Têm dificuldade em estabelecer limites saudáveis.",
+        "Percebem padrões repetitivos em seus relacionamentos.",
+        "Sentem-se desconectadas de si mesmas e da própria essência.",
+        "Sabem o que precisam fazer, mas acabam desistindo ou deixando para depois.",
+        "Possuem dificuldade em se posicionar e expressar suas necessidades.",
+        "Colocam todos em primeiro lugar e deixam a si mesmas por último.",
+        "Fazem muito pelos outros, mas perdem energia quando chega o momento de cuidar de si.",
+      ].map((item, index) => (
+        <div
+          key={index}
+          style={{
+            backgroundColor: "#fff",
+            padding: "30px",
+            borderRadius: "25px",
+            boxShadow: "0 8px 20px rgba(0,0,0,0.05)",
+            textAlign: "left",
+          }}
+        >
+          <p
+            style={{
+              lineHeight: "1.9rem",
+              fontSize: "1rem",
+            }}
+          >
+            ✨ {item}
+          </p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>
+
       {/* INSTITUTO */}
       <section
         id="instituto"
