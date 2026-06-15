@@ -1,6 +1,19 @@
 import Image from "next/image";
+import { useEffect, useState } from "react";
 
 export default function Home() {
+  const [isMobile, setIsMobile] = useState(false);
+
+useEffect(() => {
+  const checkScreen = () => {
+    setIsMobile(window.innerWidth < 900);
+  };
+
+  checkScreen();
+  window.addEventListener("resize", checkScreen);
+
+  return () => window.removeEventListener("resize", checkScreen);
+}, []);
   return (
     <main
       style={{
@@ -24,25 +37,31 @@ export default function Home() {
 <div
   style={{
     display: "flex",
+    flexDirection: isMobile ? "column" : "row",
     alignItems: "center",
     justifyContent: "space-between",
     gap: "40px",
-    flexWrap: "wrap",
     marginBottom: "40px",
   }}
 >
   <h1
     style={{
+      order: isMobile ? 2 : 1,
       flex: 1,
-      fontSize: "clamp(2.8rem, 5vw, 4.8rem)",
-      lineHeight: "1.15",
+      fontSize: "clamp(2rem, 3.5vw, 3.4rem)",
+      lineHeight: "1.2",
       color: "#4A3732",
       margin: 0,
     }}
   >
     Fortalecimento emocional para mulheres que desejam viver com mais leveza, clareza, segurança e propósito, deixando para trás a procrastinação e a autossabotagem.
   </h1>
-
+      
+<div
+  style={{
+    order: isMobile ? 1 : 2,
+  }}
+>
   <Image
   src="/logo.jpeg"
   alt="Instituto Kamilah Franco"
