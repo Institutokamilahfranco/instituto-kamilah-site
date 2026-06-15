@@ -1,16 +1,41 @@
 import Script from "next/script"
 
-export const metadata = {
+ export const metadata = {
   title:
-    "Instituto Kamilah Franco | Desenvolvimento Emocional Feminino",
+    "Instituto Kamilah Franco | Desenvolvimento emocional e autoestima feminina",
 
   description:
-    "Instituto especializado em fortalecimento emocional feminino, transformação pessoal e desenvolvimento emocional estratégico.",
+    "Atendimento terapêutico online para mulheres que desejam fortalecer a autoestima, superar a autossabotagem, desenvolver confiança e construir uma vida emocional mais equilibrada.",
 
-  icons: {
-    icon: "/favicon.ico",
+  keywords: [
+    "autoestima feminina",
+    "autossabotagem",
+    "dependência emocional",
+    "ansiedade",
+    "terapia online",
+    "desenvolvimento emocional",
+    "autoconhecimento",
+    "confiança feminina",
+    "terapeuta integrativa",
+    "fortalecimento emocional"
+  ],
+
+  openGraph: {
+    title:
+      "Instituto Kamilah Franco | Desenvolvimento emocional feminino",
+
+    description:
+      "Atendimento terapêutico online para mulheres que desejam fortalecer a autoestima e transformar padrões emocionais.",
+
+    url: "https://www.institutokamilahfranco.com.br",
+
+    siteName: "Instituto Kamilah Franco",
+
+    locale: "pt_BR",
+
+    type: "website",
   },
-}
+};
 
 export default function RootLayout({ children }) {
   return (
