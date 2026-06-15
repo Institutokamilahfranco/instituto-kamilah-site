@@ -88,7 +88,14 @@ useEffect(() => {
     marginBottom: "25px",
   }}
 >
-  O Instituto Kamilah Franco nasceu para acolher mulheres que desejam compreender sua história, fortalecer sua estrutura emocional e construir uma vida mais alinhada à sua essência.
+  Mulheres que desejam viver com mais clareza, segurança e propósito muitas vezes carregam padrões emocionais, sobrecarga interna e desafios que impactam sua forma de se relacionar consigo mesmas e com a vida.
+
+Por meio de um acompanhamento integrativo que considera o ser humano como um todo — corpo, mente e espírito — cada processo é conduzido de forma individualizada, respeitando a singularidade, o momento e as necessidades de cada mulher.
+
+O Instituto Kamilah Franco nasceu para acolher mulheres em seus processos de fortalecimento emocional e desenvolvimento humano, promovendo transformações profundas e sustentáveis por meio do desenvolvimento emocional, da consciência de padrões e do alinhamento energético.
+
+Mais do que promover mudanças externas, o propósito é favorecer uma vida mais alinhada à essência de cada mulher, para que ela possa viver com mais leveza, clareza, segurança e propósito.
+
 </p>
 
 <p
