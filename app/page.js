@@ -10,35 +10,46 @@ export default function Home() {
         overflowX: "hidden",
       }}
     >
-      {/* HERO */}
-      <section
-        style={{
-          minHeight: "100vh",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          padding: "80px 8%",
-          gap: "60px",
-          flexWrap: "wrap",
-          background:
-            "linear-gradient(to bottom, #FCFAF7 0%, #F5F1EC 100%)",
-        }}
-      >
-        {/* TEXTO */}
-        <div style={{ flex: 1, minWidth: "320px", maxWidth: "650px" }}>
-        <Image
-  src="/logo.jpeg"
-  alt="Instituto Kamilah Franco"
-  width={380}
-  height={380}
+     {/* HERO */}
+<section
   style={{
-    width: "100%",
-    maxWidth: "360px",
-    height: "auto",
-    marginBottom: "40px",
-    filter: "drop-shadow(0 10px 20px rgba(0,0,0,0.08))",
+    minHeight: "85vh",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+    padding: "60px 8%",
+    gap: "50px",
+    flexWrap: "wrap",
+    background:
+      "linear-gradient(to bottom, #FCFAF7 0%, #F5F1EC 100%)",
+    maxWidth: "1400px",
+    margin: "0 auto",
   }}
-/>
+>
+        {/* TEXTO */}
+        <div style={{ flex: 1, minWidth: "320px" }}>
+  {/* título, descrição e botão */}
+</div>
+
+<div
+  style={{
+    flex: "0 0 260px",
+    display: "flex",
+    justifyContent: "center",
+  }}
+>
+  <Image
+    src="/logo.jpeg"
+    alt="Instituto Kamilah Franco"
+    width={240}
+    height={240}
+    style={{
+      width: "100%",
+      maxWidth: "240px",
+      height: "auto",
+    }}
+  />
+</div>
 
           <h1
             style={{
