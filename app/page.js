@@ -668,17 +668,37 @@ Mais do que promover mudanças externas, o propósito é favorecer uma vida mais
       target="_blank"
       rel="noopener noreferrer"
       style={{
-        display: "inline-block",
-        backgroundColor: "#B08B57",
-        color: "#fff",
-        padding: "16px 35px",
-        borderRadius: "50px",
-        textDecoration: "none",
-        fontWeight: "bold",
-        fontSize: "1rem",
-      }}
+  display: "inline-block",
+  backgroundColor: "#C13584",
+  color: "#fff",
+  padding: "16px 35px",
+  borderRadius: "50px",
+  textDecoration: "none",
+  fontWeight: "bold",
+  fontSize: "1rem",
+  boxShadow: "0 8px 20px rgba(193,53,132,0.25)",
+  transition: "0.3s",
+}}
     >
-      📷 Seguir no Instagram
+      <span
+  style={{
+    display: "flex",
+    alignItems: "center",
+    gap: "10px",
+  }}
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="20"
+    height="20"
+    viewBox="0 0 24 24"
+    fill="white"
+  >
+    <path d="M7.75 2C4.57 2 2 4.57 2 7.75v8.5C2 19.43 4.57 22 7.75 22h8.5C19.43 22 22 19.43 22 16.25v-8.5C22 4.57 19.43 2 16.25 2h-8.5zm0 2h8.5A3.75 3.75 0 0 1 20 7.75v8.5A3.75 3.75 0 0 1 16.25 20h-8.5A3.75 3.75 0 0 1 4 16.25v-8.5A3.75 3.75 0 0 1 7.75 4zm8.75 1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zM12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10zm0 2a3 3 0 1 1 0 6 3 3 0 0 1 0-6z"/>
+  </svg>
+
+  <span>Acompanhar no Instagram</span>
+</span>
     </a>
   </div>
 </section>
