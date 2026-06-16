@@ -620,6 +620,68 @@ Mais do que promover mudanças externas, o propósito é favorecer uma vida mais
           ))}
         </div>
       </section>
+{/* INSTAGRAM */}
+<section
+  style={{
+    padding: "90px 8%",
+    backgroundColor: "#F5F1EC",
+  }}
+>
+  <div
+    style={{
+      maxWidth: "900px",
+      margin: "0 auto",
+      textAlign: "center",
+      backgroundColor: "#FCFAF7",
+      padding: "60px 40px",
+      borderRadius: "30px",
+      boxShadow: "0 10px 30px rgba(0,0,0,0.05)",
+    }}
+  >
+    <h2
+      style={{
+        fontSize: "2.4rem",
+        color: "#4A3732",
+        marginBottom: "20px",
+      }}
+    >
+      Acompanhe conteúdos sobre desenvolvimento emocional feminino
+    </h2>
+
+    <p
+      style={{
+        fontSize: "1.1rem",
+        lineHeight: "2rem",
+        color: "#6B5B56",
+        maxWidth: "700px",
+        margin: "0 auto 35px auto",
+      }}
+    >
+      Reflexões, conteúdos e experiências sobre fortalecimento emocional,
+      desenvolvimento humano, corpo, mente e espírito, além de temas
+      relacionados ao alinhamento energético e ao processo de transformação
+      pessoal.
+    </p>
+
+    <a
+      href="https://instagram.com/instituto.kamilah.franco"
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{
+        display: "inline-block",
+        backgroundColor: "#B08B57",
+        color: "#fff",
+        padding: "16px 35px",
+        borderRadius: "50px",
+        textDecoration: "none",
+        fontWeight: "bold",
+        fontSize: "1rem",
+      }}
+    >
+      📷 Seguir no Instagram
+    </a>
+  </div>
+</section>
 
       {/* CTA FINAL */}
       <section
@@ -691,6 +753,22 @@ Mais do que promover mudanças externas, o propósito é favorecer uma vida mais
           Instituto Kamilah Franco — Desenvolvimento emocional feminino,
           fortalecimento interno e transformação pessoal.
         </p>
+    
+  <a
+    href="https://instagram.com/instituto.kamilah.franco"
+    target="_blank"
+    rel="noopener noreferrer"
+    style={{
+      color: "#E3C58B",
+      textDecoration: "none",
+      fontSize: "1rem",
+      fontWeight: "500",
+      transition: "0.3s",
+    }}
+  >
+    📷 Acompanhe o Instituto no Instagram
+  </a>
+</div>
       </footer>
 
       {/* BOTÃO FLUTUANTE WHATSAPP */}
