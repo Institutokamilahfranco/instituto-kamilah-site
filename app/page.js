@@ -115,21 +115,36 @@ Mais do que promover mudanças externas, o propósito é favorecer uma vida mais
         flexWrap: "wrap",
       }}
     >
-      <a
-        href="https://wa.me/5546988042216?text=Olá%20Kamilah,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações."
-        target="_blank"
-        rel="noopener noreferrer"
-        style={{
-          backgroundColor: "#B08B57",
-          color: "#fff",
-          padding: "16px 30px",
-          borderRadius: "50px",
-          textDecoration: "none",
-          fontWeight: "bold",
-        }}
-      >
-        Agendar Atendimento
-      </a>
+    <a
+  href="https://wa.me/5546988042216?text=Olá%20Kamilah,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações."
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{
+    display: "inline-flex",
+    alignItems: "center",
+    gap: "10px",
+    backgroundColor: "#25D366",
+    color: "#fff",
+    padding: "16px 30px",
+    borderRadius: "50px",
+    textDecoration: "none",
+    fontWeight: "bold",
+    boxShadow: "0 8px 20px rgba(37,211,102,0.25)",
+    transition: "0.3s",
+  }}
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="22"
+    height="22"
+    viewBox="0 0 24 24"
+    fill="white"
+  >
+    <path d="M20.52 3.48A11.85 11.85 0 0 0 12.04 0C5.46 0 .12 5.34.12 11.92c0 2.1.55 4.16 1.59 5.98L0 24l6.27-1.64a11.87 11.87 0 0 0 5.77 1.47h.01c6.58 0 11.92-5.34 11.92-11.92 0-3.18-1.24-6.17-3.45-8.43zM12.05 21.8h-.01a9.8 9.8 0 0 1-4.99-1.36l-.36-.21-3.72.98.99-3.63-.24-.37a9.8 9.8 0 1 1 8.33 4.59zm5.38-7.35c-.29-.14-1.7-.84-1.96-.94-.26-.1-.45-.14-.64.14-.19.29-.73.94-.9 1.13-.16.19-.33.21-.62.07-.29-.14-1.2-.44-2.29-1.4-.85-.76-1.43-1.7-1.59-1.99-.17-.29-.02-.45.12-.59.13-.13.29-.33.43-.5.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.5-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.48-.64-.49h-.55c-.19 0-.5.07-.76.36-.26.29-1 1-.99 2.43 0 1.43 1.03 2.8 1.17 2.99.14.19 2.02 3.08 4.89 4.32.68.29 1.22.46 1.64.59.69.22 1.32.19 1.82.12.56-.08 1.7-.69 1.94-1.36.24-.67.24-1.24.17-1.36-.07-.12-.26-.19-.55-.33z"/>
+  </svg>
+
+  <span>Agendar Atendimento</span>
+</a>
 
       <a
         href="#instituto"
@@ -740,23 +755,36 @@ Mais do que promover mudanças externas, o propósito é favorecer uma vida mais
             com sua essência.
           </p>
 
-          <a
-            href="https://wa.me/5546988042216?text=Olá%20Kamilah,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações."
-            target="_blank"
-            rel="noopener noreferrer"
-            style={{
-              backgroundColor: "#B08B57",
-              color: "#fff",
-              padding: "18px 40px",
-              borderRadius: "50px",
-              textDecoration: "none",
-              fontWeight: "bold",
-              display: "inline-block",
-              fontSize: "1rem",
-            }}
-          >
-            Agendar Atendimento
-          </a>
+         <a
+  href="https://wa.me/5546988042216?text=Olá%20Kamilah,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações."
+  target="_blank"
+  rel="noopener noreferrer"
+  style={{
+    display: "inline-flex",
+    alignItems: "center",
+    gap: "10px",
+    backgroundColor: "#25D366",
+    color: "#fff",
+    padding: "16px 30px",
+    borderRadius: "50px",
+    textDecoration: "none",
+    fontWeight: "bold",
+    boxShadow: "0 8px 20px rgba(37,211,102,0.25)",
+    transition: "0.3s",
+  }}
+>
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="22"
+    height="22"
+    viewBox="0 0 24 24"
+    fill="white"
+  >
+    <path d="M20.52 3.48A11.85 11.85 0 0 0 12.04 0C5.46 0 .12 5.34.12 11.92c0 2.1.55 4.16 1.59 5.98L0 24l6.27-1.64a11.87 11.87 0 0 0 5.77 1.47h.01c6.58 0 11.92-5.34 11.92-11.92 0-3.18-1.24-6.17-3.45-8.43zM12.05 21.8h-.01a9.8 9.8 0 0 1-4.99-1.36l-.36-.21-3.72.98.99-3.63-.24-.37a9.8 9.8 0 1 1 8.33 4.59zm5.38-7.35c-.29-.14-1.7-.84-1.96-.94-.26-.1-.45-.14-.64.14-.19.29-.73.94-.9 1.13-.16.19-.33.21-.62.07-.29-.14-1.2-.44-2.29-1.4-.85-.76-1.43-1.7-1.59-1.99-.17-.29-.02-.45.12-.59.13-.13.29-.33.43-.5.14-.17.19-.29.29-.48.1-.19.05-.36-.02-.5-.07-.14-.64-1.54-.88-2.11-.23-.55-.47-.48-.64-.49h-.55c-.19 0-.5.07-.76.36-.26.29-1 1-.99 2.43 0 1.43 1.03 2.8 1.17 2.99.14.19 2.02 3.08 4.89 4.32.68.29 1.22.46 1.64.59.69.22 1.32.19 1.82.12.56-.08 1.7-.69 1.94-1.36.24-.67.24-1.24.17-1.36-.07-.12-.26-.19-.55-.33z"/>
+  </svg>
+
+  <span>Agendar Atendimento</span>
+</a>
         </div>
       </section>
 
