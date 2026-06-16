@@ -753,6 +753,13 @@ Mais do que promover mudanças externas, o propósito é favorecer uma vida mais
           Instituto Kamilah Franco — Desenvolvimento emocional feminino,
           fortalecimento interno e transformação pessoal.
         </p>
+        <div
+    style={{
+      marginTop: "20px",
+      display: "flex",
+      justifyContent: "center",
+    }}
+  >
     
   <a
     href="https://instagram.com/instituto.kamilah.franco"
