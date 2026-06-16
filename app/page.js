@@ -821,7 +821,7 @@ Mais do que promover mudanças externas, o propósito é favorecer uma vida mais
       transition: "0.3s",
     }}
   >
-    📷 Acompanhe o Instituto no Instagram
+    📷 Acompanhe o Instituto no Instagram @instituto.kamilah.franco
   </a>
 </div>
       </footer>
