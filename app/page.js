@@ -838,14 +838,14 @@ onClick={() => {
 
       {/* BOTÃO FLUTUANTE WHATSAPP */}
       <a
-        href="https://wa.me/5546988042216?text=Olá%20Kamilah,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações."
-        target="_blank"
-        rel="noopener noreferrer"
 onClick={() => {
   window.gtag?.("event", "whatsapp_click", {
     button_location: "floating",
   });
 }}
+        href="https://wa.me/5546988042216?text=Olá%20Kamilah,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações."
+        target="_blank"
+        rel="noopener noreferrer"
         style={{
           position: "fixed",
           bottom: "25px",
