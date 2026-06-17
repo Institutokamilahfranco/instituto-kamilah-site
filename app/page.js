@@ -119,6 +119,11 @@ Mais do que promover mudanças externas, o propósito é favorecer uma vida mais
   href="https://wa.me/5546988042216?text=Olá%20Kamilah,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações."
   target="_blank"
   rel="noopener noreferrer"
+onClick={() => {
+    window.gtag?.("event", "whatsapp_click", {
+      button_location: "hero",
+    });
+  }}
   style={{
     display: "inline-flex",
     alignItems: "center",
@@ -759,6 +764,11 @@ Mais do que promover mudanças externas, o propósito é favorecer uma vida mais
   href="https://wa.me/5546988042216?text=Olá%20Kamilah,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações."
   target="_blank"
   rel="noopener noreferrer"
+onClick={() => {
+    window.gtag?.("event", "whatsapp_click", {
+      button_location: "hero",
+    });
+  }}
   style={{
     display: "inline-flex",
     alignItems: "center",
@@ -831,6 +841,11 @@ Mais do que promover mudanças externas, o propósito é favorecer uma vida mais
         href="https://wa.me/5546988042216?text=Olá%20Kamilah,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações."
         target="_blank"
         rel="noopener noreferrer"
+onClick={() => {
+  window.gtag?.("event", "whatsapp_click", {
+    button_location: "floating",
+  });
+}}
         style={{
           position: "fixed",
           bottom: "25px",
