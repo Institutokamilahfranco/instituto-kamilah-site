@@ -36,27 +36,29 @@ useEffect(() => {
     gap: "50px",
     flexWrap: "wrap",
     background:
-      "linear-gradient(to bottom, #FCFAF7 0%, #F5F1EC 100%)",
+"linear-gradient(135deg, #f8f6f3 0%, #ede7e2 50%, #e5ddd6 100%)",
     maxWidth: "1400px",
     margin: "0 auto",
     position: "relative",
-    overflow: "hidden",
+zIndex: 2,
   }}
 >
-  <Image
+ <Image
   src="/logo.jpeg"
   alt=""
   width={1200}
   height={1200}
   style={{
     position: "absolute",
-    top: "-120px",
-    right: "-180px",
-    width: "550px",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    width: "700px",
     height: "auto",
-    opacity: 0.08,
+    opacity: 0.05,
     pointerEvents: "none",
     zIndex: 0,
+    filter: "grayscale(100%)",
   }}
 />
 <div
