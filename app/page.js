@@ -50,12 +50,11 @@ useEffect(() => {
   height={1200}
   style={{
     position: "absolute",
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%, -50%)",
-    width: "700px",
+    top: "-120px",
+    right: "-180px",
+    width: "550px",
     height: "auto",
-    opacity: 0.04,
+    opacity: 0.08,
     pointerEvents: "none",
     zIndex: 0,
   }}
