@@ -29,21 +29,44 @@ useEffect(() => {
 <section
   style={{
     minHeight: "85vh",
-    padding: "80px 8%",
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "space-between",
+    padding: "60px 8%",
+    gap: "50px",
+    flexWrap: "wrap",
     background:
       "linear-gradient(to bottom, #FCFAF7 0%, #F5F1EC 100%)",
     maxWidth: "1400px",
     margin: "0 auto",
+    position: "relative",
+    overflow: "hidden",
   }}
 >
+  <Image
+  src="/logo.jpeg"
+  alt=""
+  width={1200}
+  height={1200}
+  style={{
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    width: "700px",
+    height: "auto",
+    opacity: 0.04,
+    pointerEvents: "none",
+    zIndex: 0,
+  }}
+/>
 <div
   style={{
-    display: "flex",
-    flexDirection: isMobile ? "column" : "row",
-    alignItems: "center",
-    justifyContent: "space-between",
-    gap: "40px",
-    marginBottom: "40px",
+    flex: 1,
+    minWidth: "320px",
+    maxWidth: "760px",
+    position: "relative",
+    zIndex: 1,
   }}
 >
   <h1
