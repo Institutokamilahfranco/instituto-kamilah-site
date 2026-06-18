@@ -116,7 +116,7 @@ Mais do que promover mudanças externas, o propósito é favorecer uma vida mais
       }}
     >
     <a
-  href="https://wa.me/5546988042216?text=Olá%20Kamilah,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações."
+href= "https://wa.me/5546988042216?text=Olá%20Kamilah,%20vim%20pelo%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20o%20que%20estou%20vivendo%20neste%20momento%20para%20entender%20se%20o%20seu%20processo%20pode%20me%20ajudar."
   target="_blank"
   rel="noopener noreferrer"
 onClick={() => {
@@ -780,7 +780,7 @@ onClick={() => {
   </p>
 
   <a
-    href="https://wa.me/5546988042216?text=Olá%20Kamilah,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações."
+    href= "https://wa.me/5546988042216?text=Olá%20Kamilah,%20vim%20pelo%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20o%20que%20estou%20vivendo%20neste%20momento%20para%20entender%20se%20o%20seu%20processo%20pode%20me%20ajudar."
     target="_blank"
     rel="noopener noreferrer"
     onClick={() => {
@@ -853,7 +853,7 @@ onClick={() => {
           </p>
 
          <a
-  href="https://wa.me/5546988042216?text=Olá%20Kamilah,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações."
+  href="https://wa.me/5546988042216?text=Olá%20Kamilah,%20vim%20pelo%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20o%20que%20estou%20vivendo%20neste%20momento%20para%20entender%20se%20o%20seu%20processo%20pode%20me%20ajudar."
   target="_blank"
   rel="noopener noreferrer"
 onClick={() => {
@@ -935,7 +935,7 @@ onClick={() => {
     button_location: "floating",
   });
 }}
-        href="https://wa.me/5546988042216?text=Olá%20Kamilah,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações."
+        href="https://wa.me/5546988042216?text=Olá%20Kamilah,%20vim%20pelo%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20o%20que%20estou%20vivendo%20neste%20momento%20para%20entender%20se%20o%20seu%20processo%20pode%20me%20ajudar."
         target="_blank"
         rel="noopener noreferrer"
         style={{
