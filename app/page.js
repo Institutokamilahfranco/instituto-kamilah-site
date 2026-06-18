@@ -18,56 +18,54 @@ useEffect(() => {
 }, []);
   return (
     <main
-      style={{
-        backgroundColor: "#F5F1EC",
-        color: "#4B3A36",
-        fontFamily: "Arial, sans-serif",
-        overflowX: "hidden",
-      }}
-    >
-{/* HERO */}
-<section
   style={{
-    minHeight: "85vh",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "space-between",
-    padding: "60px 8%",
-    gap: "50px",
-    flexWrap: "wrap",
     background:
-"linear-gradient(135deg, #f8f6f3 0%, #ede7e2 50%, #e5ddd6 100%)",
-    maxWidth: "1400px",
-    margin: "0 auto",
-    position: "relative",
-zIndex: 2,
+      "linear-gradient(180deg, #1A1715 0%, #25211E 100%)",
+    color: "#F5F1ED",
   }}
 >
- <Image
-  src="/logo.jpeg"
-  alt=""
-  width={1200}
-  height={1200}
+
+  <div
   style={{
-    position: "absolute",
+    position: "fixed",
     top: "50%",
     left: "50%",
     transform: "translate(-50%, -50%)",
-    width: "700px",
-    height: "auto",
-    opacity: 0.05,
-    pointerEvents: "none",
     zIndex: 0,
-    filter: "grayscale(100%)",
+    opacity: 0.18,
+    pointerEvents: "none",
   }}
-/>
+>
+  <Image
+    src="/logo.jpeg"
+    alt=""
+    width={1200}
+    height={1200}
+    style={{
+      width: "900px",
+      height: "auto",
+      filter: "grayscale(100%) brightness(1.5)",
+    }}
+  />
+</div>
+
+  {/* HERO */}
+  <section
+    style={{
+      minHeight: "85vh",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "space-between",
+    }}
+  >
+ 
 <div
   style={{
     flex: 1,
     minWidth: "320px",
     maxWidth: "760px",
     position: "relative",
-    zIndex: 1,
+    zIndex: 2,
   }}
 >
   <h1
@@ -76,33 +74,13 @@ zIndex: 2,
       flex: 1,
       fontSize: "clamp(2rem, 3vw, 3rem)",
       lineHeight: "1",
-      color: "#4A3732",
+      color: "#F5F1ED",
+textShadow: "0 4px 25px rgba(0,0,0,0.5)",
       margin: 0,
     }}
   >
     Fortalecimento emocional para mulheres que desejam viver com mais leveza, clareza, segurança e propósito.
   </h1>
-      
-<div
-  style={{
-    order: isMobile ? 1 : 2,
-  }}
->
-  <Image
-    src="/logo.jpeg"
-    alt="Instituto Kamilah Franco"
-    width={280}
-    height={280}
-    style={{
-      width: "100%",
-      maxWidth: "280px",
-      height: "auto",
-      filter: "drop-shadow(0 10px 25px rgba(0,0,0,0.08))",
-    }}
-  />
-</div>
-
-</div> 
 
 <p
   style={{
@@ -122,16 +100,6 @@ Mais do que promover mudanças externas, o propósito é favorecer uma vida mais
 
 </p>
 
-<p
-  style={{
-    fontSize: "1.18rem",
-    lineHeight: "2.1rem",
-    maxWidth: "1100px",
-    marginBottom: "40px",
-  }}
->
-  Por meio de um acompanhamento integrativo que considera o ser humano como um todo — corpo, mente e espírito — cada processo é conduzido de forma individualizada, promovendo desenvolvimento emocional, alinhamento energético e transformações profundas e sustentáveis.
-</p>
     <div
       style={{
         display: "flex",
@@ -187,10 +155,12 @@ onClick={() => {
         }}
       >
         Conheça o Instituto
-      </a>
+     </a>
 
-    </div>   {/* FECHA O DIV DOS BOTÕES */}
-      
+</div>
+
+</div>
+
 </section>
 
 {/* DORES DA CLIENTE */}
