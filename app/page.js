@@ -18,54 +18,32 @@ useEffect(() => {
 }, []);
   return (
     <main
+      style={{
+        backgroundColor: "#F5F1EC",
+        color: "#4B3A36",
+        fontFamily: "Arial, sans-serif",
+        overflowX: "hidden",
+      }}
+    >
+{/* HERO */}
+<section
   style={{
+    minHeight: "85vh",
+    padding: "80px 8%",
     background:
-      "linear-gradient(180deg, #1A1715 0%, #25211E 100%)",
-    color: "#F5F1ED",
+      "linear-gradient(to bottom, #FCFAF7 0%, #F5F1EC 100%)",
+    maxWidth: "1400px",
+    margin: "0 auto",
   }}
 >
-
-  <div
-  style={{
-    position: "fixed",
-    top: "50%",
-    left: "50%",
-    transform: "translate(-50%, -50%)",
-    zIndex: 0,
-    opacity: 0.18,
-    pointerEvents: "none",
-  }}
->
-  <Image
-    src="/logo.jpeg"
-    alt=""
-    width={1200}
-    height={1200}
-    style={{
-      width: "900px",
-      height: "auto",
-      filter: "grayscale(100%) brightness(1.5)",
-    }}
-  />
-</div>
-
-  {/* HERO */}
-  <section
-    style={{
-      minHeight: "85vh",
-      display: "flex",
-      alignItems: "center",
-      justifyContent: "space-between",
-    }}
-  >
- 
 <div
   style={{
-    flex: 1,
-    minWidth: "320px",
-    maxWidth: "760px",
-    position: "relative",
-    zIndex: 2,
+    display: "flex",
+    flexDirection: isMobile ? "column" : "row",
+    alignItems: "center",
+    justifyContent: "space-between",
+    gap: "40px",
+    marginBottom: "40px",
   }}
 >
   <h1
@@ -74,13 +52,33 @@ useEffect(() => {
       flex: 1,
       fontSize: "clamp(2rem, 3vw, 3rem)",
       lineHeight: "1",
-      color: "#F5F1ED",
-textShadow: "0 4px 25px rgba(0,0,0,0.5)",
+      color: "#4A3732",
       margin: 0,
     }}
   >
     Fortalecimento emocional para mulheres que desejam viver com mais leveza, clareza, segurança e propósito.
   </h1>
+      
+<div
+  style={{
+    order: isMobile ? 1 : 2,
+  }}
+>
+  <Image
+    src="/logo.jpeg"
+    alt="Instituto Kamilah Franco"
+    width={280}
+    height={280}
+    style={{
+      width: "100%",
+      maxWidth: "280px",
+      height: "auto",
+      filter: "drop-shadow(0 10px 25px rgba(0,0,0,0.08))",
+    }}
+  />
+</div>
+
+</div> 
 
 <p
   style={{
@@ -108,8 +106,7 @@ Mais do que promover mudanças externas, o propósito é favorecer uma vida mais
       }}
     >
     <a
-href= "https://wa.me/5546988042216?text=Olá%20Kamilah,%20vim%20pelo%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20o%20que%20estou%20vivendo%20neste%20momento%20para%20entender%20se%20o%20seu%20processo%20pode%20me%20ajudar."
-  target="_blank"
+href="https://wa.me/5546988042216?text=Olá%20Kamilah,%20vim%20pelo%20site%20e%20me%20identifiquei%20com%20o%20que%20li.%20Gostaria%20de%20saber%20como%20você%20pode%20me%20ajudar."  target="_blank"
   rel="noopener noreferrer"
 onClick={() => {
     window.gtag?.("event", "whatsapp_click", {
@@ -155,12 +152,10 @@ onClick={() => {
         }}
       >
         Conheça o Instituto
-     </a>
+      </a>
 
-</div>
-
-</div>
-
+    </div>   {/* FECHA O DIV DOS BOTÕES */}
+      
 </section>
 
 {/* DORES DA CLIENTE */}
@@ -774,8 +769,7 @@ onClick={() => {
   </p>
 
   <a
-    href= "https://wa.me/5546988042216?text=Olá%20Kamilah,%20vim%20pelo%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20o%20que%20estou%20vivendo%20neste%20momento%20para%20entender%20se%20o%20seu%20processo%20pode%20me%20ajudar."
-    target="_blank"
+href="https://wa.me/5546988042216?text=Olá%20Kamilah,%20vim%20pelo%20site%20e%20me%20identifiquei%20com%20o%20que%20li.%20Gostaria%20de%20saber%20como%20você%20pode%20me%20ajudar."    target="_blank"
     rel="noopener noreferrer"
     onClick={() => {
       gtag("event", "whatsapp_click");
@@ -847,8 +841,7 @@ onClick={() => {
           </p>
 
          <a
-  href="https://wa.me/5546988042216?text=Olá%20Kamilah,%20vim%20pelo%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20o%20que%20estou%20vivendo%20neste%20momento%20para%20entender%20se%20o%20seu%20processo%20pode%20me%20ajudar."
-  target="_blank"
+href="https://wa.me/5546988042216?text=Olá%20Kamilah,%20vim%20pelo%20site%20e%20me%20identifiquei%20com%20o%20que%20li.%20Gostaria%20de%20saber%20como%20você%20pode%20me%20ajudar."  target="_blank"
   rel="noopener noreferrer"
 onClick={() => {
     window.gtag?.("event", "whatsapp_click", {
@@ -929,8 +922,7 @@ onClick={() => {
     button_location: "floating",
   });
 }}
-        href="https://wa.me/5546988042216?text=Olá%20Kamilah,%20vim%20pelo%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20o%20que%20estou%20vivendo%20neste%20momento%20para%20entender%20se%20o%20seu%20processo%20pode%20me%20ajudar."
-        target="_blank"
+href="https://wa.me/5546988042216?text=Olá%20Kamilah,%20vim%20pelo%20site%20e%20me%20identifiquei%20com%20o%20que%20li.%20Gostaria%20de%20saber%20como%20você%20pode%20me%20ajudar."        target="_blank"
         rel="noopener noreferrer"
         style={{
           position: "fixed",
