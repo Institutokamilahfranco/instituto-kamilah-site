@@ -722,6 +722,98 @@ onClick={() => {
     </a>
   </div>
 </section>
+{/* VOCÊ NÃO PRECISA PASSAR POR ISSO SOZINHA */}
+<section
+  style={{
+    padding: "100px 8%",
+    backgroundColor: "#F8F4F0",
+    textAlign: "center",
+  }}
+>
+  <h2
+    style={{
+      fontSize: "2.2rem",
+      color: "#4A3836",
+      marginBottom: "30px",
+    }}
+  >
+    Você não precisa passar por isso sozinha.
+  </h2>
+
+  <p
+    style={{
+      maxWidth: "900px",
+      margin: "0 auto",
+      fontSize: "1.15rem",
+      lineHeight: "2rem",
+      color: "#5C4A47",
+      marginBottom: "25px",
+    }}
+  >
+    Você não precisa ter tudo resolvido para buscar ajuda.
+  </p>
+
+  <p
+    style={{
+      maxWidth: "900px",
+      margin: "0 auto",
+      fontSize: "1.15rem",
+      lineHeight: "2rem",
+      color: "#5C4A47",
+      marginBottom: "25px",
+    }}
+  >
+    Se você chegou até aqui, talvez uma parte de você já reconheça que está cansada de repetir os mesmos padrões, carregar tudo sozinha ou se colocar sempre em último lugar.
+  </p>
+
+  <p
+    style={{
+      maxWidth: "900px",
+      margin: "0 auto",
+      fontSize: "1.15rem",
+      lineHeight: "2rem",
+      color: "#5C4A47",
+      marginBottom: "40px",
+    }}
+  >
+    Vamos conversar sobre o que você está vivendo e entender se este processo faz sentido para você neste momento.
+  </p>
+
+  <a
+    href="https://wa.me/5546988042216?text=Olá%20Kamilah,%20vim%20pelo%20site%20e%20gostaria%20de%20mais%20informações."
+    target="_blank"
+    rel="noopener noreferrer"
+    onClick={() => {
+      gtag("event", "whatsapp_click");
+    }}
+    style={{
+      display: "inline-flex",
+      alignItems: "center",
+      gap: "10px",
+      backgroundColor: "#25D366",
+      color: "#fff",
+      padding: "18px 35px",
+      borderRadius: "50px",
+      textDecoration: "none",
+      fontWeight: "bold",
+      fontSize: "1.1rem",
+      boxShadow: "0 8px 20px rgba(37,211,102,0.25)",
+      transition: "0.3s",
+    }}
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="22"
+      height="22"
+      viewBox="0 0 32 32"
+      fill="currentColor"
+    >
+      <path d="M16.004 3C8.82 3 3 8.82 3 16.004c0 2.546.748 5.034 2.162 7.168L3 29l5.992-2.123a12.94 12.94 0 0 0 7.012 2.053C23.18 28.93 29 23.11 29 15.926 29 8.82 23.18 3 16.004 3zm0 23.61c-2.07 0-4.09-.554-5.855-1.604l-.42-.25-3.557 1.26 1.193-3.47-.273-.447a10.57 10.57 0 0 1-1.63-5.67c0-5.84 4.75-10.59 10.59-10.59s10.59 4.75 10.59 10.59-4.75 10.59-10.59 10.59zm5.805-7.89c-.316-.158-1.87-.922-2.16-1.027-.29-.106-.5-.158-.71.158-.21.316-.816 1.027-1 1.237-.184.21-.368.237-.684.08-.316-.158-1.334-.492-2.54-1.57-.938-.837-1.57-1.87-1.754-2.186-.184-.316-.02-.487.138-.645.142-.142.316-.368.474-.553.158-.184.21-.316.316-.526.105-.21.053-.395-.026-.553-.08-.158-.71-1.71-.974-2.344-.257-.618-.52-.534-.71-.544l-.605-.01c-.21 0-.553.08-.842.395-.29.316-1.105 1.08-1.105 2.634s1.132 3.055 1.29 3.265c.158.21 2.228 3.4 5.4 4.768.755.326 1.344.52 1.804.665.758.24 1.447.206 1.992.125.608-.09 1.87-.764 2.134-1.5.263-.737.263-1.37.184-1.5-.08-.132-.29-.21-.605-.368z" />
+    </svg>
+
+    Conversar no WhatsApp
+  </a>
+</section>
 
       {/* CTA FINAL */}
       <section
