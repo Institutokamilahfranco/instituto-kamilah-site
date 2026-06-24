@@ -62,8 +62,8 @@ useEffect(() => {
         margin: 0,
       }}
     >
-      Fortalecimento emocional para mulheres que desejam romper a autossabotagem, fortalecer sua autoestima e viver com mais leveza, clareza e segurança.
-    </h1>
+Rompa a autossabotagem, fortaleça sua autoestima e viva com mais leveza emocional.
+  </h1>
 
     <p
       style={{
@@ -74,8 +74,10 @@ useEffect(() => {
         maxWidth: "700px",
       }}
     >
-Se você sente que está cansada de se colocar por último, repetir os mesmos padrões e carregar sozinha o peso das suas emoções, saiba que existe um caminho para construir uma vida com mais leveza, clareza e segurança emocional.
-    </p>
+Você sente que faz muito pelos outros, mas acaba se esquecendo de si mesma?
+Tem dificuldade para se posicionar, vive sobrecarregada emocionalmente ou percebe que está repetindo os mesmos padrões na vida e nos relacionamentos?
+Existe um caminho para desenvolver mais clareza, segurança e equilíbrio emocional.
+  </p>
 
   </div>
 
