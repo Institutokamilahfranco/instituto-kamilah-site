@@ -198,11 +198,6 @@ onClick={() => {
   Muitas mulheres chegam até aqui sentindo exatamente o mesmo.
 </p>
 
-<div
-  style={{
-    display: "grid",
-    gridTemplateColumns:
-      "repeat(auto-fit, minmax(250px, 1fr))",
           <div
             style={{
               display: "grid",
