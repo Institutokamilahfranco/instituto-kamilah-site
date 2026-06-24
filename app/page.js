@@ -46,39 +46,59 @@ useEffect(() => {
     marginBottom: "40px",
   }}
 >
-  <h1
+
+  <div
     style={{
       order: isMobile ? 2 : 1,
       flex: 1,
-      fontSize: "clamp(2rem, 3vw, 3rem)",
-      lineHeight: "1",
-      color: "#4A3732",
-      margin: 0,
     }}
   >
-    Fortalecimento emocional para mulheres que desejam viver com mais leveza, clareza, segurança e propósito.
-  </h1>
-      
-<div
-  style={{
-    order: isMobile ? 1 : 2,
-  }}
->
-  <Image
-    src="/logo.jpeg"
-    alt="Instituto Kamilah Franco"
-    width={280}
-    height={280}
-    style={{
-      width: "100%",
-      maxWidth: "280px",
-      height: "auto",
-      filter: "drop-shadow(0 10px 25px rgba(0,0,0,0.08))",
-    }}
-  />
-</div>
 
-</div> 
+    <h1
+      style={{
+        fontSize: "clamp(2rem, 3vw, 3rem)",
+        lineHeight: "1.2",
+        color: "#4A3732",
+        margin: 0,
+      }}
+    >
+      Fortalecimento emocional para mulheres que desejam romper a autossabotagem, fortalecer sua autoestima e viver com mais leveza, clareza e segurança.
+    </h1>
+
+    <p
+      style={{
+        fontSize: "1.2rem",
+        lineHeight: "1.8rem",
+        color: "#6B5B56",
+        marginTop: "25px",
+        maxWidth: "700px",
+      }}
+    >
+      Se você sente que está sempre carregando tudo sozinha, se colocando por último ou repetindo padrões que te afastam da vida que deseja, este processo foi criado para você.
+    </p>
+
+  </div>
+
+  <div
+    style={{
+      order: isMobile ? 1 : 2,
+    }}
+  >
+    <Image
+      src="/logo.jpeg"
+      alt="Instituto Kamilah Franco"
+      width={280}
+      height={280}
+      style={{
+        width: "100%",
+        maxWidth: "280px",
+        height: "auto",
+        filter: "drop-shadow(0 10px 25px rgba(0,0,0,0.08))",
+      }}
+    />
+  </div>
+
+</div>
 
 <p
   style={{
@@ -141,7 +161,7 @@ onClick={() => {
 </a>
 
       <a
-        href="#instituto"
+        href="#processos"
         style={{
           border: "1px solid #B08B57",
           color: "#B08B57",
@@ -151,7 +171,7 @@ onClick={() => {
           fontWeight: "bold",
         }}
       >
-        Conheça o Instituto
+        Como Funciona o Processo
       </a>
 
     </div>   {/* FECHA O DIV DOS BOTÕES */}
@@ -180,7 +200,7 @@ onClick={() => {
               color: "#4A3732",
             }}
           >
-            Você se identifica com alguma destas experiências?
+            Você se reconhece em alguma destas situações?
           </h2>
 
           <div
@@ -355,6 +375,21 @@ onClick={() => {
           >
             Cada processo é conduzido com profundidade, acolhimento e sensibilidade, integrando recursos terapêuticos e alinhamento energético para promover transformações sustentáveis e alinhadas à essência de cada mulher.
           </p>
+              <div style={{ marginTop: "40px" }}>
+  <a
+    href="#contato"
+    style={{
+      backgroundColor: "#B08B57",
+      color: "#fff",
+      padding: "15px 30px",
+      borderRadius: "50px",
+      textDecoration: "none",
+      fontWeight: "bold",
+    }}
+  >
+    Quero entender como esse processo pode me ajudar
+  </a>
+</div>
         </div>
       </section>
 
@@ -730,7 +765,7 @@ onClick={() => {
       marginBottom: "30px",
     }}
   >
-    Você não precisa passar por isso sozinha.
+    Você não precisa continuar carregando tudo sozinha.
   </h2>
 
   <p
@@ -828,7 +863,7 @@ href="https://wa.me/5546988042216?text=Olá%20Kamilah,%20vim%20pelo%20site%20e%2
               color: "#4A3732",
             }}
           >
-            Dê o primeiro passo em direção à sua transformação emocional
+           Chegou a hora de cuidar de você.
           </h2>
 
           <p
@@ -838,10 +873,9 @@ href="https://wa.me/5546988042216?text=Olá%20Kamilah,%20vim%20pelo%20site%20e%2
               marginBottom: "40px",
             }}
           >
-            Se você sente que é hora de olhar para si mesma com mais cuidado,
-            acolhimento e profundidade, será um privilégio caminhar ao seu lado
-            nesse processo de fortalecimento emocional, consciência e reconexão
-            com sua essência.
+           Se você chegou até aqui, talvez exista uma parte sua que já sabe que não quer mais continuar vivendo da mesma forma.
+
+Vamos conversar e entender qual é o próximo passo para construir uma vida com mais leveza, segurança e clareza emocional.
           </p>
 
          <a
