@@ -74,9 +74,13 @@ Rompa a autossabotagem, fortaleça sua autoestima e viva com mais leveza emocion
         maxWidth: "700px",
       }}
     >
-Você sente que faz muito pelos outros, mas acaba se esquecendo de si mesma?
-Tem dificuldade para se posicionar, vive sobrecarregada emocionalmente ou percebe que está repetindo os mesmos padrões na vida e nos relacionamentos?
-Existe um caminho para desenvolver mais clareza, segurança e equilíbrio emocional.
+Você sente que está cansada de carregar tudo sozinha?
+
+Tem dificuldade para dizer não, se coloca sempre em último lugar ou percebe que está repetindo padrões que te fazem sofrer?
+
+Talvez você esteja vivendo exatamente o que muitas mulheres vivem: sobrecarga emocional, insegurança, culpa e dificuldade de olhar para si mesma.
+
+Existe um caminho para romper esse ciclo e construir uma vida com mais leveza, clareza e segurança emocional.
   </p>
 
   </div>
