@@ -160,6 +160,7 @@ onClick={() => {
 
 {/* DORES DA CLIENTE */}
 <section
+  id="experiencias"
   style={{
     padding: "100px 8%",
     backgroundColor: "#EFE7DF",
@@ -224,6 +225,7 @@ onClick={() => {
 
 {/* PARA QUEM É */}
 <section
+  id="paraquem"
   style={{
     padding: "100px 8%",
     backgroundColor: "#FCFAF7",
@@ -445,7 +447,8 @@ onClick={() => {
 
       {/* PROCESSOS TERAPÊUTICOS */}
       <section
-        style={{
+  id="processos"
+  style={{
           padding: "100px 8%",
           backgroundColor: "#FCFAF7",
         }}
@@ -713,6 +716,7 @@ onClick={() => {
 </section>
 {/* VOCÊ NÃO PRECISA PASSAR POR ISSO SOZINHA */}
 <section
+  id="contato"
   style={{
     padding: "100px 8%",
     backgroundColor: "#F8F4F0",
