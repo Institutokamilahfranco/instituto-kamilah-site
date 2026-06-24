@@ -74,7 +74,7 @@ useEffect(() => {
         maxWidth: "700px",
       }}
     >
-      Se você sente que está sempre carregando tudo sozinha, se colocando por último ou repetindo padrões que te afastam da vida que deseja, este processo foi criado para você.
+Se você sente que está cansada de se colocar por último, repetir os mesmos padrões e carregar sozinha o peso das suas emoções, saiba que existe um caminho para construir uma vida com mais leveza, clareza e segurança emocional.
     </p>
 
   </div>
@@ -91,7 +91,7 @@ useEffect(() => {
       height={280}
       style={{
         width: "100%",
-        maxWidth: "280px",
+        maxWidth: "220px",
         height: "auto",
         filter: "drop-shadow(0 10px 25px rgba(0,0,0,0.08))",
       }}
@@ -99,24 +99,6 @@ useEffect(() => {
   </div>
 
 </div>
-
-<p
-  style={{
-    fontSize: "1.25rem",
-    lineHeight: "2.2rem",
-    maxWidth: "1100px",
-    marginBottom: "25px",
-  }}
->
-  Mulheres que desejam viver com mais clareza, segurança e propósito muitas vezes carregam padrões emocionais, sobrecarga interna e desafios que impactam sua forma de se relacionar consigo mesmas e com a vida.
-
-Por meio de um acompanhamento integrativo que considera o ser humano como um todo — corpo, mente e espírito — cada processo é conduzido de forma individualizada, respeitando a singularidade, o momento e as necessidades de cada mulher.
-
-O Instituto Kamilah Franco nasceu para acolher mulheres em seus processos de fortalecimento emocional e desenvolvimento humano, promovendo transformações profundas e sustentáveis por meio do desenvolvimento emocional, da consciência de padrões e do alinhamento energético.
-
-Mais do que promover mudanças externas, o propósito é favorecer uma vida mais alinhada à essência de cada mulher, para que ela possa viver com mais leveza, clareza, segurança e propósito.
-
-</p>
 
     <div
       style={{
@@ -202,7 +184,25 @@ onClick={() => {
           >
             Você se reconhece em alguma destas situações?
           </h2>
+<p
+  style={{
+    textAlign: "center",
+    maxWidth: "800px",
+    margin: "0 auto 50px",
+    fontSize: "1.15rem",
+    lineHeight: "1.8",
+    color: "#6B5B56",
+  }}
+>
+  Se você respondeu "sim" para uma ou mais delas, saiba que não está sozinha.
+  Muitas mulheres chegam até aqui sentindo exatamente o mesmo.
+</p>
 
+<div
+  style={{
+    display: "grid",
+    gridTemplateColumns:
+      "repeat(auto-fit, minmax(250px, 1fr))",
           <div
             style={{
               display: "grid",
