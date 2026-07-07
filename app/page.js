@@ -62,7 +62,8 @@ useEffect(() => {
         margin: 0,
       }}
     >
-Rompa a autossabotagem, fortaleça sua autoestima e viva com mais leveza emocional.
+Você faz de tudo pelos outros...
+...mas sente que está se perdendo de si mesma?
   </h1>
 
     <p
@@ -80,7 +81,7 @@ Tem dificuldade para dizer não, se coloca sempre em último lugar ou percebe qu
 
 Talvez você esteja vivendo exatamente o que muitas mulheres vivem: sobrecarga emocional, insegurança, culpa e dificuldade de olhar para si mesma.
 
-Existe um caminho para romper esse ciclo e construir uma vida com mais leveza, clareza e segurança emocional.
+Existe um caminho para romper esse ciclo e construir uma vida com mais leveza, clareza e segurança emocional. Através de um acompanhamento terapêutico individual, você aprende a romper padrões de autossabotagem, fortalecer sua autoestima e construir uma vida com mais leveza, segurança e propósito.
   </p>
 
   </div>
