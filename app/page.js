@@ -834,7 +834,7 @@ useEffect(() => {
           borderRadius: "30px",
           padding: "45px 35px",
           boxShadow: "0 15px 35px rgba(0,0,0,.05)",
-        }
+        }}
       >
         <div
           style={{
