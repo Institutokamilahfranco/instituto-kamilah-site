@@ -62,8 +62,7 @@ useEffect(() => {
         margin: 0,
       }}
     >
-Você faz de tudo pelos outros...
-...mas sente que está se perdendo de si mesma?
+Você faz de tudo pelos outros, mas sente que está se perdendo de si mesma?
   </h1>
 
     <p
