@@ -1,3 +1,25 @@
+"use client";
+
+import { useState, useEffect } from "react";
+// outros imports
+
+export default function Home() {
+
+const [isMobile, setIsMobile] = useState(false);
+
+useEffect(() => {
+  const checkMobile = () => {
+    setIsMobile(window.innerWidth < 768);
+  };
+
+  checkMobile();
+
+  window.addEventListener("resize", checkMobile);
+
+  return () => window.removeEventListener("resize", checkMobile);
+}, []);
+  return (
+    <>
 {/* HERO */}
 <section
   style={{
@@ -812,7 +834,7 @@
           borderRadius: "30px",
           padding: "45px 35px",
           boxShadow: "0 15px 35px rgba(0,0,0,.05)",
-        }}
+        }
       >
         <div
           style={{
