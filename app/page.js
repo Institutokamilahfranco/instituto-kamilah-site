@@ -7,8 +7,6 @@ import { useState, useEffect } from "react";
 export default function Home() {
 
 const [isMobile, setIsMobile] = useState(false);
-  console.log("Largura:", window.innerWidth);
-console.log("isMobile:", isMobile);
 
 useEffect(() => {
   const checkMobile = () => {
@@ -77,7 +75,7 @@ useEffect(() => {
         Você faz de tudo pelos outros...
         <br />
         <span style={{ color: "#B08B57" }}>
-          Mas quem esta cuidando de você?
+          Mas quem está cuidando de você?
         </span>
       </h1>
 
@@ -609,8 +607,9 @@ Através de um acompanhamento terapêutico individual, você fortalece sua autoe
     <div
       style={{
         display: "grid",
-        gridTemplateColumns:
-          "repeat(auto-fit,minmax(280px,1fr))",
+        gridTemplateColumns: isMobile
+  ? "1fr"
+  : "repeat(auto-fit,minmax(280px,1fr))",
         gap: "25px",
       }}
     >
@@ -1166,11 +1165,15 @@ Através de um acompanhamento terapêutico individual, você fortalece sua autoe
         justifyContent: "center",
       }}
     >
-      <div
-        style={{
-          position: "relative",
-        }}
-      >
+    <div
+  style={{
+    position: "relative",
+    overflow: "hidden",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  }}
+>
         <div
           style={{
             position: "absolute",
