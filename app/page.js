@@ -175,6 +175,7 @@ Através de um acompanhamento terapêutico individual, você fortalece sua autoe
         display: "flex",
         justifyContent: "center",
       }}
+>
   <div
   style={{
     position: "relative",
@@ -398,8 +399,9 @@ Através de um acompanhamento terapêutico individual, você fortalece sua autoe
     <div
       style={{
         display: "grid",
-        gridTemplateColumns:
-          "repeat(auto-fit,minmax(320px,1fr))",
+       gridTemplateColumns: isMobile
+    ? "1fr"
+    : "repeat(3,1fr)"
         gap: "25px",
       }}
     >
@@ -1043,8 +1045,9 @@ Através de um acompanhamento terapêutico individual, você fortalece sua autoe
     <div
       style={{
         display: "grid",
-        gridTemplateColumns:
-          "repeat(auto-fit,minmax(320px,1fr))",
+        gridTemplateColumns: isMobile
+    ? "1fr"
+    : "repeat(3,1fr)"
         gap: "28px",
       }}
     >
@@ -1373,8 +1376,9 @@ Através de um acompanhamento terapêutico individual, você fortalece sua autoe
     <div
       style={{
         display: "grid",
-        gridTemplateColumns:
-          "repeat(auto-fit,minmax(320px,1fr))",
+        gridTemplateColumns: isMobile
+    ? "1fr"
+    : "repeat(3,1fr)"
         gap: "28px",
       }}
     >
