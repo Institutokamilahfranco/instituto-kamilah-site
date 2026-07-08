@@ -75,7 +75,7 @@ useEffect(() => {
         Você faz de tudo pelos outros...
         <br />
         <span style={{ color: "#B08B57" }}>
-          mas sente que está se perdendo de si mesma?
+          Mas sente que está se perdendo de si mesma?
         </span>
       </h1>
 
