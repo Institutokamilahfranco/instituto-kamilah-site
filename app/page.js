@@ -205,7 +205,7 @@ useEffect(() => {
           style={{
             position: "relative",
             width: "100%",
-            maxWidth: isMobile ? "330px" : "560px",
+            maxWidth: isMobile ? "330px" : "890px",
             height: "auto",
             zIndex: 2,
           }}
