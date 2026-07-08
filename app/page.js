@@ -204,7 +204,7 @@ Através de um acompanhamento terapêutico individual, você fortalece sua autoe
           style={{
             position: "relative",
             width: "100%",
-            maxWidth: isMobile ? "330px" : "1000px",
+            maxWidth: isMobile ? "330px" : "1500px",
             height: "auto",
             zIndex: 2,
           }}
