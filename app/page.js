@@ -175,25 +175,28 @@ Através de um acompanhamento terapêutico individual, você fortalece sua autoe
         display: "flex",
         justifyContent: "center",
       }}
-    >
-      <div
-        style={{
-          position: "relative",
-        }}
-      >
-        <div
-          style={{
-            position: "absolute",
-            width: "420px",
-            height: "420px",
-            background: "#EADFCC",
-            borderRadius: "50%",
-            top: "50%",
-            left: "50%",
-            transform: "translate(-50%,-50%)",
-            filter: "blur(0px)",
-          }}
-        />
+  <div
+  style={{
+    position: "relative",
+    overflow: "hidden",
+    display: "flex",
+    justifyContent: "center",
+    alignItems: "center",
+  }}
+>
+  <div
+    style={{
+      position: "absolute",
+      width: isMobile ? "280px" : "420px",
+      height: isMobile ? "280px" : "420px",
+      background: "#EADFCC",
+      borderRadius: "50%",
+      top: "50%",
+      left: "50%",
+      transform: "translate(-50%, -50%)",
+      zIndex: 1,
+    }}
+  />
 
         <Image
           src="/kamilah.png"
@@ -202,12 +205,13 @@ Através de um acompanhamento terapêutico individual, você fortalece sua autoe
           height={700}
           priority
           style={{
-            position: "relative",
-            width: "100%",
-            maxWidth: isMobile ? "420px" : "560px",
-            height: "auto",
-            zIndex: 2,
-          }}
+  position: "relative",
+  width: "100%",
+  maxWidth: isMobile ? "300px" : "560px",
+  height: "auto",
+  display: "block",
+  zIndex: 2,
+}}
         />
       </div>
     </div>
