@@ -401,7 +401,7 @@ Através de um acompanhamento terapêutico individual, você fortalece sua autoe
         display: "grid",
        gridTemplateColumns: isMobile
     ? "1fr"
-    : "repeat(3,1fr)"
+    : "repeat(3,1fr)",
         gap: "25px",
       }}
     >
