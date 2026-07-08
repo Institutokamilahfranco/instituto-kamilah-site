@@ -33,7 +33,7 @@ useEffect(() => {
       maxWidth: "1300px",
       margin: "0 auto",
       display: "flex",
-      flexDirection: isMobile ? "column-reverse" : "row",
+      flexDirection: isMobile ? "column" : "row",
       alignItems: "center",
       justifyContent: "space-between",
       gap: "70px",
@@ -205,7 +205,7 @@ useEffect(() => {
           style={{
             position: "relative",
             width: "100%",
-            maxWidth: isMobile ? "330px" : "470px",
+            maxWidth: isMobile ? "330px" : "560px",
             height: "auto",
             zIndex: 2,
           }}
