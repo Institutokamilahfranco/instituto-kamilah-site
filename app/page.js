@@ -75,7 +75,7 @@ useEffect(() => {
         Você faz de tudo pelos outros...
         <br />
         <span style={{ color: "#B08B57" }}>
-          Mas sente que está se perdendo de si mesma?
+          Mas quem esta cuidando de você?
         </span>
       </h1>
 
@@ -87,10 +87,9 @@ useEffect(() => {
           marginBottom: "40px",
         }}
       >
-        Você não precisa continuar enfrentando tudo sozinha.
-        Existe um caminho para fortalecer sua autoestima,
-        romper padrões de autossabotagem e voltar a viver
-        com leveza, clareza e segurança emocional.
+        Você não precisa continuar carregando tudo sozinha.
+
+Através de um acompanhamento terapêutico individual, você fortalece sua autoestima, rompe padrões emocionais e volta a viver com mais leveza.
       </p>
 
       <div
@@ -123,7 +122,7 @@ useEffect(() => {
             boxShadow: "0 12px 30px rgba(37,211,102,.25)",
           }}
         >
-          💬 Quero ter uma vida plena
+          💬 Quero ccomeçar minha transformação
         </a>
 
         <a
@@ -137,7 +136,7 @@ useEffect(() => {
             fontWeight: "700",
           }}
         >
-          Conheça o acompanhamento
+          Como funciona o processo
         </a>
       </div>
 
