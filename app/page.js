@@ -7,6 +7,8 @@ import { useState, useEffect } from "react";
 export default function Home() {
 
 const [isMobile, setIsMobile] = useState(false);
+  console.log("Largura:", window.innerWidth);
+console.log("isMobile:", isMobile);
 
 useEffect(() => {
   const checkMobile = () => {
