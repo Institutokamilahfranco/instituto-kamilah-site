@@ -122,7 +122,7 @@ Através de um acompanhamento terapêutico individual, você fortalece sua autoe
             boxShadow: "0 12px 30px rgba(37,211,102,.25)",
           }}
         >
-          💬 Quero ccomeçar minha transformação
+          💬 Quero começar minha transformação
         </a>
 
         <a
@@ -163,7 +163,7 @@ Através de um acompanhamento terapêutico individual, você fortalece sua autoe
             fontSize: ".95rem",
           }}
         >
-          Atendimento individual • Online • Focado no fortalecimento emocional feminino
+          Atendimento individual • Online e Presencial • Focado no fortalecimento emocional feminino
         </div>
       </div>
     </div>
