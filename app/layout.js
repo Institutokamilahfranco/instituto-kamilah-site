@@ -1,6 +1,6 @@
-import Script from "next/script"
+import Script from "next/script";
 
- export const metadata = {
+export const metadata = {
   title:
     "Instituto Kamilah Franco | Desenvolvimento emocional e autoestima feminina",
 
@@ -17,7 +17,7 @@ import Script from "next/script"
     "autoconhecimento",
     "confiança feminina",
     "terapeuta integrativa",
-    "fortalecimento emocional"
+    "fortalecimento emocional",
   ],
 
   openGraph: {
@@ -35,6 +35,13 @@ import Script from "next/script"
 
     type: "website",
   },
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  viewportFit: "cover",
 };
 
 export default function RootLayout({ children }) {
@@ -59,5 +66,5 @@ export default function RootLayout({ children }) {
         </Script>
       </body>
     </html>
-  )
+  );
 }
