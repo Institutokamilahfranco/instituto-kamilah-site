@@ -23,6 +23,7 @@ useEffect(() => {
     <>
 {/* HERO */}
 <section
+ id="inicio"
   style={{
     background: "linear-gradient(180deg,#FCFAF7 0%, #F5F1EC 100%)",
     padding: isMobile ? "60px 8% 80px" : "90px 8% 110px",
@@ -1142,6 +1143,7 @@ Através de um acompanhamento terapêutico individual, você fortalece sua autoe
 </section>
 {/* SOBRE KAMILAH */}
 <section
+ id="sobre"
   style={{
     padding: isMobile ? "90px 8%" : "130px 8%",
     background: "#FFFFFF",
