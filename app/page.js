@@ -682,7 +682,7 @@ Através de um acompanhamento terapêutico individual, você fortalece sua autoe
           marginBottom: "25px",
         }}
       >
-        Você não precisa fazer isso sozinha.
+        Você não precisa fazer isso sozinha(o).
       </h3>
 
       <p
@@ -951,7 +951,7 @@ Através de um acompanhamento terapêutico individual, você fortalece sua autoe
           marginBottom: "25px",
         }}
       >
-        Cada mulher vive um processo único.
+        Cada pessoa vive um processo único.
       </h3>
 
       <p
@@ -1039,7 +1039,7 @@ Através de um acompanhamento terapêutico individual, você fortalece sua autoe
         fontSize: "1.1rem",
       }}
     >
-      Cada mulher possui uma história única. Por isso, o processo terapêutico
+      Cada pessoa possui uma história única. Por isso, o processo terapêutico
       é construído de forma individualizada, respeitando seu momento,
       suas necessidades e seus objetivos.
     </p>
@@ -1086,7 +1086,7 @@ Através de um acompanhamento terapêutico individual, você fortalece sua autoe
         },
         {
           icone: "💛",
-          titulo: "Olhar para a mulher como um todo",
+          titulo: "Olhar para o ser humano como um todo",
           texto:
             "O foco não está apenas nos sintomas, mas em fortalecer você para viver com mais equilíbrio, autonomia e qualidade de vida.",
         },
@@ -1231,7 +1231,7 @@ Através de um acompanhamento terapêutico individual, você fortalece sua autoe
           lineHeight: "1.2",
         }}
       >
-      Talvez você tenha chegado até aqui porque cansou de tentar resolver tudo sozinha. Eu me chamo Kamilah Franco.
+      Talvez você tenha chegado até aqui porque cansou de tentar resolver tudo sozinha(o). Eu me chamo Kamilah Franco.
       </h2>
 
       <p
@@ -1242,7 +1242,7 @@ Através de um acompanhamento terapêutico individual, você fortalece sua autoe
           marginBottom: "22px",
         }}
       >
-        Meu propósito é ajudar mulheres que, por muito tempo,
+        Meu propósito é ajudar pessoas que, por muito tempo,
         aprenderam a cuidar de todos, mas acabaram esquecendo de cuidar de si.
       </p>
 
@@ -1375,7 +1375,7 @@ Através de um acompanhamento terapêutico individual, você fortalece sua autoe
         fontSize: "1.1rem",
       }}
     >
-      Algumas mulheres chegaram até aqui cansadas,
+      Algumas pessoas chegaram até aqui cansadas,
       inseguras e sem saber por onde começar.
       Hoje vivem sua jornada de forma muito diferente.
     </p>
