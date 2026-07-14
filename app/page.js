@@ -88,7 +88,7 @@ useEffect(() => {
           marginBottom: "40px",
         }}
       >
-        Você não precisa continuar carregando tudo sozinha.
+        Você não precisa continuar carregando tudo sozinha(o).
 
 Através de um acompanhamento terapêutico individual, você fortalece sua autoestima, rompe padrões emocionais e volta a viver com mais leveza.
       </p>
@@ -164,7 +164,7 @@ Através de um acompanhamento terapêutico individual, você fortalece sua autoe
             fontSize: ".95rem",
           }}
         >
-          Atendimento individual • Online e Presencial • Focado no fortalecimento emocional feminino
+          Atendimento individual • Online e Presencial • Focado no fortalecimento emocional
         </div>
       </div>
     </div>
@@ -326,7 +326,7 @@ Através de um acompanhamento terapêutico individual, você fortalece sua autoe
         lineHeight: "1.25",
       }}
     >
-      Muitas mulheres chegam até aqui acreditando que precisam ser fortes o tempo todo.
+      Muitas pessoas chegam até aqui acreditando que precisam ser fortes o tempo todo.
     </h2>
 
     <p
@@ -341,7 +341,7 @@ Através de um acompanhamento terapêutico individual, você fortalece sua autoe
       Com o tempo, passam a ignorar as próprias necessidades, carregam
       tudo sozinhas e sentem que estão se afastando de quem realmente são.
       Se alguma dessas situações faz sentido para você, saiba que não está
-      sozinha.
+      sozinha(o).
     </p>
   </div>
 </section>
@@ -369,7 +369,7 @@ Através de um acompanhamento terapêutico individual, você fortalece sua autoe
         fontSize: ".85rem",
       }}
     >
-      VOCÊ NÃO ESTÁ SOZINHA
+      VOCÊ NÃO ESTÁ SOZINHA(O)
     </span>
 
     <h2
@@ -392,7 +392,7 @@ Através de um acompanhamento terapêutico individual, você fortalece sua autoe
         color: "#6B5B56",
       }}
     >
-      Muitas mulheres chegam até aqui acreditando que precisam dar conta de
+      Muitas pessoas chegam até aqui acreditando que precisam dar conta de
       tudo. Aos poucos, deixam de cuidar de si mesmas e passam a viver apenas
       para atender às necessidades dos outros.
     </p>
@@ -423,14 +423,14 @@ Através de um acompanhamento terapêutico individual, você fortalece sua autoe
             "Relacionamentos, decisões ou comportamentos parecem mudar por um tempo, mas acabam voltando ao mesmo lugar.",
         },
         {
-          titulo: "Está emocionalmente sobrecarregada",
+          titulo: "Está emocionalmente sobrecarregada(o)",
           texto:
             "Você sente que está cansada o tempo todo, mesmo quando aparentemente nada aconteceu.",
         },
         {
           titulo: "Tem dificuldade para dizer 'não'",
           texto:
-            "Você evita conflitos, aceita mais do que gostaria e depois acaba frustrada consigo mesma.",
+            "Você evita conflitos, aceita mais do que gostaria e depois acaba frustrada(o) consigo mesma(o).",
         },
         {
           titulo: "Já não reconhece quem você era",
