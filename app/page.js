@@ -61,7 +61,7 @@ useEffect(() => {
           marginBottom: "25px",
         }}
       >
-        ✨ Atendimento Online para todo o Brasil
+        ✨ Atendimento Particular Online para todo o Brasil
       </div>
 
       <h1
@@ -123,7 +123,8 @@ Através de um acompanhamento terapêutico individual, você fortalece sua autoe
             boxShadow: "0 12px 30px rgba(37,211,102,.25)",
           }}
         >
-          💬 Quero começar minha transformação
+          💬 Agende a sua Sessão de Clareza Emocional 
+                    R$97,00
         </a>
 
         <a
@@ -164,7 +165,7 @@ Através de um acompanhamento terapêutico individual, você fortalece sua autoe
             fontSize: ".95rem",
           }}
         >
-          Atendimento individual • Online e Presencial • Focado no fortalecimento emocional
+          Atendimento particular individual • Online e Presencial • Focado no fortalecimento emocional
         </div>
       </div>
     </div>
@@ -543,7 +544,9 @@ Através de um acompanhamento terapêutico individual, você fortalece sua autoe
           boxShadow: "0 12px 30px rgba(37,211,102,.25)",
         }}
       >
-        Quero conversar com a Kamilah
+        Quero conversar com a Kamilah 
+          e agendar minha sessão de clareza emocional 
+            R$97,00
       </a>
     </div>
   </div>
