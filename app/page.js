@@ -61,7 +61,7 @@ useEffect(() => {
           marginBottom: "25px",
         }}
       >
-        ✨ Atendimento Particular Online para todo o Brasil
+        ✨ Atendimento Particular - Online para todo o Brasil
       </div>
 
       <h1
