@@ -101,8 +101,7 @@ Através de um acompanhamento terapêutico individual, você fortalece sua autoe
           marginBottom: "35px",
         }}
       >
-        <a
-          href="https://wa.me/5546988042216?text=Olá%20Kamilah,%20vim%20pelo%20site%20e%20me%20identifiquei%20com%20o%20que%20li.%20Gostaria%20de%20saber%20como%20você%20pode%20me%20ajudar."
+        <ahref="https://wa.me/5546988042216?text=Ola%20Kamilah%2C%20vim%20pelo%20site%2C%20me%20identifiquei%20com%20o%20que%20li%2C%20e%20gostaria%20de%20dar%20o%20proximo%20passo%20e%20agendar%20a%20minha%20sessao%20de%20clareza%20emocional."
           target="_blank"
           rel="noopener noreferrer"
           onClick={() =>
@@ -521,8 +520,7 @@ Através de um acompanhamento terapêutico individual, você fortalece sua autoe
       </p>
 
       <a
-        href="https://wa.me/5546988042216?text=Olá%20Kamilah,%20vim%20pelo%20site%20e%20me%20identifiquei%20com%20o%20que%20li.%20Gostaria%20de%20saber%20como%20você%20pode%20me%20ajudar."
-        target="_blank"
+href="https://wa.me/5546988042216?text=Ola%20Kamilah%2C%20vim%20pelo%20site%2C%20me%20identifiquei%20com%20o%20que%20li%2C%20e%20gostaria%20de%20dar%20o%20proximo%20passo%20e%20agendar%20a%20minha%20sessao%20de%20clareza%20emocional."        target="_blank"
         rel="noopener noreferrer"
         onClick={() =>
           window.gtag?.("event", "whatsapp_click", {
@@ -703,8 +701,7 @@ Através de um acompanhamento terapêutico individual, você fortalece sua autoe
       </p>
 
       <a
-        href="https://wa.me/5546988042216?text=Olá%20Kamilah,%20vim%20pelo%20site%20e%20me%20identifiquei%20com%20o%20que%20li.%20Gostaria%20de%20saber%20como%20você%20pode%20me%20ajudar."
-        target="_blank"
+href="https://wa.me/5546988042216?text=Ola%20Kamilah%2C%20vim%20pelo%20site%2C%20me%20identifiquei%20com%20o%20que%20li%2C%20e%20gostaria%20de%20dar%20o%20proximo%20passo%20e%20agendar%20a%20minha%20sessao%20de%20clareza%20emocional."        target="_blank"
         rel="noopener noreferrer"
         onClick={() =>
           window.gtag?.("event", "whatsapp_click", {
@@ -972,8 +969,7 @@ Através de um acompanhamento terapêutico individual, você fortalece sua autoe
       </p>
 
       <a
-        href="https://wa.me/5546988042216?text=Olá%20Kamilah,%20vim%20pelo%20site%20e%20me%20identifiquei%20com%20o%20que%20li.%20Gostaria%20de%20saber%20como%20você%20pode%20me%20ajudar."
-        target="_blank"
+href="https://wa.me/5546988042216?text=Ola%20Kamilah%2C%20vim%20pelo%20site%2C%20me%20identifiquei%20com%20o%20que%20li%2C%20e%20gostaria%20de%20dar%20o%20proximo%20passo%20e%20agendar%20a%20minha%20sessao%20de%20clareza%20emocional."        target="_blank"
         rel="noopener noreferrer"
         onClick={() =>
           window.gtag?.("event", "whatsapp_click", {
@@ -1306,8 +1302,7 @@ Através de um acompanhamento terapêutico individual, você fortalece sua autoe
       </div>
 
       <a
-        href="https://wa.me/5546988042216?text=Olá%20Kamilah,%20vim%20pelo%20site%20e%20me%20identifiquei%20com%20o%20que%20li.%20Gostaria%20de%20saber%20como%20você%20pode%20me%20ajudar."
-        target="_blank"
+href="https://wa.me/5546988042216?text=Ola%20Kamilah%2C%20vim%20pelo%20site%2C%20me%20identifiquei%20com%20o%20que%20li%2C%20e%20gostaria%20de%20dar%20o%20proximo%20passo%20e%20agendar%20a%20minha%20sessao%20de%20clareza%20emocional."        target="_blank"
         rel="noopener noreferrer"
         onClick={() =>
           window.gtag?.("event", "whatsapp_click", {
@@ -1453,8 +1448,7 @@ Através de um acompanhamento terapêutico individual, você fortalece sua autoe
       }}
     >
       <a
-        href="https://wa.me/5546988042216?text=Olá%20Kamilah,%20vim%20pelo%20site%20e%20gostaria%20de%20conhecer%20o%20acompanhamento."
-        target="_blank"
+href="https://wa.me/5546988042216?text=Ola%20Kamilah%2C%20vim%20pelo%20site%2C%20me%20identifiquei%20com%20o%20que%20li%2C%20e%20gostaria%20de%20dar%20o%20proximo%20passo%20e%20agendar%20a%20minha%20sessao%20de%20clareza%20emocional."        target="_blank"
         rel="noopener noreferrer"
         onClick={() =>
           window.gtag?.("event", "whatsapp_click", {
