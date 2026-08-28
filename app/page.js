@@ -545,7 +545,7 @@ href="https://wa.me/5546988042216?text=Ola%20Kamilah%2C%20vim%20pelo%20site%2C%2
       >
         Quero conversar com a Kamilah 
           e agendar minha sessão de clareza emocional 
-            R$97,00
+            R$147,00
       </a>
     </div>
   </div>
@@ -989,7 +989,7 @@ href="https://wa.me/5546988042216?text=Ola%20Kamilah%2C%20vim%20pelo%20site%2C%2
           boxShadow: "0 12px 30px rgba(37,211,102,.25)",
         }}
       >
-        Quero conversar com a Kamilah
+        Agendar minha sessão de clareza por R$147,00
       </a>
     </div>
   </div>
