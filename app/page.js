@@ -73,10 +73,10 @@ useEffect(() => {
           fontWeight: "700",
         }}
       >
-        Você faz de tudo pelos outros...
+        Você já mudou muita coisa na sua vida.
         <br />
         <span style={{ color: "#B08B57" }}>
-          Mas quem está cuidando de você?
+         Agora é hora de mudar a forma como você se coloca nela.
         </span>
       </h1>
 
@@ -90,7 +90,7 @@ useEffect(() => {
       >
         Você não precisa continuar carregando tudo sozinha(o).
 
-Através de um acompanhamento terapêutico individual, você fortalece sua autoestima, rompe padrões emocionais e volta a viver com mais leveza.
+Através da mentoria terapêutica individual, você fortalece sua autoestima, rompe padrões e bloqueios emocionais e volta a viver com mais leveza.
       </p>
 
       <div
@@ -123,8 +123,8 @@ Através de um acompanhamento terapêutico individual, você fortalece sua autoe
             boxShadow: "0 12px 30px rgba(37,211,102,.25)",
           }}
         >
-          💬 Agende a sua Sessão de Clareza Emocional 
-                    R$97,00
+          💬 Agendar Sessão de Clareza — R$97
+                  
         </a>
 
         <a
