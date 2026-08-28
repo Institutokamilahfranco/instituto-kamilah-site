@@ -123,7 +123,7 @@ Através da mentoria terapêutica individual, você fortalece sua autoestima, ro
             boxShadow: "0 12px 30px rgba(37,211,102,.25)",
           }}
         >
-          💬 Agendar Sessão de Clareza — R$97
+          💬 Agendar Sessão de Clareza — R$147,00
                   
         </a>
 
