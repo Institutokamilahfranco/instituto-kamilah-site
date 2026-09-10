@@ -8,9 +8,13 @@ export default function ReconexaoPage() {
 
   useEffect(() => {
     const checkMobile = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
+  const width = Math.min(
+    window.innerWidth,
+    document.documentElement.clientWidth
+  );
 
+  setIsMobile(width <= 1024);
+};
     checkMobile();
 
     window.addEventListener("resize", checkMobile);
