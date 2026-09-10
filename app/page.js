@@ -2283,3 +2283,6 @@ href="https://wa.me/5546988042216?text=Ola%20Kamilah%2C%20vim%20pelo%20site%2C%2
     </div>
   </div>
 </section>
+  </>
+  );
+}
