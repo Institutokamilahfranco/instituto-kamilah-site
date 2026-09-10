@@ -1800,7 +1800,7 @@ href="https://wa.me/5546988042216?text=Ola%20Kamilah%2C%20vim%20pelo%20site%2C%2
 </section>
 {/* SOBRE KAMILAH */}
 <section
- id="sobre"
+  id="sobre"
   style={{
     padding: isMobile ? "90px 8%" : "130px 8%",
     background: "#FFFFFF",
@@ -1813,26 +1813,29 @@ href="https://wa.me/5546988042216?text=Ola%20Kamilah%2C%20vim%20pelo%20site%2C%2
       display: "flex",
       flexDirection: isMobile ? "column" : "row",
       alignItems: "center",
-      gap: "70px",
+      gap: isMobile ? "45px" : "70px",
     }}
   >
+
     {/* FOTO */}
     <div
       style={{
         flex: 1,
         display: "flex",
         justifyContent: "center",
+        width: "100%",
       }}
     >
-    <div
-  style={{
-    position: "relative",
-    overflow: "hidden",
-    display: "flex",
-    justifyContent: "center",
-    alignItems: "center",
-  }}
->
+      <div
+        style={{
+          position: "relative",
+          overflow: "hidden",
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          width: "100%",
+        }}
+      >
         <div
           style={{
             position: "absolute",
@@ -1866,6 +1869,7 @@ href="https://wa.me/5546988042216?text=Ola%20Kamilah%2C%20vim%20pelo%20site%2C%2
     <div
       style={{
         flex: 1,
+        width: "100%",
       }}
     >
       <span
@@ -1874,6 +1878,7 @@ href="https://wa.me/5546988042216?text=Ola%20Kamilah%2C%20vim%20pelo%20site%2C%2
           fontWeight: "700",
           letterSpacing: "2px",
           fontSize: ".85rem",
+          textTransform: "uppercase",
         }}
       >
         QUEM VAI CAMINHAR COM VOCÊ
@@ -1888,7 +1893,8 @@ href="https://wa.me/5546988042216?text=Ola%20Kamilah%2C%20vim%20pelo%20site%2C%2
           lineHeight: "1.2",
         }}
       >
-      Talvez você tenha chegado até aqui porque cansou de tentar resolver tudo sozinha(o). Eu me chamo Kamilah Franco.
+        Meu trabalho é acompanhar pessoas e casais que perceberam que não
+        querem continuar vivendo da mesma forma.
       </h2>
 
       <p
@@ -1899,8 +1905,9 @@ href="https://wa.me/5546988042216?text=Ola%20Kamilah%2C%20vim%20pelo%20site%2C%2
           marginBottom: "22px",
         }}
       >
-        Meu propósito é ajudar pessoas que, por muito tempo,
-        aprenderam a cuidar de todos, mas acabaram esquecendo de cuidar de si.
+        Eu me chamo Kamilah Franco, e meu propósito é acompanhar processos
+        de transformação emocional com profundidade, acolhimento e
+        direcionamento.
       </p>
 
       <p
@@ -1911,10 +1918,9 @@ href="https://wa.me/5546988042216?text=Ola%20Kamilah%2C%20vim%20pelo%20site%2C%2
           marginBottom: "22px",
         }}
       >
-        Ao longo da minha trajetória percebi que, por trás da ansiedade,
-        da culpa, da dificuldade em dizer "não" e da sensação de estar sempre
-        sobrecarregada, quase sempre existem padrões emocionais que precisam
-        ser compreendidos e fortalecidos.
+        No atendimento individual, meu trabalho é ajudar você a compreender
+        padrões emocionais, fortalecer sua estrutura interna e desenvolver
+        uma nova forma de se posicionar diante da própria vida.
       </p>
 
       <p
@@ -1925,63 +1931,198 @@ href="https://wa.me/5546988042216?text=Ola%20Kamilah%2C%20vim%20pelo%20site%2C%2
           marginBottom: "22px",
         }}
       >
-        É por isso que cada atendimento acontece de forma individual,
-        respeitando sua história, seu tempo e seus objetivos.
-        Mais do que oferecer uma sessão, meu compromisso é caminhar ao seu lado
-        para que você desenvolva recursos internos e construa mudanças reais.
+        No trabalho com casais, o olhar se amplia para a relação: para os
+        padrões que vocês construíram juntos, os conflitos que se repetem,
+        as feridas que ainda interferem na convivência e a forma como vocês
+        podem construir uma nova maneira de se relacionar.
       </p>
 
-      <div
+      <p
         style={{
-          marginTop: "35px",
-          display: "grid",
-          gap: "15px",
+          color: "#6B5B56",
+          lineHeight: "2rem",
+          fontSize: "1.08rem",
+          marginBottom: "25px",
         }}
       >
-        {[
-          "✔ Atendimento acolhedor e individualizado",
-          "✔ Processo adaptado à sua realidade",
-          "✔ Desenvolvimento emocional com profundidade",
-          "✔ Atendimento online para todo o Brasil",
-        ].map((item, index) => (
+        Em ambos os processos, existe um ponto em comum:
+        <strong style={{ color: "#4A3732" }}>
+          {" "}compreender antes de transformar.
+        </strong>
+      </p>
+
+      <p
+        style={{
+          color: "#6B5B56",
+          lineHeight: "2rem",
+          fontSize: "1.08rem",
+          marginBottom: "0",
+        }}
+      >
+        Cada acompanhamento é conduzido de forma estruturada e personalizada,
+        respeitando a história, o momento e os objetivos de quem chega até mim.
+      </p>
+
+    {/* DIFERENCIAIS */}
+<section
+  style={{
+    background: "#FCFAF7",
+    padding: isMobile ? "90px 8%" : "120px 8%",
+  }}
+>
+  <div
+    style={{
+      maxWidth: "1180px",
+      margin: "0 auto",
+      textAlign: "center",
+    }}
+  >
+
+    {/* TÍTULO */}
+    <span
+      style={{
+        color: "#B08B57",
+        letterSpacing: "2px",
+        fontWeight: "700",
+        fontSize: ".85rem",
+        textTransform: "uppercase",
+      }}
+    >
+      O QUE TORNA O NOSSO TRABALHO DIFERENTE
+    </span>
+
+    <h2
+      style={{
+        marginTop: "18px",
+        color: "#4A3732",
+        fontSize: isMobile ? "2rem" : "3rem",
+        lineHeight: "1.2",
+        maxWidth: "1000px",
+        marginInline: "auto",
+      }}
+    >
+      Mais do que sessões, você encontra processos estruturados
+      para gerar mudanças reais.
+    </h2>
+
+    <p
+      style={{
+        maxWidth: "800px",
+        margin: "30px auto 70px",
+        color: "#6B5B56",
+        lineHeight: "2rem",
+        fontSize: "1.1rem",
+      }}
+    >
+      Cada história é única. Por isso, os processos são estruturados com
+      direção, mas conduzidos com sensibilidade para respeitar o momento,
+      as necessidades e os objetivos de cada pessoa ou casal.
+    </p>
+
+    {/* CARDS */}
+    <div
+      style={{
+        display: "grid",
+        gridTemplateColumns: isMobile
+          ? "1fr"
+          : "repeat(3, 1fr)",
+        gap: "28px",
+      }}
+    >
+      {[
+        {
+          icone: "🌿",
+          titulo: "Atendimento personalizado",
+          texto:
+            "Cada acompanhamento considera a história, o momento, as necessidades e os objetivos de quem está sendo atendido — seja individualmente ou como casal.",
+        },
+        {
+          icone: "✨",
+          titulo: "Processos estruturados",
+          texto:
+            "Cada processo possui uma direção clara e etapas definidas, sem perder a flexibilidade necessária para respeitar a realidade de cada história.",
+        },
+        {
+          icone: "🤍",
+          titulo: "Olhar para além do conflito",
+          texto:
+            "O trabalho não se limita ao problema que trouxe você até aqui. Buscamos compreender os padrões que sustentam o que está sendo vivido para que mudanças mais profundas possam acontecer.",
+        },
+        {
+          icone: "🌸",
+          titulo: "Profundidade e continuidade",
+          texto:
+            "O objetivo não é apenas aliviar um desconforto momentâneo, mas promover compreensão, desenvolvimento e mudanças que possam ser sustentadas ao longo do tempo.",
+        },
+        {
+          icone: "💻",
+          titulo: "Atendimento online e presencial",
+          texto:
+            "Acompanhamentos realizados com privacidade, acolhimento e segurança, de forma online para todo o Brasil e presencialmente no Instituto.",
+        },
+        {
+          icone: "💛",
+          titulo: "Um olhar para a pessoa e para a relação",
+          texto:
+            "Cada processo considera o ser humano em sua totalidade e, quando o atendimento é para casais, também olha para a dinâmica construída entre os dois.",
+        },
+      ].map((item, index) => (
+        <div
+          key={index}
+          style={{
+            background: "#FFFFFF",
+            borderRadius: "28px",
+            padding: "35px",
+            textAlign: "left",
+            boxShadow: "0 15px 35px rgba(0,0,0,.05)",
+          }}
+        >
+
+          {/* ÍCONE */}
           <div
-            key={index}
             style={{
+              width: "65px",
+              height: "65px",
+              borderRadius: "50%",
+              background: "#EFE7DF",
               display: "flex",
               alignItems: "center",
-              gap: "12px",
-              color: "#4A3732",
-              fontWeight: "500",
+              justifyContent: "center",
+              fontSize: "1.6rem",
+              marginBottom: "22px",
             }}
           >
-            {item}
+            {item.icone}
           </div>
-        ))}
-      </div>
 
-      <a
-href="https://wa.me/5546988042216?text=Ola%20Kamilah%2C%20vim%20pelo%20site%2C%20me%20identifiquei%20com%20o%20que%20li%2C%20e%20gostaria%20de%20dar%20o%20proximo%20passo%20e%20agendar%20a%20minha%20sessao%20de%20clareza%20emocional."        target="_blank"
-        rel="noopener noreferrer"
-        onClick={() =>
-          window.gtag?.("event", "whatsapp_click", {
-            button_location: "sobre",
-          })
-        }
-        style={{
-          display: "inline-block",
-          marginTop: "45px",
-          background: "#25D366",
-          color: "#FFF",
-          padding: "18px 38px",
-          borderRadius: "60px",
-          textDecoration: "none",
-          fontWeight: "700",
-          boxShadow: "0 12px 30px rgba(37,211,102,.25)",
-        }}
-      >
-        Quero dar o primeiro passo
-      </a>
+          {/* TÍTULO DO CARD */}
+          <h3
+            style={{
+              color: "#4A3732",
+              marginBottom: "18px",
+              fontSize: "1.35rem",
+              lineHeight: "1.35",
+            }}
+          >
+            {item.titulo}
+          </h3>
+
+          {/* TEXTO */}
+          <p
+            style={{
+              color: "#6B5B56",
+              lineHeight: "1.9rem",
+              margin: 0,
+              fontSize: "1rem",
+            }}
+          >
+            {item.texto}
+          </p>
+
+        </div>
+      ))}
     </div>
+
   </div>
 </section>
 {/* DEPOIMENTOS */}
@@ -2004,9 +2145,10 @@ href="https://wa.me/5546988042216?text=Ola%20Kamilah%2C%20vim%20pelo%20site%2C%2
         letterSpacing: "2px",
         fontWeight: "700",
         fontSize: ".85rem",
+        textTransform: "uppercase",
       }}
     >
-      DEPOIMENTOS
+      EXPERIÊNCIAS REAIS
     </span>
 
     <h2
@@ -2015,33 +2157,35 @@ href="https://wa.me/5546988042216?text=Ola%20Kamilah%2C%20vim%20pelo%20site%2C%2
         marginBottom: "25px",
         color: "#4A3732",
         fontSize: isMobile ? "2rem" : "3rem",
+        lineHeight: "1.25",
       }}
     >
       Cada processo é único.
       <br />
-      Mas todos começam com uma decisão.
+      Toda transformação começa com uma decisão.
     </h2>
 
     <p
       style={{
-        maxWidth: "720px",
+        maxWidth: "760px",
         margin: "0 auto 70px",
         color: "#6B5B56",
         lineHeight: "2rem",
         fontSize: "1.1rem",
       }}
     >
-      Algumas pessoas chegaram até aqui cansadas,
-      inseguras e sem saber por onde começar.
-      Hoje vivem sua jornada de forma muito diferente.
+      Pessoas chegam ao Instituto com histórias, desafios e momentos
+      diferentes. O que existe em comum é a decisão de olhar para aquilo
+      que precisa ser compreendido e transformado.
     </p>
 
+    {/* DEPOIMENTOS */}
     <div
       style={{
         display: "grid",
         gridTemplateColumns: isMobile
-    ? "1fr"
-    : "repeat(3,1fr)",
+          ? "1fr"
+          : "repeat(3,1fr)",
         gap: "28px",
       }}
     >
@@ -2049,14 +2193,17 @@ href="https://wa.me/5546988042216?text=Ola%20Kamilah%2C%20vim%20pelo%20site%2C%2
         {
           texto:
             "Hoje consigo olhar para mim com mais carinho. Aprendi que cuidar de mim não é egoísmo. Foi um processo transformador.",
+          tipo: "Processo Individual",
         },
         {
           texto:
             "Cheguei completamente sobrecarregada. Aos poucos fui entendendo meus padrões e hoje consigo estabelecer limites sem culpa.",
+          tipo: "Processo Individual",
         },
         {
           texto:
             "Foi a primeira vez que realmente me senti acolhida. O processo me ajudou a reencontrar minha confiança.",
+          tipo: "Processo Individual",
         },
       ].map((item, index) => (
         <div
@@ -2092,21 +2239,24 @@ href="https://wa.me/5546988042216?text=Ola%20Kamilah%2C%20vim%20pelo%20site%2C%2
           <strong
             style={{
               color: "#4A3732",
+              fontSize: ".95rem",
             }}
           >
-            Atendimento Individual
+            {item.tipo}
           </strong>
         </div>
       ))}
     </div>
 
+    {/* CTA */}
     <div
       style={{
         marginTop: "70px",
       }}
     >
       <a
-href="https://wa.me/5546988042216?text=Ola%20Kamilah%2C%20vim%20pelo%20site%2C%20me%20identifiquei%20com%20o%20que%20li%2C%20e%20gostaria%20de%20dar%20o%20proximo%20passo%20e%20agendar%20a%20minha%20sessao%20de%20clareza%20emocional."        target="_blank"
+        href="https://wa.me/5546988042216?text=Ol%C3%A1%2C%20Kamilah%21%20Conheci%20o%20Instituto%20pelo%20site%20e%20gostaria%20de%20conhecer%20os%20processos%20de%20atendimento."
+        target="_blank"
         rel="noopener noreferrer"
         onClick={() =>
           window.gtag?.("event", "whatsapp_click", {
@@ -2114,21 +2264,22 @@ href="https://wa.me/5546988042216?text=Ola%20Kamilah%2C%20vim%20pelo%20site%2C%2
           })
         }
         style={{
-          display: "inline-block",
+          display: "inline-flex",
+          alignItems: "center",
+          justifyContent: "center",
           background: "#25D366",
           color: "#FFF",
-          padding: "18px 40px",
+          padding: isMobile ? "17px 28px" : "18px 40px",
           borderRadius: "60px",
           textDecoration: "none",
           fontWeight: "700",
+          fontSize: "1rem",
           boxShadow: "0 10px 30px rgba(37,211,102,.25)",
+          textAlign: "center",
         }}
       >
-        Quero iniciar meu acompanhamento
+        Conhecer os processos do Instituto
       </a>
     </div>
   </div>
 </section>
-    </>
-  );
-}
