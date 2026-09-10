@@ -9,9 +9,13 @@ export default function Home() {
 const [isMobile, setIsMobile] = useState(false);
 
 useEffect(() => {
-  const checkMobile = () => {
-  console.log("Largura detectada:", window.innerWidth);
-  setIsMobile(window.innerWidth < 768);
+ const checkMobile = () => {
+  const width = Math.min(
+    window.innerWidth,
+    document.documentElement.clientWidth
+  );
+
+  setIsMobile(width <= 1024);
 };
 
   checkMobile();
