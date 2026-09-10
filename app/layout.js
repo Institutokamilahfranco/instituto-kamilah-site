@@ -1,5 +1,5 @@
+import "./globals.css";
 import Script from "next/script";
-
 export const metadata = {
   title:
     "Instituto Kamilah Franco | Desenvolvimento emocional e autoestima feminina",
