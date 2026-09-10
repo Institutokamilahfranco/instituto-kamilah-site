@@ -1,1 +1,139 @@
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  min-width: 320px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a,
+button {
+  max-width: 100%;
+}
+
+/* =========================================================
+   RESPONSIVIDADE MOBILE
+   ========================================================= */
+
+@media (max-width: 767px) {
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
+  /* Impede containers internos de manterem largura de desktop */
+  section {
+    width: 100% !important;
+    max-width: 100% !important;
+    overflow-x: hidden;
+  }
+
+  section > div {
+    max-width: 100% !important;
+    width: 100% !important;
+    box-sizing: border-box;
+  }
+
+  /* Todos os grids passam para uma coluna no celular */
+  div[style*="grid-template-columns"] {
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  /* Todos os elementos internos dos grids */
+  div[style*="grid-template-columns"] > div {
+    width: 100% !important;
+    max-width: 100% !important;
+    min-width: 0 !important;
+    box-sizing: border-box;
+  }
+
+  /* Proteção para layouts flex */
+  div[style*="flex-direction: row"] {
+    flex-direction: column !important;
+  }
+
+  /* Evita que colunas internas ultrapassem a tela */
+  div {
+    min-width: 0;
+  }
+
+  /* Textos grandes nunca podem ultrapassar a largura */
+  h1,
+  h2,
+  h3,
+  h4,
+  p,
+  span {
+    max-width: 100%;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+  }
+
+  /* Tamanho mais seguro para títulos muito grandes */
+  h1 {
+    font-size: clamp(2rem, 9vw, 2.7rem) !important;
+  }
+
+  h2 {
+    font-size: clamp(1.8rem, 8vw, 2.3rem) !important;
+  }
+
+  h3 {
+    font-size: clamp(1.4rem, 6vw, 1.8rem) !important;
+  }
+
+  /* Remove quebra forçada que pode empurrar conteúdo */
+  br {
+    display: none;
+  }
+
+  /* Botões */
+  a {
+    max-width: 100%;
+    word-break: normal;
+  }
+}
+
+/* =========================================================
+   TELAS MUITO PEQUENAS
+   ========================================================= */
+
+@media (max-width: 390px) {
+  section {
+    padding-left: 6% !important;
+    padding-right: 6% !important;
+  }
+
+  h1 {
+    font-size: 2rem !important;
+  }
+
+  h2 {
+    font-size: 1.8rem !important;
+  }
+}
