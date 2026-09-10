@@ -994,6 +994,663 @@ href="https://wa.me/5546988042216?text=Ola%20Kamilah%2C%20vim%20pelo%20site%2C%2
     </div>
   </div>
 </section>
+{/* RECONEXÃO — UM NOVO NÓS */}
+<section
+  id="reconexao"
+  style={{
+    padding: isMobile ? "85px 8%" : "120px 8%",
+    background: "linear-gradient(180deg,#EFE7DF 0%, #FCFAF7 100%)",
+  }}
+>
+  <div
+    style={{
+      maxWidth: "1180px",
+      margin: "0 auto",
+    }}
+  >
+
+    {/* TRANSIÇÃO PARA RELACIONAMENTOS */}
+    <div
+      style={{
+        textAlign: "center",
+        maxWidth: "860px",
+        margin: "0 auto 70px",
+      }}
+    >
+      <span
+        style={{
+          color: "#B08B57",
+          fontWeight: "700",
+          letterSpacing: "2px",
+          textTransform: "uppercase",
+          fontSize: ".85rem",
+        }}
+      >
+        RELACIONAMENTOS & CASAIS
+      </span>
+
+      <h2
+        style={{
+          fontSize: isMobile ? "2rem" : "3.1rem",
+          color: "#4A3732",
+          marginTop: "20px",
+          marginBottom: "28px",
+          lineHeight: "1.22",
+        }}
+      >
+        E quando a transformação que você deseja
+        <br />
+        também envolve a relação que você vive?
+      </h2>
+
+      <p
+        style={{
+          maxWidth: "780px",
+          margin: "0 auto",
+          color: "#6B5B56",
+          fontSize: "1.12rem",
+          lineHeight: "2rem",
+        }}
+      >
+        Existem momentos em que o casal percebe que está preso nos mesmos
+        conflitos, se afastando emocionalmente ou vivendo uma relação
+        diferente daquela que gostaria de viver.
+      </p>
+
+      <p
+        style={{
+          maxWidth: "760px",
+          margin: "22px auto 0",
+          color: "#6B5B56",
+          fontSize: "1.12rem",
+          lineHeight: "2rem",
+        }}
+      >
+        E talvez o que esteja acontecendo não seja simplesmente falta de amor.
+        Talvez existam padrões, feridas e formas de se relacionar que precisam
+        ser compreendidos e transformados.
+      </p>
+    </div>
+
+    {/* IDENTIFICAÇÃO */}
+    <div
+      style={{
+        display: "grid",
+        gridTemplateColumns: isMobile ? "1fr" : "1fr 1fr",
+        gap: isMobile ? "35px" : "70px",
+        alignItems: "center",
+      }}
+    >
+
+      {/* TEXTO DE IDENTIFICAÇÃO */}
+      <div>
+        <span
+          style={{
+            color: "#B08B57",
+            fontWeight: "700",
+            letterSpacing: "2px",
+            fontSize: ".85rem",
+          }}
+        >
+          TALVEZ VOCÊS ESTEJAM VIVENDO ISSO
+        </span>
+
+        <h3
+          style={{
+            color: "#4A3732",
+            fontSize: isMobile ? "1.8rem" : "2.35rem",
+            lineHeight: "1.3",
+            marginTop: "18px",
+            marginBottom: "25px",
+          }}
+        >
+          Vocês ainda se amam, mas parece que não conseguem mais se encontrar?
+        </h3>
+
+        <p
+          style={{
+            color: "#6B5B56",
+            fontSize: "1.08rem",
+            lineHeight: "2rem",
+            marginBottom: "18px",
+          }}
+        >
+          As mesmas discussões voltam a acontecer.
+          Pequenas situações se transformam em grandes conflitos.
+          Um tenta conversar, o outro se fecha.
+          Um cobra, o outro se distancia.
+        </p>
+
+        <p
+          style={{
+            color: "#6B5B56",
+            fontSize: "1.08rem",
+            lineHeight: "2rem",
+            marginBottom: "18px",
+          }}
+        >
+          Talvez vocês já tenham tentado conversar.
+          Talvez tenham prometido que seria diferente.
+          Talvez estejam cansados de repetir os mesmos ciclos.
+        </p>
+
+        <p
+          style={{
+            color: "#6B5B56",
+            fontSize: "1.08rem",
+            lineHeight: "2rem",
+            margin: 0,
+          }}
+        >
+          Quando a relação começa a ser marcada por distância, cobranças,
+          silêncio, mágoas ou conflitos recorrentes, olhar apenas para o último
+          problema nem sempre é suficiente.
+        </p>
+      </div>
+
+      {/* FRASE DE IMPACTO */}
+      <div
+        style={{
+          background: "#FFFFFF",
+          borderRadius: "30px",
+          padding: isMobile ? "35px 28px" : "50px",
+          boxShadow: "0 15px 40px rgba(0,0,0,.05)",
+          border: "1px solid rgba(176,139,87,.12)",
+        }}
+      >
+        <div
+          style={{
+            fontSize: "2.5rem",
+            color: "#B08B57",
+            marginBottom: "18px",
+            lineHeight: 1,
+          }}
+        >
+          “
+        </div>
+
+        <h3
+          style={{
+            color: "#4A3732",
+            fontSize: isMobile ? "1.7rem" : "2.2rem",
+            lineHeight: "1.35",
+            marginBottom: "20px",
+          }}
+        >
+          Talvez o problema não seja a falta de amor.
+        </h3>
+
+        <p
+          style={{
+            color: "#B08B57",
+            fontSize: isMobile ? "1.25rem" : "1.5rem",
+            lineHeight: "1.6",
+            fontWeight: "600",
+            margin: 0,
+          }}
+        >
+          Talvez seja a forma como vocês aprenderam a se relacionar.
+        </p>
+      </div>
+    </div>
+
+    {/* APRESENTAÇÃO DO PROCESSO */}
+    <div
+      style={{
+        marginTop: isMobile ? "75px" : "95px",
+        background: "#F8F5F2",
+        borderRadius: "35px",
+        padding: isMobile ? "40px 28px" : "60px",
+        textAlign: "center",
+      }}
+    >
+      <span
+        style={{
+          color: "#B08B57",
+          fontWeight: "700",
+          letterSpacing: "2px",
+          fontSize: ".85rem",
+        }}
+      >
+        UM PROCESSO PARA DOIS
+      </span>
+
+      <h3
+        style={{
+          marginTop: "18px",
+          color: "#4A3732",
+          fontSize: isMobile ? "2rem" : "2.8rem",
+          lineHeight: "1.2",
+          marginBottom: "22px",
+        }}
+      >
+        RECONEXÃO — UM NOVO NÓS
+      </h3>
+
+      <p
+        style={{
+          maxWidth: "800px",
+          margin: "0 auto",
+          color: "#6B5B56",
+          fontSize: "1.1rem",
+          lineHeight: "2rem",
+        }}
+      >
+        Um processo terapêutico estruturado para casais que desejam compreender
+        a dinâmica da relação, reconhecer padrões que se repetem, transformar
+        formas de comunicação e construir uma nova maneira de se relacionar.
+      </p>
+
+      <p
+        style={{
+          maxWidth: "780px",
+          margin: "22px auto 0",
+          color: "#6B5B56",
+          fontSize: "1.08rem",
+          lineHeight: "2rem",
+        }}
+      >
+        São 8 encontros, organizados para que o casal possa olhar para a
+        relação com mais consciência, compreender o que sustenta os conflitos
+        e construir novos caminhos para a convivência.
+      </p>
+    </div>
+
+    {/* COMO FUNCIONA O ACOMPANHAMENTO */}
+    <div
+      style={{
+        marginTop: isMobile ? "65px" : "80px",
+        textAlign: "center",
+      }}
+    >
+      <span
+        style={{
+          color: "#B08B57",
+          fontWeight: "700",
+          letterSpacing: "2px",
+          fontSize: ".85rem",
+        }}
+      >
+        COMO FUNCIONA O ACOMPANHAMENTO
+      </span>
+
+      <h3
+        style={{
+          color: "#4A3732",
+          fontSize: isMobile ? "1.9rem" : "2.7rem",
+          marginTop: "18px",
+          marginBottom: "25px",
+          lineHeight: "1.25",
+        }}
+      >
+        Um processo com começo, desenvolvimento e continuidade.
+      </h3>
+
+      <p
+        style={{
+          maxWidth: "780px",
+          margin: "0 auto 55px",
+          color: "#6B5B56",
+          fontSize: "1.08rem",
+          lineHeight: "2rem",
+        }}
+      >
+        Cada encontro possui uma função dentro do processo. A estrutura oferece
+        direção ao casal, enquanto a condução respeita a história, o momento e
+        as necessidades que surgem ao longo do acompanhamento.
+      </p>
+
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: isMobile ? "1fr" : "repeat(4,1fr)",
+          gap: "22px",
+        }}
+      >
+        {[
+          {
+            numero: "01",
+            titulo: "Compreender",
+            texto:
+              "Olhar para a dinâmica do casal, identificar padrões de conflito e compreender o que existe por trás do que vocês vivem.",
+          },
+          {
+            numero: "02",
+            titulo: "Desconstruir",
+            texto:
+              "Trabalhar emoções, feridas, ressentimentos e formas de comunicação que mantêm o casal preso aos mesmos ciclos.",
+          },
+          {
+            numero: "03",
+            titulo: "Reconstruir",
+            texto:
+              "Desenvolver novas formas de diálogo, responsabilidade, confiança e acordos dentro da relação.",
+          },
+          {
+            numero: "04",
+            titulo: "Sustentar",
+            texto:
+              "Fortalecer as mudanças construídas e criar recursos para que uma nova forma de se relacionar possa continuar.",
+          },
+        ].map((item, index) => (
+          <div
+            key={index}
+            style={{
+              background: "#FFFFFF",
+              borderRadius: "25px",
+              padding: "32px 25px",
+              textAlign: "left",
+              boxShadow: "0 12px 30px rgba(0,0,0,.05)",
+              border: "1px solid rgba(176,139,87,.08)",
+            }}
+          >
+            <div
+              style={{
+                width: "52px",
+                height: "52px",
+                borderRadius: "50%",
+                background: "#EFE7DF",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                color: "#B08B57",
+                fontWeight: "700",
+                fontSize: ".95rem",
+                marginBottom: "22px",
+              }}
+            >
+              {item.numero}
+            </div>
+
+            <h4
+              style={{
+                color: "#4A3732",
+                fontSize: "1.25rem",
+                marginBottom: "15px",
+              }}
+            >
+              {item.titulo}
+            </h4>
+
+            <p
+              style={{
+                color: "#6B5B56",
+                lineHeight: "1.8rem",
+                fontSize: ".96rem",
+                margin: 0,
+              }}
+            >
+              {item.texto}
+            </p>
+          </div>
+        ))}
+      </div>
+    </div>
+
+    {/* RESPONSABILIDADE E PROPÓSITO */}
+    <div
+      style={{
+        marginTop: isMobile ? "70px" : "90px",
+        textAlign: "center",
+        maxWidth: "900px",
+        marginInline: "auto",
+      }}
+    >
+      <h3
+        style={{
+          color: "#4A3732",
+          fontSize: isMobile ? "1.8rem" : "2.35rem",
+          lineHeight: "1.3",
+          marginBottom: "22px",
+        }}
+      >
+        Não é sobre encontrar culpados.
+        <br />
+        É sobre compreender a dinâmica que vocês construíram.
+      </h3>
+
+      <p
+        style={{
+          color: "#6B5B56",
+          fontSize: "1.08rem",
+          lineHeight: "2rem",
+          margin: 0,
+        }}
+      >
+        O RECONEXÃO não promete salvar uma relação a qualquer custo.
+        É um processo estruturado para que os dois possam olhar para a
+        relação com mais consciência, responsabilidade e disposição para
+        transformar aquilo que precisa ser transformado.
+      </p>
+    </div>
+
+    {/* INVESTIMENTO */}
+    <div
+      style={{
+        marginTop: isMobile ? "70px" : "90px",
+        background: "#FFFFFF",
+        borderRadius: "35px",
+        padding: isMobile ? "42px 28px" : "60px",
+        textAlign: "center",
+        boxShadow: "0 15px 40px rgba(0,0,0,.05)",
+        border: "1px solid rgba(176,139,87,.12)",
+      }}
+    >
+      <span
+        style={{
+          color: "#B08B57",
+          fontWeight: "700",
+          letterSpacing: "2px",
+          fontSize: ".85rem",
+          textTransform: "uppercase",
+        }}
+      >
+        ATENDIMENTO PARTICULAR PARA CASAIS
+      </span>
+
+      <h3
+        style={{
+          color: "#4A3732",
+          fontSize: isMobile ? "2rem" : "2.7rem",
+          marginTop: "18px",
+          marginBottom: "18px",
+          lineHeight: "1.2",
+        }}
+      >
+        Um investimento na relação que vocês desejam construir.
+      </h3>
+
+      <p
+        style={{
+          maxWidth: "760px",
+          margin: "0 auto 40px",
+          color: "#6B5B56",
+          fontSize: "1.05rem",
+          lineHeight: "1.9rem",
+        }}
+      >
+        O RECONEXÃO é um acompanhamento terapêutico particular,
+        estruturado em 8 encontros e desenvolvido especificamente para o casal.
+      </p>
+
+      {/* CONDIÇÕES DE PAGAMENTO */}
+      <div
+        style={{
+          background: "#F8F5F2",
+          borderRadius: "25px",
+          padding: isMobile ? "30px 20px" : "40px",
+          maxWidth: "650px",
+          margin: "0 auto",
+        }}
+      >
+        <p
+          style={{
+            margin: 0,
+            color: "#7A6A64",
+            fontSize: ".95rem",
+          }}
+        >
+          No cartão
+        </p>
+
+        <div
+          style={{
+            marginTop: "8px",
+            color: "#4A3732",
+            fontWeight: "700",
+            fontSize: isMobile ? "2.1rem" : "2.7rem",
+            lineHeight: "1.2",
+          }}
+        >
+          12x de R$ 299,68
+        </div>
+
+        <div
+          style={{
+            width: "100%",
+            height: "1px",
+            background: "rgba(176,139,87,.18)",
+            margin: "30px 0",
+          }}
+        />
+
+        <p
+          style={{
+            margin: 0,
+            color: "#7A6A64",
+            fontSize: ".95rem",
+          }}
+        >
+          À vista
+        </p>
+
+        <div
+          style={{
+            marginTop: "8px",
+            color: "#B08B57",
+            fontWeight: "700",
+            fontSize: isMobile ? "2rem" : "2.5rem",
+            lineHeight: "1.2",
+          }}
+        >
+          R$ 2.997,00
+        </div>
+
+        <div
+          style={{
+            display: "inline-block",
+            marginTop: "15px",
+            background: "#EFE7DF",
+            color: "#8C6A45",
+            padding: "8px 16px",
+            borderRadius: "30px",
+            fontWeight: "700",
+            fontSize: ".9rem",
+          }}
+        >
+          Economize R$ 599,16 no pagamento à vista
+        </div>
+      </div>
+
+      {/* COMPARAÇÃO COM DOIS PROCESSOS INDIVIDUAIS */}
+      <div
+        style={{
+          maxWidth: "720px",
+          margin: "35px auto 0",
+          padding: isMobile ? "24px 20px" : "28px 35px",
+          background: "#FCFAF7",
+          borderRadius: "22px",
+        }}
+      >
+        <p
+          style={{
+            margin: 0,
+            color: "#6B5B56",
+            fontSize: ".98rem",
+            lineHeight: "1.8rem",
+          }}
+        >
+          O RECONEXÃO não é a soma de dois processos individuais.
+          Para comparação, dois acompanhamentos individuais somariam{" "}
+          <strong style={{ color: "#4A3732" }}>
+            R$ 4.000,00
+          </strong>
+          . O RECONEXÃO foi estruturado especificamente para trabalhar a{" "}
+          <strong style={{ color: "#4A3732" }}>
+            relação como um todo
+          </strong>
+          .
+        </p>
+      </div>
+
+      {/* FRASE MANIFESTO */}
+      <div
+        style={{
+          marginTop: "42px",
+          paddingTop: "32px",
+          borderTop: "1px solid rgba(176,139,87,.18)",
+        }}
+      >
+        <p
+          style={{
+            margin: 0,
+            color: "#4A3732",
+            fontSize: isMobile ? "1.3rem" : "1.6rem",
+            lineHeight: "1.6",
+            fontWeight: "600",
+          }}
+        >
+          Não é sobre voltar a ser como antes.
+          <br />
+          <span style={{ color: "#B08B57" }}>
+            É sobre construir um novo nós.
+          </span>
+        </p>
+      </div>
+
+      {/* CTA WHATSAPP */}
+      <a
+        href="https://wa.me/5546988042216?text=Ol%C3%A1%2C%20Kamilah%21%20Conheci%20o%20processo%20RECONEX%C3%83O%20%E2%80%94%20UM%20NOVO%20N%C3%93S%20no%20site%20e%20tenho%20interesse%20em%20iniciar%20o%20processo%20de%20terapia%20de%20casal.%20Gostaria%20de%20entender%20como%20funciona%20e%20saber%20os%20pr%C3%B3ximos%20passos."
+        target="_blank"
+        rel="noopener noreferrer"
+        onClick={() =>
+          window.gtag?.("event", "whatsapp_click", {
+            button_location: "reconexao",
+          })
+        }
+        style={{
+          display: "inline-flex",
+          alignItems: "center",
+          justifyContent: "center",
+          marginTop: "40px",
+          background: "#25D366",
+          color: "#FFF",
+          padding: isMobile ? "17px 25px" : "18px 38px",
+          borderRadius: "60px",
+          textDecoration: "none",
+          fontWeight: "700",
+          fontSize: "1rem",
+          boxShadow: "0 12px 30px rgba(37,211,102,.25)",
+          textAlign: "center",
+        }}
+      >
+        💬 Quero conhecer o processo RECONEXÃO
+      </a>
+
+      <p
+        style={{
+          marginTop: "18px",
+          color: "#7A6A64",
+          fontSize: ".9rem",
+          lineHeight: "1.6",
+        }}
+      >
+        Atendimento particular • 8 encontros • Processo terapêutico para casais
+      </p>
+    </div>
+
+  </div>
+</section>
 {/* DIFERENCIAIS */}
 <section
   style={{
