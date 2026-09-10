@@ -165,7 +165,7 @@ Através da mentoria terapêutica individual, você fortalece sua autoestima, ro
             fontSize: ".95rem",
           }}
         >
-          Atendimento particular individual • Online e Presencial • Focado no fortalecimento emocional
+          Atendimento particular individual • Online • Focado no fortalecimento emocional
         </div>
       </div>
     </div>
@@ -1972,10 +1972,10 @@ href="https://wa.me/5546988042216?text=Ola%20Kamilah%2C%20vim%20pelo%20site%2C%2
         }}
       >
         {[
-          "✔ Atendimento personalizado para pessoas e casais",
+          "✔ Atendimento personalizado individual e para casais",
           "✔ Processos estruturados e adaptados a cada realidade",
           "✔ Olhar profundo para padrões emocionais e relacionais",
-          "✔ Atendimento online e presencial",
+          "✔ Atendimento online ",
         ].map((item, index) => (
           <div
             key={index}
@@ -2089,7 +2089,7 @@ href="https://wa.me/5546988042216?text=Ola%20Kamilah%2C%20vim%20pelo%20site%2C%2
         },
         {
           icone: "💻",
-          titulo: "Atendimento online e presencial",
+          titulo: "Atendimento online",
           texto:
             "Acompanhamentos realizados com privacidade, acolhimento e segurança, de forma online para todo o Brasil e presencialmente no Instituto.",
         },
