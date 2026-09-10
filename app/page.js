@@ -1959,11 +1959,44 @@ href="https://wa.me/5546988042216?text=Ola%20Kamilah%2C%20vim%20pelo%20site%2C%2
           marginBottom: "0",
         }}
       >
-        Cada acompanhamento é conduzido de forma estruturada e personalizada,
+             Cada acompanhamento é conduzido de forma estruturada e personalizada,
         respeitando a história, o momento e os objetivos de quem chega até mim.
       </p>
 
-    {/* DIFERENCIAIS */}
+      {/* DIFERENCIAIS DO TRABALHO */}
+      <div
+        style={{
+          marginTop: "35px",
+          display: "grid",
+          gap: "15px",
+        }}
+      >
+        {[
+          "✔ Atendimento personalizado para pessoas e casais",
+          "✔ Processos estruturados e adaptados a cada realidade",
+          "✔ Olhar profundo para padrões emocionais e relacionais",
+          "✔ Atendimento online e presencial",
+        ].map((item, index) => (
+          <div
+            key={index}
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: "12px",
+              color: "#4A3732",
+              fontWeight: "500",
+              lineHeight: "1.5rem",
+            }}
+          >
+            {item}
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
+{/* DIFERENCIAIS */}
 <section
   style={{
     background: "#FCFAF7",
