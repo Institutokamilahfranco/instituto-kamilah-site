@@ -2179,7 +2179,61 @@ href="https://wa.me/5546988042216?text=Ola%20Kamilah%2C%20vim%20pelo%20site%2C%2
       que precisa ser compreendido e transformado.
     </p>
 
-    {/* DEPOIMENTOS */}
+  {/* DEPOIMENTOS */}
+<section
+  style={{
+    background: "#F8F5F2",
+    padding: isMobile ? "90px 8%" : "130px 8%",
+  }}
+>
+  <div
+    style={{
+      maxWidth: "1180px",
+      margin: "0 auto",
+      textAlign: "center",
+    }}
+  >
+    <span
+      style={{
+        color: "#B08B57",
+        letterSpacing: "2px",
+        fontWeight: "700",
+        fontSize: ".85rem",
+        textTransform: "uppercase",
+      }}
+    >
+      EXPERIÊNCIAS REAIS
+    </span>
+
+    <h2
+      style={{
+        marginTop: "20px",
+        marginBottom: "25px",
+        color: "#4A3732",
+        fontSize: isMobile ? "2rem" : "3rem",
+        lineHeight: "1.25",
+      }}
+    >
+      Cada processo é único.
+      <br />
+      Toda transformação começa com uma decisão.
+    </h2>
+
+    <p
+      style={{
+        maxWidth: "760px",
+        margin: "0 auto 70px",
+        color: "#6B5B56",
+        lineHeight: "2rem",
+        fontSize: "1.1rem",
+      }}
+    >
+      Pessoas chegam ao Instituto com histórias, desafios e momentos
+      diferentes. O que existe em comum é a decisão de olhar para aquilo
+      que precisa ser compreendido e transformado.
+    </p>
+
+    {/* CARDS DE DEPOIMENTOS */}
     <div
       style={{
         display: "grid",
