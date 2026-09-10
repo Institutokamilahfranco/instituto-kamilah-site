@@ -178,7 +178,7 @@ export default function ReconexaoPage() {
                 fontSize: ".9rem",
               }}
             >
-              8 encontros • Atendimento particular • Online e presencial
+              8 encontros • Atendimento particular • Online 
             </p>
           </div>
 
@@ -912,7 +912,7 @@ export default function ReconexaoPage() {
               marginTop: "22px",
             }}
           >
-            Atendimento particular • 8 encontros • Online e presencial
+            Atendimento particular • 8 encontros • Online
           </p>
         </div>
       </section>
