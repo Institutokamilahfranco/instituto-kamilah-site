@@ -154,10 +154,11 @@ export default function ReconexaoPage() {
 
 <p
   style={{
-    marginTop: "22px",
+    marginTop: "14px",
     color: "#7A6A64",
     fontSize: "1rem",
     lineHeight: "1.6",
+    fontWeight: "600",
   }}
 >
   Entenda como o Reconexão pode ajudar vocês a construir uma nova dinâmica. ↓
