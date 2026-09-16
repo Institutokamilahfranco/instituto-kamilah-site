@@ -152,29 +152,6 @@ export default function ReconexaoPage() {
               </strong>
             </p>
 
-            <a
-              href={whatsappUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={openWhatsApp}
-              style={{
-                display: "inline-flex",
-                alignItems: "center",
-                justifyContent: "center",
-                background: "#25D366",
-                color: "#FFF",
-                padding: isMobile ? "17px 24px" : "18px 34px",
-                borderRadius: "60px",
-                textDecoration: "none",
-                fontWeight: "700",
-                fontSize: "1rem",
-                boxShadow: "0 12px 30px rgba(37,211,102,.25)",
-                textAlign: "center",
-              }}
-            >
-              💬 Quero conhecer o RECONEXÃO
-            </a>
-
             <p
               style={{
                 marginTop: "16px",
