@@ -145,14 +145,25 @@ export default function ReconexaoPage() {
                 marginBottom: "35px",
               }}
             >
-              Talvez o problema não seja a falta de amor.
-              <strong style={{ color: "#4A3732" }}>
-                {" "}
-                Talvez seja a forma como vocês aprenderam a se relacionar.
-              </strong>
-            </p>
+  Talvez o problema não seja a falta de amor.
+  <strong style={{ color: "#4A3732" }}>
+    {" "}
+    Talvez seja a forma como vocês aprenderam a se relacionar.
+  </strong>
+</p>
 
-            <p
+<p
+  style={{
+    marginTop: "22px",
+    color: "#7A6A64",
+    fontSize: "1rem",
+    lineHeight: "1.6",
+  }}
+>
+  Entenda como o Reconexão pode ajudar vocês a construir uma nova dinâmica. ↓
+</p>
+
+<p
               style={{
                 marginTop: "16px",
                 color: "#7A6A64",
