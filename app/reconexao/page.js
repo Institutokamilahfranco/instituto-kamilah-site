@@ -7,151 +7,211 @@ export default function ReconexaoPage() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const checkMobile = () => {
-      const width = Math.min(
-        window.innerWidth,
-        document.documentElement.clientWidth
-      );
-      setIsMobile(width <= 1024);
-    };
-
+    const checkMobile = () => setIsMobile(window.innerWidth <= 1024);
     checkMobile();
     window.addEventListener("resize", checkMobile);
 
     document.title =
       "Terapia de Casal | RECONEXÃO — UM NOVO NÓS | Instituto Kamilah Franco";
 
-    const metaDescription = document.querySelector(
-      'meta[name="description"]'
-    );
-
     const description =
-      "Terapia de casal com processo estruturado em 8 encontros. RECONEXÃO — UM NOVO NÓS, do Instituto Kamilah Franco.";
+      "Terapia de casal online com processo estruturado em 8 encontros. RECONEXÃO — UM NOVO NÓS, do Instituto Kamilah Franco.";
 
-    if (metaDescription) {
-      metaDescription.setAttribute("content", description);
-    } else {
-      const meta = document.createElement("meta");
+    let meta = document.querySelector('meta[name="description"]');
+
+    if (!meta) {
+      meta = document.createElement("meta");
       meta.name = "description";
-      meta.content = description;
       document.head.appendChild(meta);
     }
+
+    meta.setAttribute("content", description);
 
     return () => window.removeEventListener("resize", checkMobile);
   }, []);
 
   const whatsappMessage =
-    "Olá, Kamilah! Conheci o processo RECONEXÃO — UM NOVO NÓS no site e tenho interesse em iniciar o processo de terapia de casal. Gostaria de entender como funciona e saber os próximos passos.";
+    "Olá, Kamilah! Conheci o processo RECONEXÃO — UM NOVO NÓS no site. Quero entender se esse processo faz sentido para nós e saber os próximos passos.";
 
   const whatsappUrl = `https://wa.me/5546988042216?text=${encodeURIComponent(
     whatsappMessage
   )}`;
 
-  const openWhatsApp = () => {
+  const trackWhatsApp = () => {
     window.gtag?.("event", "whatsapp_click", {
       button_location: "reconexao_landing",
     });
   };
 
-const sectionStyle = (background, desktop = "120px 8%") => ({
-  background,
-  padding: isMobile ? "85px 8%" : desktop,
-});
-  const eyebrowStyle = {
+  const section = (background, desktop = "110px 8%") => ({
+    background,
+    padding: isMobile ? "72px 7%" : desktop,
+  });
+
+  const eyebrow = {
     color: "#B08B57",
-    fontWeight: "700",
+    fontWeight: 700,
     letterSpacing: "2px",
-  textTransform: "uppercase",
-    fontSize: ".85rem",
+    textTransform: "uppercase",
+    fontSize: ".82rem",
   };
 
-  const headingStyle = {
+  const title = {
     color: "#4A3732",
-    fontSize: isMobile ? "2rem" : "3.1rem",
-    lineHeight: "1.2",
+    fontSize: isMobile ? "2rem" : "3rem",
+    lineHeight: 1.2,
   };
+
+  const body = {
+    color: "#6B5B56",
+    fontSize: "1.08rem",
+    lineHeight: 1.9,
+  };
+
+  const cards = [
+    [
+      "Os mesmos conflitos",
+      "Vocês conversam sobre as mesmas coisas, prometem mudar e acabam novamente no mesmo lugar.",
+    ],
+    [
+      "Distância emocional",
+      "Existe convivência, mas falta conexão, escuta, intimidade ou a sensação de realmente serem uma equipe.",
+    ],
+    [
+      "Mágoas acumuladas",
+      "Experiências passadas continuam influenciando a forma como vocês reagem um ao outro hoje.",
+    ],
+  ];
+
+  const process = [
+    [
+      "01",
+      "Compreender",
+      "Identificar a dinâmica do casal e os padrões que sustentam os conflitos.",
+    ],
+    [
+      "02",
+      "Desconstruir",
+      "Olhar para emoções, feridas, ressentimentos e formas de comunicação que mantêm os mesmos ciclos.",
+    ],
+    [
+      "03",
+      "Reconstruir",
+      "Desenvolver novas formas de diálogo, responsabilidade, confiança e acordos.",
+    ],
+    [
+      "04",
+      "Sustentar",
+      "Fortalecer as mudanças construídas para que uma nova forma de se relacionar possa continuar.",
+    ],
+  ];
+
+  const different = [
+    [
+      "Quando uma conversa difícil começar...",
+      "Em vez de vocês entrarem automaticamente no mesmo ciclo, poderão começar a reconhecer o que está acontecendo entre vocês.",
+    ],
+    [
+      "Quando surgir uma mágoa...",
+      "Em vez de ela aparecer novamente em todas as discussões, vocês terão espaço para compreender o que existe por trás dela.",
+    ],
+    [
+      "Quando um dos dois se fechar...",
+      "Em vez de interpretar imediatamente como rejeição ou desinteresse, vocês poderão perceber o padrão que está acontecendo.",
+    ],
+    [
+      "E quando vocês discordarem...",
+      "O objetivo não será nunca mais discordar. Será não precisar se perder um do outro toda vez que discordarem.",
+    ],
+  ];
+
+  const faq = [
+    [
+      "Precisamos estar quase nos separando para começar?",
+      "Não. O processo também pode ser buscado quando vocês percebem que não querem continuar vivendo a relação da mesma maneira.",
+    ],
+    [
+      "Mas nós já conversamos tantas vezes...",
+      "Conversar é importante. Mas quando o mesmo ciclo se repete, pode ser necessário olhar também para a dinâmica que existe por trás dessas conversas.",
+    ],
+    [
+      "E se for difícil falar sobre algumas coisas?",
+      "Vocês não precisam chegar sabendo exatamente o que dizer. A condução ajuda a organizar essas conversas com segurança, respeito e direção.",
+    ],
+    [
+      "E se um de nós estiver mais aberto que o outro?",
+      "O RECONEXÃO é um processo para o casal e pressupõe a disposição dos dois em participar e olhar para a relação.",
+    ],
+    [
+      "O processo é online?",
+      "Sim. Os encontros são realizados online, em formato de atendimento particular para o casal.",
+    ],
+    [
+      "São sessões avulsas?",
+      "Não. O RECONEXÃO é estruturado como um processo completo de 8 encontros.",
+    ],
+  ];
 
   return (
-    <>
-      {/* =========================================================
-          HERO — SEM CTA
-      ========================================================= */}
+    <main
+      style={{
+        fontFamily: "inherit",
+        color: "#4A3732",
+        overflow: "hidden",
+      }}
+    >
+      {/* HERO */}
       <section
-        id="inicio"
-        style={{
-          background:
-            "linear-gradient(180deg,#FCFAF7 0%, #F5F1EC 100%)",
-          padding: isMobile ? "65px 8% 80px" : "95px 8% 110px",
-        }}
+        style={section(
+          "linear-gradient(180deg,#FCFAF7 0%,#F5F1EC 100%)",
+          "75px 7% 95px"
+        )}
       >
         <div
           style={{
-            maxWidth: "1250px",
+            maxWidth: 1240,
             margin: "0 auto",
             display: "flex",
             flexDirection: isMobile ? "column" : "row",
             alignItems: "center",
-            justifyContent: "space-between",
-            gap: isMobile ? "45px" : "70px",
+            gap: isMobile ? 42 : 70,
           }}
         >
-          <div style={{ flex: 1, maxWidth: "650px", width: "100%" }}>
-            <div
+          <div style={{ flex: 1, maxWidth: 650 }}>
+            <span
               style={{
-                display: "inline-flex",
-                alignItems: "center",
-                gap: "10px",
+                ...eyebrow,
+                display: "inline-block",
                 background: "#EFE7DF",
-                color: "#8C6A45",
-                padding: "10px 18px",
-                borderRadius: "30px",
-                fontWeight: "700",
-                fontSize: ".9rem",
-                marginBottom: "25px",
+                padding: "10px 17px",
+                borderRadius: 30,
+                letterSpacing: ".5px",
+                marginBottom: 24,
               }}
             >
               Terapia de Casal • Atendimento Particular
-            </div>
+            </span>
 
             <h1
               style={{
-                fontSize: isMobile ? "2.35rem" : "3.9rem",
-                lineHeight: "1.12",
                 color: "#4A3732",
-                marginBottom: "28px",
-                fontWeight: "700",
+                fontSize: isMobile ? "2.35rem" : "3.8rem",
+                lineHeight: 1.12,
+                margin: "0 0 26px",
+                fontWeight: 700,
               }}
             >
-              Vocês ainda se amam,
-              <br />
-              mas parece que não
-              <span style={{ color: "#B08B57" }}>
-                {" "}
-                conseguem mais se encontrar?
-              </span>
+              Vocês ainda se amam, mas parece que não conseguem mais se{" "}
+              <span style={{ color: "#B08B57" }}>encontrar?</span>
             </h1>
 
-            <p
-              style={{
-                fontSize: "1.15rem",
-                lineHeight: "2rem",
-                color: "#6B5B56",
-                marginBottom: "22px",
-              }}
-            >
+            <p style={{ ...body, margin: "0 0 20px" }}>
               As mesmas discussões se repetem. Pequenas situações se
               transformam em grandes conflitos. Um tenta conversar, o outro
               se fecha. Um cobra, o outro se distancia.
             </p>
 
-            <p
-              style={{
-                fontSize: "1.15rem",
-                lineHeight: "2rem",
-                color: "#6B5B56",
-                marginBottom: "35px",
-              }}
-            >
+            <p style={{ ...body, margin: "0 0 22px" }}>
               Talvez o problema não seja a falta de amor.{" "}
               <strong style={{ color: "#4A3732" }}>
                 Talvez seja a forma como vocês aprenderam a se relacionar.
@@ -160,22 +220,22 @@ const sectionStyle = (background, desktop = "120px 8%") => ({
 
             <p
               style={{
-                marginTop: "14px",
                 color: "#7A6A64",
                 fontSize: "1rem",
-                lineHeight: "1.6",
-                fontWeight: "600",
+                lineHeight: 1.6,
+                fontWeight: 600,
+                margin: "0 0 14px",
               }}
             >
-              Entenda como o Reconexão pode ajudar vocês a construir uma nova
+              Entenda como o RECONEXÃO pode ajudar vocês a construir uma nova
               dinâmica. ↓
             </p>
 
             <p
               style={{
-                marginTop: "16px",
                 color: "#7A6A64",
                 fontSize: ".9rem",
+                margin: 0,
               }}
             >
               8 encontros • Atendimento particular • Online
@@ -185,26 +245,24 @@ const sectionStyle = (background, desktop = "120px 8%") => ({
           <div
             style={{
               flex: 1,
+              width: "100%",
               display: "flex",
               justifyContent: "center",
-              width: "100%",
             }}
           >
             <div
               style={{
                 position: "relative",
                 width: "100%",
-                maxWidth: "520px",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
+                maxWidth: 510,
+                textAlign: "center",
               }}
             >
               <div
                 style={{
                   position: "absolute",
-                  width: isMobile ? "300px" : "430px",
-                  height: isMobile ? "300px" : "430px",
+                  width: isMobile ? 285 : 430,
+                  height: isMobile ? 285 : 430,
                   background: "#EADFCC",
                   borderRadius: "50%",
                   top: "50%",
@@ -222,9 +280,8 @@ const sectionStyle = (background, desktop = "120px 8%") => ({
                 style={{
                   position: "relative",
                   width: "100%",
-                  maxWidth: isMobile ? "320px" : "450px",
+                  maxWidth: isMobile ? 330 : 450,
                   height: "auto",
-                  display: "block",
                   zIndex: 2,
                 }}
               />
@@ -233,92 +290,68 @@ const sectionStyle = (background, desktop = "120px 8%") => ({
         </div>
       </section>
 
-      {/* =========================================================
-          IDENTIFICAÇÃO
-      ========================================================= */}
-      <section id="identificacao" style={sectionStyle("#FFFFFF")}>
-        <div
-          style={{
-            maxWidth: "1050px",
-            margin: "0 auto",
-            textAlign: "center",
-          }}
-        >
-          <span style={eyebrowStyle}>TALVEZ VOCÊS ESTEJAM VIVENDO ISSO</span>
-
-          <h2
+      {/* IDENTIFICAÇÃO */}
+      <section style={section("#FFFFFF")}>
+        <div style={{ maxWidth: 1100, margin: "0 auto" }}>
+          <div
             style={{
-              ...headingStyle,
-              marginTop: "20px",
-              marginBottom: "28px",
-            }}
-          >
-            Quando a relação começa a pesar mais do que acolher.
-          </h2>
-
-          <p
-            style={{
-              maxWidth: "800px",
+              textAlign: "center",
+              maxWidth: 850,
               margin: "0 auto",
-              color: "#6B5B56",
-              fontSize: "1.12rem",
-              lineHeight: "2rem",
             }}
           >
-            Talvez vocês ainda tenham carinho um pelo outro, mas já não sabem
-            mais como conversar sem entrar em conflito. Talvez existam mágoas
-            que nunca foram realmente elaboradas, assuntos que sempre terminam
-            em discussão ou um distanciamento que foi crescendo aos poucos.
-          </p>
+            <span style={eyebrow}>
+              TALVEZ VOCÊS ESTEJAM VIVENDO ISSO
+            </span>
+
+            <h2 style={{ ...title, margin: "18px 0 24px" }}>
+              Quando a relação começa a pesar mais do que acolher.
+            </h2>
+
+            <p style={{ ...body, margin: 0 }}>
+              Talvez vocês ainda tenham carinho um pelo outro, mas já não
+              sabem mais como conversar sem entrar em conflito. Talvez existam
+              mágoas que nunca foram realmente elaboradas, assuntos que sempre
+              terminam em discussão ou um distanciamento que foi crescendo aos
+              poucos.
+            </p>
+          </div>
 
           <div
             style={{
-              marginTop: "55px",
               display: "grid",
-              gridTemplateColumns: isMobile ? "1fr" : "repeat(3, 1fr)",
-              gap: "25px",
+              gridTemplateColumns: isMobile ? "1fr" : "repeat(3,1fr)",
+              gap: 22,
+              marginTop: 48,
             }}
           >
-            {[
-              [
-                "Os mesmos conflitos",
-                "Vocês conversam sobre as mesmas coisas, prometem mudar e acabam novamente no mesmo lugar.",
-              ],
-              [
-                "Distância emocional",
-                "Existe convivência, mas falta conexão, escuta, intimidade ou a sensação de realmente serem uma equipe.",
-              ],
-              [
-                "Mágoas acumuladas",
-                "Experiências passadas continuam influenciando a forma como vocês reagem um ao outro hoje.",
-              ],
-            ].map(([titulo, texto]) => (
+            {cards.map(([h, p]) => (
               <div
-                key={titulo}
+                key={h}
                 style={{
                   background: "#F8F5F2",
-                  borderRadius: "28px",
-                  padding: "32px",
-                  textAlign: "left",
+                  borderRadius: 26,
+                  padding: 30,
                 }}
               >
                 <h3
                   style={{
+                    margin: "0 0 13px",
                     color: "#4A3732",
-                    fontSize: "1.3rem",
-                    marginBottom: "15px",
+                    fontSize: "1.25rem",
                   }}
                 >
-                  {titulo}
+                  {h}
                 </h3>
+
                 <p
                   style={{
-                    color: "#6B5B56",
-                    lineHeight: "1.85rem",
+                    ...body,
+                    fontSize: ".98rem",
                     margin: 0,
                   }}
                 >
-                  {texto}
+                  {p}
                 </p>
               </div>
             ))}
@@ -326,73 +359,107 @@ const sectionStyle = (background, desktop = "120px 8%") => ({
         </div>
       </section>
 
-      {/* =========================================================
-          OBJEÇÃO — JÁ TENTARAM RESOLVER
-      ========================================================= */}
-      <section style={sectionStyle("#FCFAF7", "90px 8%")}>
+      {/* IMAGEM 1 + DOR */}
+      <section style={section("#F5F1EC", "85px 7%")}>
         <div
           style={{
-            maxWidth: "850px",
+            maxWidth: 1150,
+            margin: "0 auto",
+            display: "flex",
+            flexDirection: isMobile ? "column" : "row",
+            alignItems: "center",
+            gap: isMobile ? 35 : 65,
+          }}
+        >
+          <div
+            style={{
+              flex: 1,
+              overflow: "hidden",
+              borderRadius: 30,
+            }}
+          >
+            <Image
+              src="/reconexao/01-casal-distancia.webp"
+              alt="Casal vivendo um momento de distância emocional"
+              width={1200}
+              height={800}
+              style={{
+                width: "100%",
+                height: "auto",
+                display: "block",
+              }}
+            />
+          </div>
+
+          <div style={{ flex: 1 }}>
+            <span style={eyebrow}>
+              TALVEZ VOCÊS JÁ TENHAM TENTADO
+            </span>
+
+            <h2 style={{ ...title, margin: "18px 0 22px" }}>
+              E talvez vocês já tenham tentado resolver isso.
+            </h2>
+
+            <p style={{ ...body, margin: 0 }}>
+              Vocês já conversaram. Já prometeram que seria diferente. Já
+              tentaram deixar algumas coisas para trás. Mas, mesmo quando
+              existe vontade de fazer dar certo, os mesmos padrões podem voltar
+              a aparecer.
+            </p>
+
+            <p style={{ ...body, margin: "18px 0 0" }}>
+              <strong style={{ color: "#4A3732" }}>
+                Porque às vezes o problema não está apenas no que vocês
+                discutem, mas na forma como vocês entram nesses ciclos.
+              </strong>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* POR QUE CONVERSAR NEM SEMPRE RESOLVE */}
+      <section style={section("#FCFAF7")}>
+        <div
+          style={{
+            maxWidth: 900,
             margin: "0 auto",
             textAlign: "center",
           }}
         >
-          <span style={eyebrowStyle}>TALVEZ VOCÊS JÁ TENHAM TENTADO</span>
+          <span style={eyebrow}>
+            POR QUE APENAS CONVERSAR NEM SEMPRE RESOLVE?
+          </span>
 
-          <h2
-            style={{
-              color: "#4A3732",
-              fontSize: isMobile ? "1.9rem" : "2.8rem",
-              lineHeight: "1.25",
-              marginTop: "20px",
-              marginBottom: "25px",
-            }}
-          >
-            E talvez vocês já tenham tentado resolver isso.
+          <h2 style={{ ...title, margin: "18px 0 24px" }}>
+            Porque o problema pode estar no ciclo — e não apenas no assunto.
           </h2>
 
-          <p
-            style={{
-              color: "#6B5B56",
-              fontSize: "1.08rem",
-              lineHeight: "2rem",
-              margin: 0,
-            }}
-          >
-            Vocês já conversaram. Já prometeram que seria diferente. Já
-            tentaram deixar algumas coisas para trás. Mas, mesmo quando existe
-            vontade de fazer dar certo, os mesmos padrões podem voltar a
-            aparecer.
+          <p style={{ ...body, margin: 0 }}>
+            Um cobra. O outro se fecha. Um insiste. O outro se distancia. A
+            conversa termina, mas o problema permanece. Até que alguma
+            situação parecida aconteça novamente — e o ciclo recomeça.
           </p>
 
-          <p
-            style={{
-              color: "#4A3732",
-              fontSize: "1.08rem",
-              lineHeight: "2rem",
-              margin: "22px 0 0",
-              fontWeight: "600",
-            }}
-          >
-            Porque às vezes o problema não está apenas no que vocês discutem,
-            mas na forma como vocês entram nesses ciclos.
+          <p style={{ ...body, margin: "22px 0 0" }}>
+            O RECONEXÃO trabalha justamente sobre essa dinâmica:{" "}
+            <strong style={{ color: "#4A3732" }}>
+              compreender o ciclo, identificar o que o mantém e construir novas
+              possibilidades para a relação.
+            </strong>
           </p>
         </div>
       </section>
 
-      {/* =========================================================
-          VIRADA DE CONSCIÊNCIA
-      ========================================================= */}
+      {/* VIRADA */}
       <section
-        style={{
-          background:
-            "linear-gradient(180deg,#EFE7DF 0%, #FCFAF7 100%)",
-          padding: isMobile ? "80px 8%" : "110px 8%",
-        }}
+        style={section(
+          "linear-gradient(180deg,#EFE7DF 0%,#FCFAF7 100%)",
+          "90px 7%"
+        )}
       >
         <div
           style={{
-            maxWidth: "900px",
+            maxWidth: 920,
             margin: "0 auto",
             textAlign: "center",
           }}
@@ -402,7 +469,6 @@ const sectionStyle = (background, desktop = "120px 8%") => ({
               color: "#B08B57",
               fontSize: "3rem",
               lineHeight: 1,
-              marginBottom: "20px",
             }}
           >
             “
@@ -410,10 +476,9 @@ const sectionStyle = (background, desktop = "120px 8%") => ({
 
           <h2
             style={{
-              color: "#4A3732",
-              fontSize: isMobile ? "2rem" : "3.2rem",
-              lineHeight: "1.25",
-              marginBottom: "25px",
+              ...title,
+              margin: "15px 0 20px",
+              fontSize: isMobile ? "2rem" : "3.15rem",
             }}
           >
             Talvez o problema não seja a falta de amor.
@@ -422,9 +487,9 @@ const sectionStyle = (background, desktop = "120px 8%") => ({
           <p
             style={{
               color: "#B08B57",
-              fontSize: isMobile ? "1.3rem" : "1.7rem",
-              lineHeight: "1.6",
-              fontWeight: "600",
+              fontSize: isMobile ? "1.25rem" : "1.65rem",
+              lineHeight: 1.55,
+              fontWeight: 600,
               margin: 0,
             }}
           >
@@ -433,171 +498,112 @@ const sectionStyle = (background, desktop = "120px 8%") => ({
         </div>
       </section>
 
-      {/* =========================================================
-          PROCESSO
-      ========================================================= */}
-      <section id="processo" style={sectionStyle("#FFFFFF")}>
-        <div
-          style={{
-            maxWidth: "1050px",
-            margin: "0 auto",
-            textAlign: "center",
-          }}
-        >
-          <span style={eyebrowStyle}>RECONEXÃO — UM NOVO NÓS</span>
-
-          <h2
+      {/* PROCESSO */}
+      <section id="processo" style={section("#FFFFFF")}>
+        <div style={{ maxWidth: 1150, margin: "0 auto" }}>
+          <div
             style={{
-              ...headingStyle,
-              marginTop: "20px",
-              marginBottom: "25px",
-            }}
-          >
-            Um processo terapêutico estruturado para casais.
-          </h2>
-
-          <p
-            style={{
-              maxWidth: "820px",
+              maxWidth: 850,
               margin: "0 auto",
-              color: "#6B5B56",
-              fontSize: "1.1rem",
-              lineHeight: "2rem",
+              textAlign: "center",
             }}
           >
-            O RECONEXÃO foi desenvolvido para casais que desejam compreender
-            sua dinâmica, reconhecer padrões que se repetem e transformar a
-            forma como estão se relacionando.
-          </p>
+            <span style={eyebrow}>RECONEXÃO — UM NOVO NÓS</span>
 
-          <p
-            style={{
-              maxWidth: "800px",
-              margin: "22px auto 0",
-              color: "#6B5B56",
-              fontSize: "1.08rem",
-              lineHeight: "2rem",
-            }}
-          >
-            São 8 encontros organizados dentro de um processo com direção e
-            profundidade, respeitando a história, o momento e as necessidades
-            de cada casal.
-          </p>
+            <h2 style={{ ...title, margin: "18px 0 22px" }}>
+              Um processo terapêutico estruturado para casais.
+            </h2>
+
+            <p style={{ ...body, margin: 0 }}>
+              O RECONEXÃO foi desenvolvido para casais que desejam compreender
+              sua dinâmica, reconhecer padrões que se repetem e transformar a
+              forma como estão se relacionando.
+            </p>
+
+            <p style={{ ...body, margin: "18px 0 0" }}>
+              São 8 encontros organizados dentro de um processo com direção e
+              profundidade, respeitando a história, o momento e as necessidades
+              de cada casal.
+            </p>
+          </div>
         </div>
       </section>
 
-      {/* =========================================================
-          COMO FUNCIONA
-      ========================================================= */}
-      <section id="como-funciona" style={sectionStyle("#F8F5F2")}>
-        <div
-          style={{
-            maxWidth: "1150px",
-            margin: "0 auto",
-            textAlign: "center",
-          }}
-        >
-          <span style={eyebrowStyle}>COMO FUNCIONA</span>
-
-          <h2
+      {/* COMO FUNCIONA */}
+      <section id="como-funciona" style={section("#F8F5F2")}>
+        <div style={{ maxWidth: 1180, margin: "0 auto" }}>
+          <div
             style={{
-              ...headingStyle,
-              marginTop: "20px",
-              marginBottom: "25px",
+              textAlign: "center",
+              maxWidth: 850,
+              margin: "0 auto",
             }}
           >
-            Um processo com começo, desenvolvimento e continuidade.
-          </h2>
+            <span style={eyebrow}>COMO FUNCIONA</span>
 
-          <p
-            style={{
-              maxWidth: "790px",
-              margin: "0 auto 60px",
-              color: "#6B5B56",
-              lineHeight: "2rem",
-              fontSize: "1.08rem",
-            }}
-          >
-            Cada encontro possui uma função dentro do processo. A estrutura
-            oferece direção ao casal, enquanto a condução respeita aquilo que
-            emerge ao longo do acompanhamento.
-          </p>
+            <h2 style={{ ...title, margin: "18px 0 20px" }}>
+              Um processo com começo, desenvolvimento e continuidade.
+            </h2>
+
+            <p style={{ ...body, margin: 0 }}>
+              Cada encontro possui uma função dentro do processo. A estrutura
+              oferece direção ao casal, enquanto a condução respeita aquilo que
+              emerge ao longo do acompanhamento.
+            </p>
+          </div>
 
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: isMobile ? "1fr" : "repeat(4, 1fr)",
-              gap: "22px",
+              gridTemplateColumns: isMobile ? "1fr" : "repeat(4,1fr)",
+              gap: 20,
+              marginTop: 48,
             }}
           >
-            {[
-              [
-                "01",
-                "Compreender",
-                "Identificar a dinâmica do casal e os padrões que sustentam os conflitos.",
-              ],
-              [
-                "02",
-                "Desconstruir",
-                "Olhar para emoções, feridas, ressentimentos e formas de comunicação que mantêm os mesmos ciclos.",
-              ],
-              [
-                "03",
-                "Reconstruir",
-                "Desenvolver novas formas de diálogo, responsabilidade, confiança e acordos.",
-              ],
-              [
-                "04",
-                "Sustentar",
-                "Fortalecer as mudanças construídas para que uma nova forma de se relacionar possa continuar.",
-              ],
-            ].map(([numero, titulo, texto]) => (
+            {process.map(([n, h, p]) => (
               <div
-                key={numero}
+                key={n}
                 style={{
-                  background: "#FFFFFF",
-                  borderRadius: "28px",
-                  padding: "32px 25px",
-                  textAlign: "left",
-                  boxShadow: "0 12px 30px rgba(0,0,0,.05)",
+                  background: "#FFF",
+                  borderRadius: 26,
+                  padding: 28,
+                  boxShadow: "0 10px 28px rgba(0,0,0,.05)",
                 }}
               >
                 <div
                   style={{
-                    width: "55px",
-                    height: "55px",
+                    width: 52,
+                    height: 52,
                     borderRadius: "50%",
                     background: "#EFE7DF",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
+                    display: "grid",
+                    placeItems: "center",
                     color: "#B08B57",
-                    fontWeight: "700",
-                    marginBottom: "22px",
+                    fontWeight: 700,
+                    marginBottom: 20,
                   }}
                 >
-                  {numero}
+                  {n}
                 </div>
 
                 <h3
                   style={{
                     color: "#4A3732",
-                    fontSize: "1.25rem",
-                    marginBottom: "15px",
+                    fontSize: "1.2rem",
+                    margin: "0 0 12px",
                   }}
                 >
-                  {titulo}
+                  {h}
                 </h3>
 
                 <p
                   style={{
-                    color: "#6B5B56",
-                    lineHeight: "1.8rem",
+                    ...body,
+                    fontSize: ".96rem",
                     margin: 0,
-                    fontSize: ".97rem",
                   }}
                 >
-                  {texto}
+                  {p}
                 </p>
               </div>
             ))}
@@ -605,132 +611,160 @@ const sectionStyle = (background, desktop = "120px 8%") => ({
         </div>
       </section>
 
-      {/* =========================================================
-          O QUE PODEM CONSTRUIR
-      ========================================================= */}
-      <section style={sectionStyle("#FCFAF7", "100px 8%")}>
+      {/* IMAGEM 2 — ESCUTA */}
+      <section style={section("#FFFFFF", "80px 7%")}>
         <div
           style={{
-            maxWidth: "1050px",
+            maxWidth: 1150,
             margin: "0 auto",
-            textAlign: "center",
+            display: "flex",
+            flexDirection: isMobile ? "column-reverse" : "row",
+            alignItems: "center",
+            gap: isMobile ? 35 : 65,
           }}
         >
-          <span style={eyebrowStyle}>AO LONGO DO PROCESSO</span>
+          <div style={{ flex: 1 }}>
+            <span style={eyebrow}>
+              UM ESPAÇO PARA CONVERSAS DIFÍCEIS
+            </span>
 
-          <h2
-            style={{
-              ...headingStyle,
-              marginTop: "20px",
-              marginBottom: "25px",
-            }}
-          >
-            O que vocês podem construir ao longo desse processo.
-          </h2>
+            <h2 style={{ ...title, margin: "18px 0 22px" }}>
+              Nem tudo precisa ser resolvido sozinhos.
+            </h2>
 
-          <p
-            style={{
-              maxWidth: "760px",
-              margin: "0 auto 45px",
-              color: "#6B5B56",
-              fontSize: "1.08rem",
-              lineHeight: "2rem",
-            }}
-          >
-            O objetivo não é prometer uma relação sem conflitos. É ajudar
-            vocês a construir uma relação em que os conflitos não precisem
-            continuar acontecendo da mesma maneira.
-          </p>
+            <p style={{ ...body, margin: 0 }}>
+              Existem assuntos que vocês talvez evitem, adiem ou tentem
+              resolver sempre da mesma maneira. O processo oferece um espaço
+              estruturado para que essas conversas possam acontecer com mais
+              segurança, respeito e direção.
+            </p>
+          </div>
 
           <div
             style={{
-              display: "grid",
-              gridTemplateColumns: isMobile ? "1fr" : "repeat(2, 1fr)",
-              gap: "20px",
-              textAlign: "left",
+              flex: 1,
+              overflow: "hidden",
+              borderRadius: 30,
             }}
           >
-            {[
-              "Mais clareza sobre a dinâmica de vocês",
-              "Uma comunicação mais consciente",
-              "Mais responsabilidade compartilhada",
-              "Novas formas de estar juntos",
-            ].map((item) => (
-              <div
-                key={item}
-                style={{
-                  background: "#FFFFFF",
-                  borderRadius: "22px",
-                  padding: "25px",
-                  display: "flex",
-                  gap: "14px",
-                  alignItems: "center",
-                  boxShadow: "0 8px 25px rgba(0,0,0,.04)",
-                }}
-              >
-                <span
-                  style={{
-                    width: "30px",
-                    height: "30px",
-                    minWidth: "30px",
-                    borderRadius: "50%",
-                    background: "#EFE7DF",
-                    color: "#B08B57",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    fontWeight: "700",
-                  }}
-                >
-                  ✓
-                </span>
-                <span
-                  style={{
-                    color: "#4A3732",
-                    lineHeight: "1.6rem",
-                    fontWeight: "600",
-                  }}
-                >
-                  {item}
-                </span>
-              </div>
-            ))}
+            <Image
+              src="/reconexao/02-casal-conversa.webp"
+              alt="Casal conversando com atenção e escuta"
+              width={1200}
+              height={800}
+              style={{
+                width: "100%",
+                height: "auto",
+                display: "block",
+              }}
+            />
           </div>
         </div>
       </section>
 
-      {/* =========================================================
-          RESPONSABILIDADE
-      ========================================================= */}
-      <section style={sectionStyle("#FFFFFF", "100px 8%")}>
+      {/* COMO PODE SER DIFERENTE */}
+      <section style={section("#F5F1EC")}>
+        <div style={{ maxWidth: 1150, margin: "0 auto" }}>
+          <div
+            style={{
+              maxWidth: 850,
+              margin: "0 auto",
+              textAlign: "center",
+            }}
+          >
+            <span style={eyebrow}>
+              COMO PODE COMEÇAR A SER DIFERENTE
+            </span>
+
+            <h2 style={{ ...title, margin: "18px 0 22px" }}>
+              Talvez a mudança não seja parar de discordar.
+            </h2>
+
+            <p style={{ ...body, margin: 0 }}>
+              Talvez seja conseguir atravessar os momentos difíceis sem
+              precisar se perder um do outro.
+            </p>
+          </div>
+
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: isMobile ? "1fr" : "repeat(2,1fr)",
+              gap: 22,
+              marginTop: 48,
+            }}
+          >
+            {different.map(([h, p]) => (
+              <div
+                key={h}
+                style={{
+                  background: "#FFF",
+                  borderRadius: 25,
+                  padding: 30,
+                }}
+              >
+                <h3
+                  style={{
+                    color: "#4A3732",
+                    fontSize: "1.18rem",
+                    margin: "0 0 12px",
+                  }}
+                >
+                  {h}
+                </h3>
+
+                <p
+                  style={{
+                    ...body,
+                    fontSize: ".98rem",
+                    margin: 0,
+                  }}
+                >
+                  {p}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <p
+            style={{
+              maxWidth: 780,
+              margin: "42px auto 0",
+              textAlign: "center",
+              color: "#4A3732",
+              fontSize: isMobile ? "1.05rem" : "1.2rem",
+              lineHeight: 1.8,
+              fontWeight: 600,
+            }}
+          >
+            Talvez seja conseguir perceber:{" "}
+            <em>“Estamos entrando naquele ciclo novamente.”</em> antes que a
+            discussão chegue ao mesmo lugar de sempre.
+          </p>
+        </div>
+      </section>
+
+      {/* RESPONSABILIDADE */}
+      <section style={section("#FCFAF7", "85px 7%")}>
         <div
           style={{
-            maxWidth: "900px",
+            maxWidth: 900,
             margin: "0 auto",
             textAlign: "center",
           }}
         >
           <h2
             style={{
-              color: "#4A3732",
-              fontSize: isMobile ? "1.9rem" : "2.7rem",
-              lineHeight: "1.3",
-              marginBottom: "25px",
+              ...title,
+              fontSize: isMobile ? "1.9rem" : "2.65rem",
+              margin: "0 0 22px",
             }}
           >
-            Não é sobre encontrar culpados.
-            <br />
-            É sobre compreender a dinâmica que vocês construíram.
+            Não é sobre encontrar culpados. É sobre compreender a dinâmica que
+            vocês construíram.
           </h2>
 
-          <p
-            style={{
-              color: "#6B5B56",
-              fontSize: "1.08rem",
-              lineHeight: "2rem",
-              margin: 0,
-            }}
-          >
+          <p style={{ ...body, margin: 0 }}>
             O RECONEXÃO não promete salvar uma relação a qualquer custo. É um
             processo estruturado para que os dois possam olhar para a relação
             com mais consciência, responsabilidade e disposição para transformar
@@ -739,48 +773,60 @@ const sectionStyle = (background, desktop = "120px 8%") => ({
         </div>
       </section>
 
-      {/* =========================================================
-          PARA QUEM É
-      ========================================================= */}
-      <section id="para-quem-e" style={sectionStyle("#F8F5F2")}>
+      {/* IMAGEM 3 — CAMINHO */}
+      <section style={section("#FFFFFF", "75px 7% 90px")}>
         <div
           style={{
-            maxWidth: "1100px",
+            maxWidth: 1150,
             margin: "0 auto",
-            textAlign: "center",
+            overflow: "hidden",
+            borderRadius: 32,
           }}
         >
-          <span style={eyebrowStyle}>TALVEZ O RECONEXÃO SEJA PARA VOCÊS SE...</span>
-
-          <h2
+          <Image
+            src="/reconexao/03-casal-caminho.webp"
+            alt="Casal caminhando junto, representando um novo caminho"
+            width={1536}
+            height={1024}
             style={{
-              ...headingStyle,
-              marginTop: "20px",
-              marginBottom: "28px",
+              width: "100%",
+              height: "auto",
+              display: "block",
+            }}
+          />
+        </div>
+      </section>
+
+      {/* PARA QUEM */}
+      <section id="para-quem-e" style={section("#FFFFFF")}>
+        <div style={{ maxWidth: 1100, margin: "0 auto" }}>
+          <div
+            style={{
+              textAlign: "center",
+              maxWidth: 850,
+              margin: "0 auto",
             }}
           >
-            Vocês não precisam estar à beira da separação para buscar ajuda.
-          </h2>
+            <span style={eyebrow}>
+              TALVEZ O RECONEXÃO SEJA PARA VOCÊS SE...
+            </span>
 
-          <p
-            style={{
-              maxWidth: "780px",
-              margin: "0 auto 50px",
-              color: "#6B5B56",
-              fontSize: "1.08rem",
-              lineHeight: "2rem",
-            }}
-          >
-            O processo pode começar quando vocês percebem que não querem
-            continuar vivendo a relação da mesma maneira.
-          </p>
+            <h2 style={{ ...title, margin: "18px 0 22px" }}>
+              Vocês não precisam estar à beira da separação para buscar ajuda.
+            </h2>
+
+            <p style={{ ...body, margin: 0 }}>
+              O processo pode começar quando vocês percebem que não querem
+              continuar vivendo a relação da mesma maneira.
+            </p>
+          </div>
 
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: isMobile ? "1fr" : "repeat(2, 1fr)",
-              gap: "22px",
-              textAlign: "left",
+              gridTemplateColumns: isMobile ? "1fr" : "repeat(2,1fr)",
+              gap: 18,
+              marginTop: 45,
             }}
           >
             {[
@@ -790,43 +836,43 @@ const sectionStyle = (background, desktop = "120px 8%") => ({
               "Casais que desejam reconstruir comunicação, confiança e parceria.",
               "Casais que não querem continuar repetindo os mesmos padrões.",
               "Casais dispostos a participar do processo e assumir responsabilidade pela transformação da relação.",
-            ].map((item) => (
+            ].map((x) => (
               <div
-                key={item}
+                key={x}
                 style={{
                   display: "flex",
-                  gap: "14px",
+                  gap: 13,
                   alignItems: "flex-start",
-                  background: "#FFFFFF",
-                  borderRadius: "22px",
-                  padding: "25px",
+                  background: "#F8F5F2",
+                  borderRadius: 21,
+                  padding: 24,
                 }}
               >
-                <div
+                <span
                   style={{
-                    width: "28px",
-                    height: "28px",
-                    minWidth: "28px",
+                    width: 27,
+                    height: 27,
+                    minWidth: 27,
                     borderRadius: "50%",
                     background: "#EFE7DF",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
                     color: "#B08B57",
-                    fontWeight: "700",
+                    display: "grid",
+                    placeItems: "center",
+                    fontWeight: 700,
                   }}
                 >
                   ✓
-                </div>
+                </span>
 
                 <p
                   style={{
-                    margin: 0,
+                    ...body,
                     color: "#4A3732",
-                    lineHeight: "1.7rem",
+                    fontSize: ".98rem",
+                    margin: 0,
                   }}
                 >
-                  {item}
+                  {x}
                 </p>
               </div>
             ))}
@@ -834,82 +880,111 @@ const sectionStyle = (background, desktop = "120px 8%") => ({
         </div>
       </section>
 
-      {/* =========================================================
-          OBJEÇÕES ANTES DO INVESTIMENTO
-      ========================================================= */}
-      <section style={sectionStyle("#FFFFFF", "100px 8%")}>
+      {/* QUEM CONDUZ */}
+      <section style={section("#F5F1EC", "90px 7%")}>
         <div
           style={{
-            maxWidth: "900px",
+            maxWidth: 1050,
             margin: "0 auto",
-            textAlign: "center",
+            display: "flex",
+            flexDirection: isMobile ? "column" : "row",
+            alignItems: "center",
+            gap: isMobile ? 35 : 65,
           }}
         >
-          <span style={eyebrowStyle}>ANTES DE DECIDIR</span>
-
-          <h2
+          <div
             style={{
-              ...headingStyle,
-              marginTop: "20px",
-              marginBottom: "40px",
+              flex: 1,
+              overflow: "hidden",
+              borderRadius: 30,
             }}
           >
-            Talvez vocês estejam se perguntando...
-          </h2>
+            <Image
+              src="/reconexao/04-kamilah-reconexao.webp"
+              alt="Kamilah Franco"
+              width={1024}
+              height={1536}
+              style={{
+                width: "100%",
+                height: "auto",
+                display: "block",
+              }}
+            />
+          </div>
+
+          <div style={{ flex: 1 }}>
+            <span style={eyebrow}>QUEM CONDUZ O RECONEXÃO</span>
+
+            <h2 style={{ ...title, margin: "18px 0 20px" }}>
+              Kamilah Franco
+            </h2>
+
+            <p style={{ ...body, margin: 0 }}>
+              O RECONEXÃO é conduzido por Kamilah Franco a partir de um olhar
+              voltado para a dinâmica da relação, para os padrões que se
+              repetem e para a construção de novas possibilidades de diálogo e
+              convivência.
+            </p>
+
+            <p style={{ ...body, margin: "18px 0 0" }}>
+              A proposta é oferecer ao casal um espaço de escuta e reflexão,
+              com direção e respeito à história e ao momento de cada relação.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* OBJEÇÕES */}
+      <section style={section("#FFFFFF")}>
+        <div style={{ maxWidth: 1000, margin: "0 auto" }}>
+          <div
+            style={{
+              textAlign: "center",
+              maxWidth: 800,
+              margin: "0 auto",
+            }}
+          >
+            <span style={eyebrow}>ANTES DE DECIDIR</span>
+
+            <h2 style={{ ...title, margin: "18px 0 35px" }}>
+              Talvez vocês estejam se perguntando...
+            </h2>
+          </div>
 
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: isMobile ? "1fr" : "repeat(2, 1fr)",
-              gap: "20px",
-              textAlign: "left",
+              gridTemplateColumns: isMobile ? "1fr" : "repeat(2,1fr)",
+              gap: 18,
             }}
           >
-            {[
-              [
-                "Será que isso é realmente para nós?",
-                "O RECONEXÃO foi pensado para casais que desejam compreender a própria dinâmica e estão dispostos a participar desse processo.",
-              ],
-              [
-                "Mas nós já conversamos tantas vezes...",
-                "Conversar é importante. Mas quando o mesmo ciclo se repete, pode ser necessário olhar também para a dinâmica que existe por trás dessas conversas.",
-              ],
-              [
-                "E se for difícil falar sobre algumas coisas?",
-                "Vocês não precisam chegar ao processo sabendo exatamente o que dizer. A condução ajuda a organizar essas conversas com segurança, respeito e direção.",
-              ],
-              [
-                "E se meu parceiro não estiver tão aberto quanto eu?",
-                "O RECONEXÃO é um processo para o casal e pressupõe a disposição dos dois em participar e olhar para a relação.",
-              ],
-            ].map(([pergunta, resposta]) => (
+            {faq.map(([q, a]) => (
               <div
-                key={pergunta}
+                key={q}
                 style={{
                   background: "#F8F5F2",
-                  borderRadius: "25px",
-                  padding: "30px",
+                  borderRadius: 23,
+                  padding: 26,
                 }}
               >
                 <h3
                   style={{
                     color: "#4A3732",
-                    fontSize: "1.15rem",
-                    lineHeight: "1.5",
-                    margin: "0 0 14px",
+                    fontSize: "1.08rem",
+                    margin: "0 0 11px",
                   }}
                 >
-                  {pergunta}
+                  {q}
                 </h3>
+
                 <p
                   style={{
-                    color: "#6B5B56",
-                    lineHeight: "1.8rem",
+                    ...body,
+                    fontSize: ".95rem",
                     margin: 0,
-                    fontSize: ".97rem",
                   }}
                 >
-                  {resposta}
+                  {a}
                 </p>
               </div>
             ))}
@@ -917,187 +992,87 @@ const sectionStyle = (background, desktop = "120px 8%") => ({
         </div>
       </section>
 
-      {/* =========================================================
-          INVESTIMENTO — ÂNCORA + VALOR REAL
-      ========================================================= */}
-      <section
-        id="investimento"
-        style={{
-          background: "#F8F5F2",
-          padding: isMobile ? "85px 8%" : "120px 8%",
-        }}
-      >
+      {/* POR QUE 8 ENCONTROS */}
+      <section style={section("#FCFAF7", "90px 7%")}>
         <div
           style={{
-            maxWidth: "900px",
+            maxWidth: 900,
             margin: "0 auto",
             textAlign: "center",
           }}
         >
-          <span style={eyebrowStyle}>ATENDIMENTO PARTICULAR PARA CASAIS</span>
+          <span style={eyebrow}>
+            POR QUE UM PROCESSO E NÃO APENAS UMA SESSÃO?
+          </span>
 
-          <h2
-            style={{
-              color: "#4A3732",
-              fontSize: isMobile ? "2rem" : "3rem",
-              lineHeight: "1.2",
-              marginTop: "20px",
-              marginBottom: "20px",
-            }}
-          >
-            RECONEXÃO — UM NOVO NÓS
+          <h2 style={{ ...title, margin: "18px 0 22px" }}>
+            Porque mudanças na relação precisam de espaço para acontecer.
+          </h2>
+
+          <p style={{ ...body, margin: 0 }}>
+            Uma sessão pode abrir uma conversa. Um processo permite compreender
+            o que está acontecendo, trabalhar os padrões que se repetem,
+            experimentar novas formas de se relacionar e acompanhar a
+            construção dessas mudanças ao longo do tempo.
+          </p>
+        </div>
+      </section>
+
+      {/* INVESTIMENTO */}
+      <section id="investimento" style={section("#F8F5F2", "105px 7%")}>
+        <div
+          style={{
+            maxWidth: 900,
+            margin: "0 auto",
+            textAlign: "center",
+          }}
+        >
+          <span style={eyebrow}>
+            ATENDIMENTO PARTICULAR PARA CASAIS
+          </span>
+
+          <h2 style={{ ...title, margin: "18px 0 20px" }}>
+            O investimento para o processo completo.
           </h2>
 
           <p
             style={{
-              maxWidth: "760px",
-              margin: "0 auto 42px",
-              color: "#6B5B56",
-              fontSize: "1.08rem",
-              lineHeight: "2rem",
+              ...body,
+              maxWidth: 760,
+              margin: "0 auto 40px",
             }}
           >
-            Um acompanhamento terapêutico particular, estruturado em 8
-            encontros e desenvolvido especificamente para a relação.
+            8 encontros estruturados para trabalhar a dinâmica da relação com
+            começo, desenvolvimento e continuidade.
           </p>
 
-          {/* VALOR DE REFERÊNCIA */}
           <div
             style={{
-              maxWidth: "700px",
-              margin: "0 auto 22px",
-              background: "#FFFFFF",
-              borderRadius: "28px",
-              padding: isMobile ? "28px 22px" : "34px 40px",
-              border: "1px solid rgba(176,139,87,.12)",
+              maxWidth: 720,
+              margin: "0 auto",
+              background: "#FFF",
+              borderRadius: 32,
+              padding: isMobile ? "32px 22px" : 50,
+              border: "1px solid rgba(176,139,87,.14)",
+              boxShadow: "0 14px 38px rgba(0,0,0,.05)",
             }}
           >
             <p
               style={{
-                margin: 0,
                 color: "#7A6A64",
+                margin: 0,
                 fontSize: ".95rem",
               }}
             >
-              Se cada um fizesse um acompanhamento individual
+              À vista
             </p>
 
             <div
               style={{
-                marginTop: "10px",
-                color: "#4A3732",
-                fontWeight: "700",
-                fontSize: isMobile ? "2.15rem" : "2.8rem",
-                textDecoration: "line-through",
-                textDecorationColor: "#B08B57",
-                textDecorationThickness: "2px",
-              }}
-            >
-              R$ 4.000,00
-            </div>
-
-            <p
-              style={{
-                margin: "12px 0 0",
-                color: "#7A6A64",
-                fontSize: ".92rem",
-                lineHeight: "1.6",
-              }}
-            >
-              Dois acompanhamentos individuais somariam R$ 4.000,00.
-            </p>
-          </div>
-
-          {/* VIRADA */}
-          <div
-            style={{
-              maxWidth: "700px",
-              margin: "0 auto 25px",
-              padding: isMobile ? "10px 10px" : "12px 20px",
-            }}
-          >
-            <p
-              style={{
-                margin: 0,
-                color: "#4A3732",
-                fontSize: isMobile ? "1.15rem" : "1.35rem",
-                lineHeight: "1.6",
-                fontWeight: "700",
-              }}
-            >
-              Mas não é isso que vocês irão pagar no{" "}
-              <span style={{ color: "#B08B57" }}>RECONEXÃO.</span>
-            </p>
-          </div>
-
-          {/* VALOR REAL */}
-          <div
-            style={{
-              background: "#FFFFFF",
-              borderRadius: "35px",
-              padding: isMobile ? "38px 22px" : "58px",
-              boxShadow: "0 15px 40px rgba(0,0,0,.06)",
-              border: "1px solid rgba(176,139,87,.16)",
-            }}
-          >
-            <p
-              style={{
-                margin: 0,
-                color: "#7A6A64",
-                fontSize: ".95rem",
-                letterSpacing: ".5px",
-              }}
-            >
-              NO CARTÃO
-            </p>
-
-            <div
-              style={{
-                marginTop: "8px",
                 color: "#B08B57",
-                fontWeight: "800",
-                fontSize: isMobile ? "3rem" : "4.2rem",
-                lineHeight: "1.1",
-              }}
-            >
-              12x de R$ 299,68
-            </div>
-
-            <p
-              style={{
-                margin: "13px 0 0",
-                color: "#6B5B56",
-                fontSize: ".92rem",
-              }}
-            >
-              para realizar o processo completo
-            </p>
-
-            <div
-              style={{
-                width: "100%",
-                height: "1px",
-                background: "rgba(176,139,87,.18)",
-                margin: "34px 0",
-              }}
-            />
-
-            <p
-              style={{
-                margin: 0,
-                color: "#7A6A64",
-                fontSize: ".9rem",
-              }}
-            >
-              OU À VISTA
-            </p>
-
-            <div
-              style={{
-                marginTop: "7px",
-                color: "#4A3732",
-                fontWeight: "700",
-                fontSize: isMobile ? "1.85rem" : "2.4rem",
+                fontSize: isMobile ? "2.2rem" : "3rem",
+                fontWeight: 800,
+                marginTop: 6,
               }}
             >
               R$ 2.997,00
@@ -1106,38 +1081,77 @@ const sectionStyle = (background, desktop = "120px 8%") => ({
             <div
               style={{
                 display: "inline-block",
-                marginTop: "14px",
+                marginTop: 12,
                 background: "#EFE7DF",
                 color: "#8C6A45",
-                padding: "8px 16px",
-                borderRadius: "30px",
-                fontWeight: "700",
+                padding: "8px 15px",
+                borderRadius: 30,
+                fontWeight: 700,
                 fontSize: ".88rem",
               }}
             >
               Economia de R$ 599,16 no pagamento à vista
             </div>
 
+            <div
+              style={{
+                height: 1,
+                background: "rgba(176,139,87,.18)",
+                margin: "30px 0",
+              }}
+            />
+
             <p
               style={{
-                maxWidth: "650px",
-                margin: "30px auto 0",
-                color: "#6B5B56",
-                fontSize: ".97rem",
-                lineHeight: "1.8rem",
+                color: "#7A6A64",
+                margin: 0,
+                fontSize: ".95rem",
               }}
             >
-              O RECONEXÃO não é a soma de dois processos individuais. Aqui, o
-              trabalho é direcionado especificamente para a relação de vocês.
+              No cartão
+            </p>
+
+            <div
+              style={{
+                color: "#4A3732",
+                fontSize: isMobile ? "2rem" : "2.65rem",
+                fontWeight: 700,
+                marginTop: 6,
+              }}
+            >
+              12x de R$ 299,68
+            </div>
+
+            <p
+              style={{
+                color: "#7A6A64",
+                fontSize: ".85rem",
+                margin: "8px 0 0",
+              }}
+            >
+              Total parcelado: R$ 3.596,16
+            </p>
+
+            <p
+              style={{
+                ...body,
+                fontSize: ".96rem",
+                maxWidth: 620,
+                margin: "28px auto 0",
+              }}
+            >
+              Para comparação, dois acompanhamentos individuais de R$ 1.997,00
+              representariam R$ 3.994,00. O RECONEXÃO não é a soma de dois
+              processos individuais: o trabalho é direcionado especificamente
+              para a relação.
             </p>
           </div>
 
           <p
             style={{
               color: "#7A6A64",
-              fontSize: ".9rem",
-              lineHeight: "1.6",
-              marginTop: "22px",
+              fontSize: ".88rem",
+              marginTop: 20,
             }}
           >
             Atendimento particular • 8 encontros • Online
@@ -1145,53 +1159,40 @@ const sectionStyle = (background, desktop = "120px 8%") => ({
         </div>
       </section>
 
-      {/* =========================================================
-          VALOR — O INVESTIMENTO É PELO PROCESSO
-      ========================================================= */}
-      <section style={sectionStyle("#FFFFFF", "105px 8%")}>
-        <div
-          style={{
-            maxWidth: "1000px",
-            margin: "0 auto",
-            textAlign: "center",
-          }}
-        >
-          <span style={eyebrowStyle}>O QUE ESTÁ POR TRÁS DO INVESTIMENTO</span>
-
-          <h2
+      {/* VALOR */}
+      <section style={section("#FFFFFF")}>
+        <div style={{ maxWidth: 1050, margin: "0 auto" }}>
+          <div
             style={{
-              color: "#4A3732",
-              fontSize: isMobile ? "2rem" : "3rem",
-              lineHeight: "1.2",
-              marginTop: "20px",
-              marginBottom: "22px",
+              textAlign: "center",
+              maxWidth: 820,
+              margin: "0 auto",
             }}
           >
-            O investimento não é apenas pelos encontros.
-            <br />
-            <span style={{ color: "#B08B57" }}>É pelo processo.</span>
-          </h2>
+            <span style={eyebrow}>
+              O QUE ESTÁ POR TRÁS DO INVESTIMENTO
+            </span>
 
-          <p
-            style={{
-              maxWidth: "780px",
-              margin: "0 auto 50px",
-              color: "#6B5B56",
-              fontSize: "1.08rem",
-              lineHeight: "2rem",
-            }}
-          >
-            Vocês estão investindo em um espaço para compreender o que está
-            acontecendo entre vocês, interromper padrões que se repetem e
-            construir novas possibilidades para a relação.
-          </p>
+            <h2 style={{ ...title, margin: "18px 0 22px" }}>
+              O investimento não é apenas pelos encontros.{" "}
+              <span style={{ color: "#B08B57" }}>
+                É pelo processo.
+              </span>
+            </h2>
+
+            <p style={{ ...body, margin: 0 }}>
+              Vocês estão investindo em um espaço para compreender o que está
+              acontecendo entre vocês, interromper padrões que se repetem e
+              construir novas possibilidades para a relação.
+            </p>
+          </div>
 
           <div
             style={{
               display: "grid",
-              gridTemplateColumns: isMobile ? "1fr" : "repeat(2, 1fr)",
-              gap: "22px",
-              textAlign: "left",
+              gridTemplateColumns: isMobile ? "1fr" : "repeat(2,1fr)",
+              gap: 20,
+              marginTop: 45,
             }}
           >
             {[
@@ -1215,131 +1216,133 @@ const sectionStyle = (background, desktop = "120px 8%") => ({
                 "Um processo pensado para a realidade de vocês",
                 "Cada casal tem uma história, uma dinâmica e necessidades próprias.",
               ],
-            ].map(([titulo, texto]) => (
+            ].map(([h, p]) => (
               <div
-                key={titulo}
+                key={h}
                 style={{
                   background: "#F8F5F2",
-                  borderRadius: "25px",
-                  padding: "28px",
+                  borderRadius: 24,
+                  padding: 28,
                 }}
               >
                 <h3
                   style={{
                     color: "#4A3732",
-                    fontSize: "1.15rem",
-                    margin: "0 0 12px",
+                    fontSize: "1.12rem",
+                    margin: "0 0 11px",
                   }}
                 >
-                  {titulo}
+                  {h}
                 </h3>
+
                 <p
                   style={{
-                    color: "#6B5B56",
-                    lineHeight: "1.8rem",
+                    ...body,
+                    fontSize: ".96rem",
                     margin: 0,
-                    fontSize: ".97rem",
                   }}
                 >
-                  {texto}
+                  {p}
                 </p>
               </div>
             ))}
           </div>
-
-          <p
-            style={{
-              maxWidth: "760px",
-              margin: "45px auto 0",
-              color: "#4A3732",
-              fontSize: isMobile ? "1.05rem" : "1.2rem",
-              lineHeight: "1.8rem",
-              fontWeight: "600",
-            }}
-          >
-            Porque o objetivo não é apenas conversar sobre a relação.
-            <br />
-            É criar condições para que vocês possam se relacionar de uma forma
-            diferente.
-          </p>
         </div>
       </section>
 
-      {/* =========================================================
-          SEGURANÇA ANTES DO CTA
-      ========================================================= */}
+      {/* SEGURANÇA */}
       <section
-        style={{
-          background:
-            "linear-gradient(180deg,#EFE7DF 0%, #FCFAF7 100%)",
-          padding: isMobile ? "85px 8%" : "110px 8%",
-        }}
+        style={section(
+          "linear-gradient(180deg,#EFE7DF 0%,#FCFAF7 100%)",
+          "90px 7%"
+        )}
       >
         <div
           style={{
-            maxWidth: "850px",
+            maxWidth: 850,
             margin: "0 auto",
             textAlign: "center",
           }}
         >
-          <span style={eyebrowStyle}>E SE VOCÊS AINDA NÃO TIVEREM CERTEZA?</span>
+          <span style={eyebrow}>
+            E SE VOCÊS AINDA NÃO TIVEREM CERTEZA?
+          </span>
 
-          <h2
-            style={{
-              color: "#4A3732",
-              fontSize: isMobile ? "2rem" : "2.8rem",
-              lineHeight: "1.25",
-              marginTop: "20px",
-              marginBottom: "25px",
-            }}
-          >
+          <h2 style={{ ...title, margin: "18px 0 22px" }}>
             Vocês não precisam decidir tudo agora.
           </h2>
 
-          <p
-            style={{
-              maxWidth: "750px",
-              margin: "0 auto",
-              color: "#6B5B56",
-              fontSize: "1.08rem",
-              lineHeight: "2rem",
-            }}
-          >
+          <p style={{ ...body, margin: 0 }}>
             Depois de conhecer o processo, vocês podem entrar em contato e
             contar brevemente o que estão vivendo. A partir disso, podemos
-            entender se o RECONEXÃO é realmente adequado para o que estão
-            buscando.
+            entender se o RECONEXÃO é realmente adequado para o momento de
+            vocês.
           </p>
+
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: isMobile ? "1fr" : "repeat(3,1fr)",
+              gap: 14,
+              marginTop: 35,
+              textAlign: "left",
+            }}
+          >
+            {[
+              ["1", "Contem o que estão vivendo."],
+              ["2", "Conversamos sobre o momento de vocês."],
+              ["3", "Se fizer sentido, alinhamos os próximos passos."],
+            ].map(([n, t]) => (
+              <div
+                key={n}
+                style={{
+                  background: "#FFF",
+                  borderRadius: 20,
+                  padding: 22,
+                }}
+              >
+                <strong
+                  style={{
+                    color: "#B08B57",
+                    fontSize: "1.25rem",
+                  }}
+                >
+                  {n}
+                </strong>
+
+                <p
+                  style={{
+                    color: "#4A3732",
+                    lineHeight: 1.6,
+                    margin: "8px 0 0",
+                  }}
+                >
+                  {t}
+                </p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* =========================================================
-          CTA FINAL — ÚNICO CTA DA PÁGINA
-      ========================================================= */}
-      <section
-        style={{
-          background: "#FCFAF7",
-          padding: isMobile ? "85px 8%" : "110px 8%",
-        }}
-      >
+      {/* CTA FINAL */}
+      <section style={section("#FCFAF7", "100px 7% 110px")}>
         <div
           style={{
-            maxWidth: "900px",
+            maxWidth: 900,
             margin: "0 auto",
             textAlign: "center",
           }}
         >
-          <span style={eyebrowStyle}>
+          <span style={eyebrow}>
             UM NOVO NÓS PODE COMEÇAR COM UMA DECISÃO
           </span>
 
           <h2
             style={{
-              color: "#4A3732",
+              ...title,
               fontSize: isMobile ? "2rem" : "3.1rem",
-              lineHeight: "1.2",
-              marginTop: "20px",
-              marginBottom: "25px",
+              margin: "18px 0 23px",
             }}
           >
             Vocês não precisam voltar a ser como antes.
@@ -1347,11 +1350,9 @@ const sectionStyle = (background, desktop = "120px 8%") => ({
 
           <p
             style={{
-              maxWidth: "760px",
+              ...body,
+              maxWidth: 760,
               margin: "0 auto",
-              color: "#6B5B56",
-              fontSize: "1.1rem",
-              lineHeight: "2rem",
             }}
           >
             Talvez o que a relação de vocês precise não seja voltar ao passado,
@@ -1360,11 +1361,11 @@ const sectionStyle = (background, desktop = "120px 8%") => ({
 
           <p
             style={{
-              marginTop: "25px",
               color: "#4A3732",
-              fontSize: isMobile ? "1.3rem" : "1.6rem",
-              fontWeight: "600",
-              lineHeight: "1.6",
+              fontSize: isMobile ? "1.25rem" : "1.55rem",
+              fontWeight: 600,
+              lineHeight: 1.6,
+              margin: "24px 0 0",
             }}
           >
             Não é sobre voltar a ser como antes.
@@ -1378,21 +1379,23 @@ const sectionStyle = (background, desktop = "120px 8%") => ({
             href={whatsappUrl}
             target="_blank"
             rel="noopener noreferrer"
-            onClick={openWhatsApp}
+            onClick={trackWhatsApp}
+            aria-label="Conversar sobre o processo RECONEXÃO pelo WhatsApp"
             style={{
               display: "inline-flex",
               alignItems: "center",
               justifyContent: "center",
-              marginTop: "35px",
+              marginTop: 34,
               background: "#25D366",
               color: "#FFF",
-              padding: isMobile ? "17px 25px" : "18px 38px",
-              borderRadius: "60px",
+              padding: isMobile ? "16px 23px" : "18px 36px",
+              borderRadius: 60,
               textDecoration: "none",
-              fontWeight: "700",
+              fontWeight: 700,
               fontSize: "1rem",
-              boxShadow: "0 12px 30px rgba(37,211,102,.25)",
+              boxShadow: "0 12px 30px rgba(37,211,102,.22)",
               textAlign: "center",
+              maxWidth: "100%",
             }}
           >
             💬 Quero conversar sobre o processo RECONEXÃO
@@ -1400,26 +1403,29 @@ const sectionStyle = (background, desktop = "120px 8%") => ({
 
           <p
             style={{
-              marginTop: "16px",
               color: "#7A6A64",
               fontSize: ".9rem",
+              lineHeight: 1.6,
+              margin: "15px auto 0",
+              maxWidth: 620,
             }}
           >
             Conte brevemente o que vocês estão vivendo. A partir disso,
-            podemos entender se o processo faz sentido para vocês.
+            conversamos sobre o momento de vocês, a adequação do processo e os
+            próximos passos.
           </p>
 
           <p
             style={{
-              marginTop: "18px",
               color: "#7A6A64",
-              fontSize: ".85rem",
+              fontSize: ".84rem",
+              marginTop: 18,
             }}
           >
             Atendimento particular para casais
           </p>
         </div>
       </section>
-    </>
+    </main>
   );
 }
