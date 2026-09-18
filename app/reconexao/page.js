@@ -1147,149 +1147,189 @@ export default function ReconexaoPage() {
         </div>
       </section>
 
-      {/* INVESTIMENTO */}
-      <section
-        id="investimento"
-        style={section("#F8F5F2", "105px 7%")}
+     {/* INVESTIMENTO */}
+<section
+  id="investimento"
+  style={section("#F8F5F2", "105px 7%")}
+>
+  <div
+    style={{
+      maxWidth: 900,
+      margin: "0 auto",
+      textAlign: "center",
+    }}
+  >
+    <span style={eyebrow}>
+      ATENDIMENTO PARTICULAR PARA CASAIS
+    </span>
+
+    <h2 style={{ ...title, margin: "18px 0 20px" }}>
+      O investimento para o processo completo.
+    </h2>
+
+    <p
+      style={{
+        ...body,
+        maxWidth: 760,
+        margin: "0 auto 38px",
+      }}
+    >
+      São 8 encontros estruturados para trabalhar a dinâmica da relação
+      com começo, desenvolvimento e continuidade.
+    </p>
+
+    {/* VALOR DE REFERÊNCIA */}
+    <div
+      style={{
+        maxWidth: 700,
+        margin: "0 auto 24px",
+        background: "#FFFFFF",
+        borderRadius: 28,
+        padding: isMobile ? "28px 22px" : "34px 40px",
+        border: "1px solid rgba(176,139,87,.12)",
+      }}
+    >
+      <p
+        style={{
+          margin: 0,
+          color: "#7A6A64",
+          fontSize: ".95rem",
+          lineHeight: 1.6,
+        }}
       >
-        <div
-          style={{
-            maxWidth: 900,
-            margin: "0 auto",
-            textAlign: "center",
-          }}
-        >
-          <span style={eyebrow}>
-            ATENDIMENTO PARTICULAR PARA CASAIS
-          </span>
+        Dois acompanhamentos individuais representariam
+      </p>
 
-          <h2 style={{ ...title, margin: "18px 0 20px" }}>
-            O investimento para o processo completo.
-          </h2>
+      <div
+        style={{
+          marginTop: 10,
+          color: "#4A3732",
+          fontWeight: 700,
+          fontSize: isMobile ? "2.35rem" : "3rem",
+          lineHeight: 1.1,
+        }}
+      >
+        cerca de R$ 4.000,00
+      </div>
 
-          <p
-            style={{
-              ...body,
-              maxWidth: 760,
-              margin: "0 auto 40px",
-            }}
-          >
-            8 encontros estruturados para trabalhar a dinâmica da relação com
-            começo, desenvolvimento e continuidade.
-          </p>
+      <p
+        style={{
+          margin: "12px 0 0",
+          color: "#7A6A64",
+          fontSize: ".92rem",
+          lineHeight: 1.6,
+        }}
+      >
+        O RECONEXÃO não é a soma de dois processos individuais.
+        O trabalho é direcionado especificamente para a relação.
+      </p>
+    </div>
 
-          <div
-            style={{
-              maxWidth: 720,
-              margin: "0 auto",
-              background: "#FFF",
-              borderRadius: 32,
-              padding: isMobile ? "32px 22px" : 50,
-              border: "1px solid rgba(176,139,87,.14)",
-              boxShadow: "0 14px 38px rgba(0,0,0,.05)",
-            }}
-          >
-            <p
-              style={{
-                color: "#7A6A64",
-                margin: 0,
-                fontSize: ".95rem",
-              }}
-            >
-              À vista
-            </p>
+    {/* INVESTIMENTO NO CARTÃO */}
+    <div
+      style={{
+        maxWidth: 720,
+        margin: "0 auto",
+        background: "#FFFFFF",
+        borderRadius: 32,
+        padding: isMobile ? "34px 22px" : "50px",
+        border: "1px solid rgba(176,139,87,.18)",
+        boxShadow: "0 14px 38px rgba(0,0,0,.06)",
+      }}
+    >
+      <p
+        style={{
+          color: "#7A6A64",
+          margin: 0,
+          fontSize: ".95rem",
+          letterSpacing: ".5px",
+          textTransform: "uppercase",
+        }}
+      >
+        No cartão
+      </p>
 
-            <div
-              style={{
-                color: "#B08B57",
-                fontSize: isMobile ? "2.2rem" : "3rem",
-                fontWeight: 800,
-                marginTop: 6,
-              }}
-            >
-              R$ 2.997,00
-            </div>
+      <div
+        style={{
+          color: "#B08B57",
+          fontSize: isMobile ? "2.7rem" : "3.5rem",
+          fontWeight: 800,
+          lineHeight: 1.1,
+          marginTop: 10,
+        }}
+      >
+        12x de R$ 299,68
+      </div>
 
-            <div
-              style={{
-                display: "inline-block",
-                marginTop: 12,
-                background: "#EFE7DF",
-                color: "#8C6A45",
-                padding: "8px 15px",
-                borderRadius: 30,
-                fontWeight: 700,
-                fontSize: ".88rem",
-              }}
-            >
-              Economia de R$ 599,16 no pagamento à vista
-            </div>
+      <p
+        style={{
+          color: "#7A6A64",
+          fontSize: ".88rem",
+          margin: "10px 0 0",
+        }}
+      >
+        Total parcelado: R$ 3.596,16
+      </p>
 
-            <div
-              style={{
-                height: 1,
-                background: "rgba(176,139,87,.18)",
-                margin: "30px 0",
-              }}
-            />
+      <div
+        style={{
+          height: 1,
+          background: "rgba(176,139,87,.18)",
+          margin: "30px 0",
+        }}
+      />
 
-            <p
-              style={{
-                color: "#7A6A64",
-                margin: 0,
-                fontSize: ".95rem",
-              }}
-            >
-              No cartão
-            </p>
+      {/* À VISTA */}
+      <p
+        style={{
+          color: "#7A6A64",
+          margin: 0,
+          fontSize: ".95rem",
+          letterSpacing: ".5px",
+          textTransform: "uppercase",
+        }}
+      >
+        À vista
+      </p>
 
-            <div
-              style={{
-                color: "#4A3732",
-                fontSize: isMobile ? "2rem" : "2.65rem",
-                fontWeight: 700,
-                marginTop: 6,
-              }}
-            >
-              12x de R$ 299,68
-            </div>
+      <div
+        style={{
+          color: "#4A3732",
+          fontSize: isMobile ? "2rem" : "2.65rem",
+          fontWeight: 700,
+          marginTop: 8,
+        }}
+      >
+        R$ 2.997,00
+      </div>
 
-            <p
-              style={{
-                color: "#7A6A64",
-                fontSize: ".85rem",
-                margin: "8px 0 0",
-              }}
-            >
-              Total parcelado: R$ 3.596,16
-            </p>
+      <div
+        style={{
+          display: "inline-block",
+          marginTop: 12,
+          background: "#EFE7DF",
+          color: "#8C6A45",
+          padding: "8px 15px",
+          borderRadius: 30,
+          fontWeight: 700,
+          fontSize: ".88rem",
+        }}
+      >
+        Economia de R$ 599,16 no pagamento à vista
+      </div>
+    </div>
 
-            <p
-              style={{
-                ...body,
-                fontSize: ".96rem",
-                maxWidth: 620,
-                margin: "28px auto 0",
-              }}
-            >
-              Para comparação, dois acompanhamentos individuais de R$ 1.997,00
-              representariam R$ 3.994,00. O RECONEXÃO não é a soma de dois
-              processos individuais: o trabalho é direcionado especificamente
-              para a relação.
-            </p>
-          </div>
-
-          <p
-            style={{
-              color: "#7A6A64",
-              fontSize: ".88rem",
-              marginTop: 20,
-            }}
-          >
-            Atendimento particular • 8 encontros • Online
-          </p>
-        </div>
-      </section>
+    <p
+      style={{
+        color: "#7A6A64",
+        fontSize: ".88rem",
+        marginTop: 20,
+      }}
+    >
+      Atendimento particular • 8 encontros • Online
+    </p>
+  </div>
+</section>
 
       {/* VALOR */}
       <section style={section("#FFFFFF")}>
