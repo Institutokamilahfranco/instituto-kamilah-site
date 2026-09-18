@@ -881,7 +881,35 @@ export default function ReconexaoPage() {
           />
         </div>
       </section>
-
+      {/* IMAGEM 3 — CAMINHO */}
+      <section
+        style={{
+          background: "#FFFFFF",
+          padding: isMobile ? "72px 7%" : "75px 7% 90px",
+        }}
+      >
+        <div
+          style={{
+            maxWidth: 1150,
+            margin: "0 auto",
+            overflow: "hidden",
+            borderRadius: 32,
+          }}
+        >
+          <Image
+            src="/reconexao/03-casal-cameno.webp.png"
+            alt="Casal caminhando em direção a uma nova fase"
+            width={1024}
+            height={683}
+            style={{
+              width: "100%",
+              height: "auto",
+              display: "block",
+              borderRadius: "18px",
+            }}
+          />
+        </div>
+      </section>
       {/* PARA QUEM */}
       <section id="para-quem-e" style={section("#FFFFFF")}>
         <div
