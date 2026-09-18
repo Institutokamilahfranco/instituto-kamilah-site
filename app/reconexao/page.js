@@ -6,10 +6,46 @@ import { useEffect, useState } from "react";
 export default function ReconexaoPage() {
   const [isMobile, setIsMobile] = useState(false);
 
+  const responsiveStyles = `
+    @media (max-width: 1024px) {
+      .reconexao-stack-mobile {
+        flex-direction: column !important;
+        width: 100% !important;
+      }
+
+      .reconexao-stack-mobile-reverse {
+        flex-direction: column-reverse !important;
+        width: 100% !important;
+      }
+
+      .reconexao-stack-mobile > .reconexao-stack-child,
+      .reconexao-stack-mobile-reverse > .reconexao-stack-child {
+        width: 100% !important;
+        max-width: none !important;
+        min-width: 0 !important;
+        flex: none !important;
+      }
+    }
+  `;
+
   useEffect(() => {
     const checkMobile = () => setIsMobile(window.innerWidth <= 1024);
+
     checkMobile();
     window.addEventListener("resize", checkMobile);
+
+    let viewport = document.querySelector('meta[name="viewport"]');
+
+    if (!viewport) {
+      viewport = document.createElement("meta");
+      viewport.name = "viewport";
+      document.head.appendChild(viewport);
+    }
+
+    viewport.setAttribute(
+      "content",
+      "width=device-width, initial-scale=1"
+    );
 
     document.title =
       "Terapia de Casal | RECONEXÃO — UM NOVO NÓS | Instituto Kamilah Franco";
@@ -160,6 +196,8 @@ export default function ReconexaoPage() {
         overflow: "hidden",
       }}
     >
+      <style dangerouslySetInnerHTML={{ __html: responsiveStyles }} />
+
       {/* HERO */}
       <section
         style={section(
@@ -168,6 +206,7 @@ export default function ReconexaoPage() {
         )}
       >
         <div
+          className="reconexao-stack-mobile"
           style={{
             maxWidth: 1240,
             margin: "0 auto",
@@ -177,7 +216,13 @@ export default function ReconexaoPage() {
             gap: isMobile ? 42 : 70,
           }}
         >
-          <div style={{ flex: 1, maxWidth: 650 }}>
+          <div
+            className="reconexao-stack-child"
+            style={{
+              flex: 1,
+              maxWidth: 650,
+            }}
+          >
             <span
               style={{
                 ...eyebrow,
@@ -243,6 +288,7 @@ export default function ReconexaoPage() {
           </div>
 
           <div
+            className="reconexao-stack-child"
             style={{
               flex: 1,
               width: "100%",
@@ -292,7 +338,12 @@ export default function ReconexaoPage() {
 
       {/* IDENTIFICAÇÃO */}
       <section style={section("#FFFFFF")}>
-        <div style={{ maxWidth: 1100, margin: "0 auto" }}>
+        <div
+          style={{
+            maxWidth: 1100,
+            margin: "0 auto",
+          }}
+        >
           <div
             style={{
               textAlign: "center",
@@ -362,6 +413,7 @@ export default function ReconexaoPage() {
       {/* IMAGEM 1 + DOR */}
       <section style={section("#F5F1EC", "85px 7%")}>
         <div
+          className="reconexao-stack-mobile"
           style={{
             maxWidth: 1150,
             margin: "0 auto",
@@ -372,6 +424,7 @@ export default function ReconexaoPage() {
           }}
         >
           <div
+            className="reconexao-stack-child"
             style={{
               flex: 1,
               overflow: "hidden",
@@ -379,20 +432,25 @@ export default function ReconexaoPage() {
             }}
           >
             <Image
-  src="/reconexao/01-casal-distancia.webp.png"
-  alt="Casal vivendo um momento de distância emocional"
-  width={1024}
-  height={683}
-  style={{
-    width: "100%",
-    height: "auto",
-    display: "block",
-    borderRadius: "18px",
-  }}
-/>
+              src="/reconexao/01-casal-distancia.webp.png"
+              alt="Casal vivendo um momento de distância emocional"
+              width={1024}
+              height={683}
+              style={{
+                width: "100%",
+                height: "auto",
+                display: "block",
+                borderRadius: "18px",
+              }}
+            />
           </div>
 
-          <div style={{ flex: 1 }}>
+          <div
+            className="reconexao-stack-child"
+            style={{
+              flex: 1,
+            }}
+          >
             <span style={eyebrow}>
               TALVEZ VOCÊS JÁ TENHAM TENTADO
             </span>
@@ -501,7 +559,12 @@ export default function ReconexaoPage() {
 
       {/* PROCESSO */}
       <section id="processo" style={section("#FFFFFF")}>
-        <div style={{ maxWidth: 1150, margin: "0 auto" }}>
+        <div
+          style={{
+            maxWidth: 1150,
+            margin: "0 auto",
+          }}
+        >
           <div
             style={{
               maxWidth: 850,
@@ -532,7 +595,12 @@ export default function ReconexaoPage() {
 
       {/* COMO FUNCIONA */}
       <section id="como-funciona" style={section("#F8F5F2")}>
-        <div style={{ maxWidth: 1180, margin: "0 auto" }}>
+        <div
+          style={{
+            maxWidth: 1180,
+            margin: "0 auto",
+          }}
+        >
           <div
             style={{
               textAlign: "center",
@@ -615,6 +683,7 @@ export default function ReconexaoPage() {
       {/* IMAGEM 2 — ESCUTA */}
       <section style={section("#FFFFFF", "80px 7%")}>
         <div
+          className="reconexao-stack-mobile-reverse"
           style={{
             maxWidth: 1150,
             margin: "0 auto",
@@ -624,7 +693,12 @@ export default function ReconexaoPage() {
             gap: isMobile ? 35 : 65,
           }}
         >
-          <div style={{ flex: 1 }}>
+          <div
+            className="reconexao-stack-child"
+            style={{
+              flex: 1,
+            }}
+          >
             <span style={eyebrow}>
               UM ESPAÇO PARA CONVERSAS DIFÍCEIS
             </span>
@@ -642,6 +716,7 @@ export default function ReconexaoPage() {
           </div>
 
           <div
+            className="reconexao-stack-child"
             style={{
               flex: 1,
               overflow: "hidden",
@@ -649,24 +724,29 @@ export default function ReconexaoPage() {
             }}
           >
             <Image
-  src="/reconexao/02-conversa-casual.webp.png"
-  alt="Casal conversando e se reconectando"
-  width={1024}
-  height={683}
-  style={{
-    width: "100%",
-    height: "auto",
-    display: "block",
-    borderRadius: "18px",
-  }}
-/>
+              src="/reconexao/02-conversa-casual.webp.png"
+              alt="Casal conversando e se reconectando"
+              width={1024}
+              height={683}
+              style={{
+                width: "100%",
+                height: "auto",
+                display: "block",
+                borderRadius: "18px",
+              }}
+            />
           </div>
         </div>
       </section>
 
       {/* COMO PODE SER DIFERENTE */}
       <section style={section("#F5F1EC")}>
-        <div style={{ maxWidth: 1150, margin: "0 auto" }}>
+        <div
+          style={{
+            maxWidth: 1150,
+            margin: "0 auto",
+          }}
+        >
           <div
             style={{
               maxWidth: 850,
@@ -740,8 +820,10 @@ export default function ReconexaoPage() {
             }}
           >
             Talvez seja conseguir perceber:{" "}
-            <em>“Estamos entrando naquele ciclo novamente.”</em> antes que a
-            discussão chegue ao mesmo lugar de sempre.
+            <em>
+              “Estamos entrando naquele ciclo novamente.”
+            </em>{" "}
+            antes que a discussão chegue ao mesmo lugar de sempre.
           </p>
         </div>
       </section>
@@ -786,23 +868,28 @@ export default function ReconexaoPage() {
           }}
         >
           <Image
-  src="/reconexao/03-casal-cameno.webp.png"
-  alt="Casal caminhando em direção a uma nova fase"
-  width={1024}
-  height={683}
-  style={{
-    width: "100%",
-    height: "auto",
-    display: "block",
-    borderRadius: "18px",
-  }}
-/>
+            src="/reconexao/03-casal-cameno.webp.png"
+            alt="Casal caminhando em direção a uma nova fase"
+            width={1024}
+            height={683}
+            style={{
+              width: "100%",
+              height: "auto",
+              display: "block",
+              borderRadius: "18px",
+            }}
+          />
         </div>
       </section>
 
       {/* PARA QUEM */}
       <section id="para-quem-e" style={section("#FFFFFF")}>
-        <div style={{ maxWidth: 1100, margin: "0 auto" }}>
+        <div
+          style={{
+            maxWidth: 1100,
+            margin: "0 auto",
+          }}
+        >
           <div
             style={{
               textAlign: "center",
@@ -886,6 +973,7 @@ export default function ReconexaoPage() {
       {/* QUEM CONDUZ */}
       <section style={section("#F5F1EC", "90px 7%")}>
         <div
+          className="reconexao-stack-mobile"
           style={{
             maxWidth: 1050,
             margin: "0 auto",
@@ -896,6 +984,7 @@ export default function ReconexaoPage() {
           }}
         >
           <div
+            className="reconexao-stack-child"
             style={{
               flex: 1,
               overflow: "hidden",
@@ -903,21 +992,28 @@ export default function ReconexaoPage() {
             }}
           >
             <Image
-  src="/reconexao/04-kamilah-reconexao.webp.png"
-  alt="Kamilah Franco"
-  width={1024}
-  height={1536}
-  style={{
-    width: "100%",
-    height: "auto",
-    display: "block",
-    borderRadius: "18px",
-  }}
-/>
+              src="/reconexao/04-kamilah-reconexao.webp.png"
+              alt="Kamilah Franco"
+              width={1024}
+              height={1536}
+              style={{
+                width: "100%",
+                height: "auto",
+                display: "block",
+                borderRadius: "18px",
+              }}
+            />
           </div>
 
-          <div style={{ flex: 1 }}>
-            <span style={eyebrow}>QUEM CONDUZ O RECONEXÃO</span>
+          <div
+            className="reconexao-stack-child"
+            style={{
+              flex: 1,
+            }}
+          >
+            <span style={eyebrow}>
+              QUEM CONDUZ O RECONEXÃO
+            </span>
 
             <h2 style={{ ...title, margin: "18px 0 20px" }}>
               Kamilah Franco
@@ -940,7 +1036,12 @@ export default function ReconexaoPage() {
 
       {/* OBJEÇÕES */}
       <section style={section("#FFFFFF")}>
-        <div style={{ maxWidth: 1000, margin: "0 auto" }}>
+        <div
+          style={{
+            maxWidth: 1000,
+            margin: "0 auto",
+          }}
+        >
           <div
             style={{
               textAlign: "center",
@@ -1023,7 +1124,10 @@ export default function ReconexaoPage() {
       </section>
 
       {/* INVESTIMENTO */}
-      <section id="investimento" style={section("#F8F5F2", "105px 7%")}>
+      <section
+        id="investimento"
+        style={section("#F8F5F2", "105px 7%")}
+      >
         <div
           style={{
             maxWidth: 900,
@@ -1165,7 +1269,12 @@ export default function ReconexaoPage() {
 
       {/* VALOR */}
       <section style={section("#FFFFFF")}>
-        <div style={{ maxWidth: 1050, margin: "0 auto" }}>
+        <div
+          style={{
+            maxWidth: 1050,
+            margin: "0 auto",
+          }}
+        >
           <div
             style={{
               textAlign: "center",
