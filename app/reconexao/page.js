@@ -53,7 +53,7 @@ export default function ReconexaoPage() {
     });
   };
 
-  const sectionStyle = (background: string, desktop = "120px 8%") => ({
+ const sectionStyle = (background, desktop = "120px 8%") => {
     background,
     padding: isMobile ? "85px 8%" : desktop,
   });
