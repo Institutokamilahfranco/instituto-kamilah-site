@@ -379,7 +379,7 @@ export default function ReconexaoPage() {
             }}
           >
             <Image
-              src="/reconexao/01-casal-distancia.webp"
+              src="/reconexao/01-casal-distancia.webp.png"
               alt="Casal vivendo um momento de distância emocional"
               width={1200}
               height={800}
@@ -648,7 +648,7 @@ export default function ReconexaoPage() {
             }}
           >
             <Image
-              src="/reconexao/02-casal-conversa.webp"
+              src="/reconexao/02-casal-conversa.webp.png"
               alt="Casal conversando com atenção e escuta"
               width={1200}
               height={800}
@@ -784,7 +784,7 @@ export default function ReconexaoPage() {
           }}
         >
           <Image
-            src="/reconexao/03-casal-caminho.webp"
+            src="/reconexao/03-casal-caminho.webp.png"
             alt="Casal caminhando junto, representando um novo caminho"
             width={1536}
             height={1024}
@@ -900,7 +900,7 @@ export default function ReconexaoPage() {
             }}
           >
             <Image
-              src="/reconexao/04-kamilah-reconexao.webp"
+              src="/reconexao/04-kamilah-reconexao.webp.png"
               alt="Kamilah Franco"
               width={1024}
               height={1536}
