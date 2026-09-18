@@ -681,150 +681,63 @@ export default function ReconexaoPage() {
       </section>
 
       {/* IMAGEM 2 — ESCUTA */}
-      <section style={section("#FFFFFF", "80px 7%")}>
-        <div
-          className="reconexao-stack-mobile-reverse"
-          style={{
-            maxWidth: 1150,
-            margin: "0 auto",
-            display: "flex",
-            flexDirection: isMobile ? "column-reverse" : "row",
-            alignItems: "center",
-            gap: isMobile ? 35 : 65,
-          }}
-        >
-          <div
-            className="reconexao-stack-child"
-            style={{
-              flex: 1,
-            }}
-          >
-            <span style={eyebrow}>
-              UM ESPAÇO PARA CONVERSAS DIFÍCEIS
-            </span>
+<section style={section("#FFFFFF", "80px 7%")}>
+  <div
+    className="reconexao-stack-mobile"
+    style={{
+      maxWidth: 1150,
+      margin: "0 auto",
+      display: "flex",
+      flexDirection: isMobile ? "column-reverse" : "row",
+      alignItems: "center",
+      gap: isMobile ? 35 : 65,
+    }}
+  >
+    <div
+      className="reconexao-stack-child"
+      style={{
+        flex: 1,
+      }}
+    >
+      <span style={eyebrow}>
+        UM ESPAÇO PARA CONVERSAS DIFÍCEIS
+      </span>
 
-            <h2 style={{ ...title, margin: "18px 0 22px" }}>
-              Nem tudo precisa ser resolvido sozinhos.
-            </h2>
+      <h2 style={{ ...title, margin: "18px 0 22px" }}>
+        Nem tudo precisa ser resolvido sozinhos.
+      </h2>
 
-            <p style={{ ...body, margin: 0 }}>
-              Existem assuntos que vocês talvez evitem, adiem ou tentem
-              resolver sempre da mesma maneira. O processo oferece um espaço
-              estruturado para que essas conversas possam acontecer com mais
-              segurança, respeito e direção.
-            </p>
-          </div>
+      <p style={{ ...body, margin: 0 }}>
+        Existem assuntos que vocês talvez evitem, adiem ou tentem
+        resolver sempre da mesma maneira. O processo oferece um espaço
+        estruturado para que essas conversas possam acontecer com mais
+        segurança, respeito e direção.
+      </p>
+    </div>
 
-          <div
-            className="reconexao-stack-child"
-            style={{
-              flex: 1,
-              overflow: "hidden",
-              borderRadius: 30,
-            }}
-          >
-           <img
- src="/reconexao/02-conversa-casual.png"
-  alt="Casal conversando e se reconectando"
-  style={{
-    width: "100%",
-    height: "auto",
-    display: "block",
-    borderRadius: "18px",
-  }}
-/>
-          </div>
-        </div>
-      </section>
-
-      {/* COMO PODE SER DIFERENTE */}
-      <section style={section("#F5F1EC")}>
-        <div
-          style={{
-            maxWidth: 1150,
-            margin: "0 auto",
-          }}
-        >
-          <div
-            style={{
-              maxWidth: 850,
-              margin: "0 auto",
-              textAlign: "center",
-            }}
-          >
-            <span style={eyebrow}>
-              COMO PODE COMEÇAR A SER DIFERENTE
-            </span>
-
-            <h2 style={{ ...title, margin: "18px 0 22px" }}>
-              Talvez a mudança não seja parar de discordar.
-            </h2>
-
-            <p style={{ ...body, margin: 0 }}>
-              Talvez seja conseguir atravessar os momentos difíceis sem
-              precisar se perder um do outro.
-            </p>
-          </div>
-
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: isMobile ? "1fr" : "repeat(2,1fr)",
-              gap: 22,
-              marginTop: 48,
-            }}
-          >
-            {different.map(([h, p]) => (
-              <div
-                key={h}
-                style={{
-                  background: "#FFF",
-                  borderRadius: 25,
-                  padding: 30,
-                }}
-              >
-                <h3
-                  style={{
-                    color: "#4A3732",
-                    fontSize: "1.18rem",
-                    margin: "0 0 12px",
-                  }}
-                >
-                  {h}
-                </h3>
-
-                <p
-                  style={{
-                    ...body,
-                    fontSize: ".98rem",
-                    margin: 0,
-                  }}
-                >
-                  {p}
-                </p>
-              </div>
-            ))}
-          </div>
-
-          <p
-            style={{
-              maxWidth: 780,
-              margin: "42px auto 0",
-              textAlign: "center",
-              color: "#4A3732",
-              fontSize: isMobile ? "1.05rem" : "1.2rem",
-              lineHeight: 1.8,
-              fontWeight: 600,
-            }}
-          >
-            Talvez seja conseguir perceber:{" "}
-            <em>
-              “Estamos entrando naquele ciclo novamente.”
-            </em>{" "}
-            antes que a discussão chegue ao mesmo lugar de sempre.
-          </p>
-        </div>
-      </section>
+    <div
+      className="reconexao-stack-child"
+      style={{
+        flex: 1,
+        overflow: "hidden",
+        borderRadius: 30,
+      }}
+    >
+      <Image
+        src="/reconexao/02-conversa-casual.png"
+        alt="Casal conversando e se reconectando"
+        width={1024}
+        height={683}
+        style={{
+          width: "100%",
+          height: "auto",
+          display: "block",
+          borderRadius: "18px",
+        }}
+      />
+    </div>
+  </div>
+</section>
 
       {/* RESPONSABILIDADE */}
       <section style={section("#FCFAF7", "85px 7%")}>
@@ -855,48 +768,21 @@ export default function ReconexaoPage() {
         </div>
       </section>
 
-      {/* IMAGEM 3 — CAMINHO */}
-      <section style={section("#FFFFFF", "75px 7% 90px")}>
-        <div
-          style={{
-            maxWidth: 1150,
-            margin: "0 auto",
-            overflow: "hidden",
-            borderRadius: 32,
-          }}
-        >
-          <Image
-           src="/reconexao/03-casal-cameno.png"
-            alt="Casal caminhando em direção a uma nova fase"
-            width={1024}
-            height={683}
-            style={{
-              width: "100%",
-              height: "auto",
-              display: "block",
-              borderRadius: "18px",
-            }}
-          />
-        </div>
-      </section>
      {/* IMAGEM 3 — CAMINHO */}
-<section
-  style={{
-    background: "#FFFFFF",
-    padding: isMobile ? "72px 7%" : "75px 7% 90px",
-  }}
->
+<section style={section("#FFFFFF", "75px 7% 90px")}>
   <div
     style={{
       maxWidth: 1150,
       margin: "0 auto",
       overflow: "hidden",
-      borderRadius: 32,
+      borderRadius: 30,
     }}
   >
-    <img
-      src="/reconexao/03-casal-cameno.webp.png"
+    <Image
+      src="/reconexao/03-casal-cameno.png"
       alt="Casal caminhando em direção a uma nova fase"
+      width={1024}
+      height={683}
       style={{
         width: "100%",
         height: "auto",
