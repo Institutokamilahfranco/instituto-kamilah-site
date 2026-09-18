@@ -61,7 +61,7 @@ const sectionStyle = (background, desktop = "120px 8%") => ({
     color: "#B08B57",
     fontWeight: "700",
     letterSpacing: "2px",
-    textTransform: "uppercase" as const,
+  textTransform: "uppercase",
     fontSize: ".85rem",
   };
 
