@@ -900,16 +900,17 @@ export default function ReconexaoPage() {
             }}
           >
             <Image
-              src="/reconexao/04-kamilah-reconexao.webp.png"
-              alt="Kamilah Franco"
-              width={1024}
-              height={1536}
-              style={{
-                width: "100%",
-                height: "auto",
-                display: "block",
-              }}
-            />
+  src="/reconexao/04-kamilah-reconexao.webp.png"
+  alt="Kamilah Franco"
+  width={1024}
+  height={1536}
+  style={{
+    width: "100%",
+    height: "auto",
+    display: "block",
+    borderRadius: "18px",
+  }}
+/>
           </div>
 
           <div style={{ flex: 1 }}>
