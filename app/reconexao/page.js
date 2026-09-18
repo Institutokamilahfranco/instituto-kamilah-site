@@ -53,11 +53,10 @@ export default function ReconexaoPage() {
     });
   };
 
- const sectionStyle = (background, desktop = "120px 8%") => {
-    background,
-    padding: isMobile ? "85px 8%" : desktop,
-  });
-
+const sectionStyle = (background, desktop = "120px 8%") => ({
+  background,
+  padding: isMobile ? "85px 8%" : desktop,
+});
   const eyebrowStyle = {
     color: "#B08B57",
     fontWeight: "700",
