@@ -724,7 +724,7 @@ export default function ReconexaoPage() {
       }}
     >
       <Image
-        src="/reconexao/02-conversa-casual.png"
+        src="/reconexao/02-casal-conversa.webp.png"
         alt="Casal conversando e se reconectando"
         width={1024}
         height={683}
@@ -779,7 +779,7 @@ export default function ReconexaoPage() {
     }}
   >
     <Image
-      src="/reconexao/03-casal-cameno.png"
+      src="/reconexao/03-casal-caminho.webp.png"
       alt="Casal caminhando em direção a uma nova fase"
       width={1024}
       height={683}
