@@ -724,7 +724,7 @@ export default function ReconexaoPage() {
             }}
           >
            <img
-  src="/reconexao/02-conversa-casual.webp.png"
+ src="/reconexao/02-conversa-casual.png"
   alt="Casal conversando e se reconectando"
   style={{
     width: "100%",
@@ -866,7 +866,7 @@ export default function ReconexaoPage() {
           }}
         >
           <Image
-            src="/reconexao/03-casal-cameno.webp.png"
+           src="/reconexao/03-casal-cameno.png"
             alt="Casal caminhando em direção a uma nova fase"
             width={1024}
             height={683}
