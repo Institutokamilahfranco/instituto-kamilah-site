@@ -1003,31 +1003,19 @@ export default function ReconexaoPage() {
         Dois acompanhamentos individuais representariam
       </p>
 
-     <div
+   <div
   style={{
-    position: "relative",
-    display: "inline-block",
     marginTop: 10,
     color: "#4A3732",
     fontWeight: 700,
     fontSize: isMobile ? "2.35rem" : "3rem",
     lineHeight: 1.1,
-    paddingTop: 10,
+    textDecorationLine: "line-through",
+    textDecorationColor: "#C94A4A",
+    textDecorationThickness: "3px",
+    textDecorationStyle: "solid",
   }}
 >
-  <span
-    style={{
-      position: "absolute",
-      top: 0,
-      left: "5%",
-      width: "90%",
-      height: 3,
-      background: "#C94A4A",
-      borderRadius: 10,
-      transform: "rotate(-2deg)",
-    }}
-  />
-
   R$ 4.000,00
 </div>
 
