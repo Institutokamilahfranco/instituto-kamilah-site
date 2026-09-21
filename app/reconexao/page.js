@@ -779,7 +779,7 @@ export default function ReconexaoPage() {
     }}
   >
     <Image
-      src="/reconexao/03-casal-caminho.webp.png"
+     src="/reconexao/03-casal-caminho.webp.png"
       alt="Casal caminhando em direção a uma nova fase"
       width={1024}
       height={683}
