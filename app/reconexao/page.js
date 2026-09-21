@@ -1003,17 +1003,33 @@ export default function ReconexaoPage() {
         Dois acompanhamentos individuais representariam
       </p>
 
-      <div
-        style={{
-          marginTop: 10,
-          color: "#4A3732",
-          fontWeight: 700,
-          fontSize: isMobile ? "2.35rem" : "3rem",
-          lineHeight: 1.1,
-        }}
-      >
-        cerca de R$ 4.000,00
-      </div>
+     <div
+  style={{
+    position: "relative",
+    display: "inline-block",
+    marginTop: 10,
+    color: "#4A3732",
+    fontWeight: 700,
+    fontSize: isMobile ? "2.35rem" : "3rem",
+    lineHeight: 1.1,
+    paddingTop: 10,
+  }}
+>
+  <span
+    style={{
+      position: "absolute",
+      top: 0,
+      left: "5%",
+      width: "90%",
+      height: 3,
+      background: "#C94A4A",
+      borderRadius: 10,
+      transform: "rotate(-2deg)",
+    }}
+  />
+
+  R$ 4.000,00
+</div>
 
       <p
         style={{
@@ -1071,7 +1087,7 @@ export default function ReconexaoPage() {
           margin: "10px 0 0",
         }}
       >
-        Total parcelado: R$ 3.596,16
+       
       </p>
 
       <div
@@ -1097,7 +1113,7 @@ export default function ReconexaoPage() {
 
       <div
         style={{
-          color: "#4A3732",
+          color: "#B08B57",
           fontSize: isMobile ? "2rem" : "2.65rem",
           fontWeight: 700,
           marginTop: 8,
