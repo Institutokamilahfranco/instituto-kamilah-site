@@ -1031,6 +1031,26 @@ export default function ReconexaoPage() {
         O trabalho é direcionado especificamente para a relação.
       </p>
     </div>
+<p
+  style={{
+    margin: "28px auto 0",
+    color: "#4A3732",
+    fontSize: isMobile ? "1.05rem" : "1.2rem",
+    lineHeight: 1.7,
+    fontWeight: 600,
+    maxWidth: 620,
+  }}
+>
+  <strong>
+    Mas o que vocês estão buscando não é simplesmente somar dois acompanhamentos.
+    <br />
+    É olhar para a relação de vocês de uma forma diferente.
+  </strong>
+  <br />
+  <span style={{ display: "inline-block", marginTop: 12 }}>
+    Então, qual é o investimento para fazer esse processo juntos?
+  </span>
+</p>
 
     {/* INVESTIMENTO NO CARTÃO */}
     <div
