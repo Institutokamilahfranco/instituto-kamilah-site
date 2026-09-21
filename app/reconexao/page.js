@@ -680,65 +680,6 @@ export default function ReconexaoPage() {
         </div>
       </section>
 
-      {/* IMAGEM 2 — ESCUTA */}
-<section style={section("#FFFFFF", "80px 7%")}>
-  <div
-    className="reconexao-stack-mobile"
-    style={{
-      maxWidth: 1150,
-      margin: "0 auto",
-      display: "flex",
-      flexDirection: isMobile ? "column-reverse" : "row",
-      alignItems: "center",
-      gap: isMobile ? 35 : 65,
-    }}
-  >
-    <div
-      className="reconexao-stack-child"
-      style={{
-        flex: 1,
-      }}
-    >
-      <span style={eyebrow}>
-        UM ESPAÇO PARA CONVERSAS DIFÍCEIS
-      </span>
-
-      <h2 style={{ ...title, margin: "18px 0 22px" }}>
-        Nem tudo precisa ser resolvido sozinhos.
-      </h2>
-
-      <p style={{ ...body, margin: 0 }}>
-        Existem assuntos que vocês talvez evitem, adiem ou tentem
-        resolver sempre da mesma maneira. O processo oferece um espaço
-        estruturado para que essas conversas possam acontecer com mais
-        segurança, respeito e direção.
-      </p>
-    </div>
-
-    <div
-      className="reconexao-stack-child"
-      style={{
-        flex: 1,
-        overflow: "hidden",
-        borderRadius: 30,
-      }}
-    >
-      <Image
-        src="/reconexao/02-casal-conversa.webp.png"
-        alt="Casal conversando e se reconectando"
-        width={1024}
-        height={683}
-        style={{
-          width: "100%",
-          height: "auto",
-          display: "block",
-          borderRadius: "18px",
-        }}
-      />
-    </div>
-  </div>
-</section>
-
       {/* RESPONSABILIDADE */}
       <section style={section("#FCFAF7", "85px 7%")}>
         <div
@@ -768,30 +709,6 @@ export default function ReconexaoPage() {
         </div>
       </section>
 
-     {/* IMAGEM 3 — CAMINHO */}
-<section style={section("#FFFFFF", "75px 7% 90px")}>
-  <div
-    style={{
-      maxWidth: 1150,
-      margin: "0 auto",
-      overflow: "hidden",
-      borderRadius: 30,
-    }}
-  >
-    <Image
-     src="/reconexao/03-casal-caminho.webp.png"
-      alt="Casal caminhando em direção a uma nova fase"
-      width={1024}
-      height={683}
-      style={{
-        width: "100%",
-        height: "auto",
-        display: "block",
-        borderRadius: "18px",
-      }}
-    />
-  </div>
-</section>
       {/* PARA QUEM */}
       <section id="para-quem-e" style={section("#FFFFFF")}>
         <div
