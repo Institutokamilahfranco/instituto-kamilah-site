@@ -1,7 +1,7 @@
 import Image from "next/image";
 
 const checkoutUrl =
-  "https://pay.kiwify.com.br/SEU-CHECKOUT_AQUI";
+  "https://pay.kiwify.com.br/Aq4x7UB";
 
 export default function PareDeTerAMesmaBrigaPage() {
   return (
