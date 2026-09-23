@@ -1296,7 +1296,7 @@ export default function PareDeTerAMesmaBrigaPage() {
             </div>
 
             <div className="installments">
-              12x de R$ 10,05
+              12x de R$ 10,03
             </div>
 
             <div className="cash">
