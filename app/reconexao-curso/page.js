@@ -128,17 +128,7 @@ export default function ReconexaoPage() {
         .hero-image {
           position: relative;
         }
-        .hero-image::before {
-          content: "";
-          position: absolute;
-          width: 170px;
-          height: 170px;
-          border-radius: 50%;
-          background: #e7ddd2;
-          top: -30px;
-          right: -20px;
-          z-index: 0;
-        }
+      
         .hero-image-frame {
           position: relative;
           z-index: 1;
