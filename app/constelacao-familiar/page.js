@@ -61,35 +61,41 @@ export default function ConstelacaoFamiliar() {
       </header>
 
       <section className="hero" id="inicio">
-        <div className="hero-conteudo">
-          <span className="etiqueta">CONSTELAÇÃO FAMILIAR SISTÊMICA</span>
+  <div className="hero-conteudo">
+    <span className="etiqueta">CONSTELAÇÃO FAMILIAR SISTÊMICA</span>
 
-          <h1>
-            Existem histórias que começaram antes de você.
-            <em> E padrões que merecem um novo olhar.</em>
-          </h1>
+    <h1>
+      Existem histórias que começaram antes de você.
+      <em> E padrões que merecem um novo olhar.</em>
+    </h1>
 
-          <p>
-            Um espaço de acolhimento e autoconhecimento para olhar
-            para sua história, compreender suas relações e ampliar
-            suas possibilidades de escolha.
-          </p>
+    <p>
+      Um espaço de acolhimento e autoconhecimento para olhar
+      para sua história, compreender suas relações e ampliar
+      suas possibilidades de escolha.
+    </p>
 
-          <span className="nota">
-            Atendimento individual e 100% online.
-          </span>
+    <span className="nota">
+      Atendimento individual e 100% online.
+    </span>
+  </div>
 
-          <a
-            href={linkAgendamento}
-            className="botao"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Quero agendar minha constelação
-          </a>
-        </div>
+  <div className="hero-imagem-mobile">
+    <img
+      src="/constelacao-bonecos.png"
+      alt="Representação de uma constelação familiar"
+    />
+  </div>
 
-      </section>
+  <a
+    href={linkAgendamento}
+    className="botao"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Quero agendar minha constelação
+  </a>
+</section>
 
       <section className="beneficios">
         <article>
