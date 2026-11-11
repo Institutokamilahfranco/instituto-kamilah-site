@@ -337,7 +337,7 @@ h1 em {
           border-radius: 48% 48% 3px 3px;
           background:
             linear-gradient(0deg, rgba(50,35,29,.55), rgba(50,35,29,.05)),
-            url("https://images.unsplash.com/photo-1470252649378-9c29740c9fa8?auto=format&fit=crop&w=1000&q=85")
+            url("/constelacao-raizes.png")
             center/cover;
           display: flex;
           align-items: end;
