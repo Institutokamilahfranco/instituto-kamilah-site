@@ -47,11 +47,15 @@ export default function ConstelacaoFamiliar() {
 
       <section className="hero">
         <div className="hero-conteudo">
-          <span className="sobretitulo">CONSTELAÇÃO FAMILIAR SISTÊMICA</span>
-          <h1>
-            Existem histórias que começaram antes de você.
-            <em> E padrões que merecem um novo olhar.</em>
-          </h1>
+         <span className="sobretitulo">SEU CAMINHO DE AUTOCONHECIMENTO</span>
+<h1>
+  Constelação Familiar
+  <em> Sistêmica</em>
+</h1>
+<h2 className="subtitulo-hero">
+  Existem histórias que começaram antes de você.
+  E padrões que merecem um novo olhar.
+</h2>
           <p>
             Um espaço de acolhimento e autoconhecimento para olhar
             para sua história, compreender suas relações e ampliar
@@ -297,6 +301,14 @@ export default function ConstelacaoFamiliar() {
           font-weight: 400;
           margin: 24px 0;
         }
+        .subtitulo-hero {
+  font-family: Georgia, serif;
+  font-size: 25px;
+  line-height: 1.35;
+  font-weight: 400;
+  margin: 0 0 22px;
+  color: var(--dourado);
+}
         h1 em { color: var(--dourado); font-weight: 400; }
         .hero-conteudo > p {
           color: var(--texto);
