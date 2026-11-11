@@ -295,12 +295,20 @@ export default function ConstelacaoFamiliar() {
         }
         h1, h2, h3, p { margin-top: 0; }
         h1 {
-          font-family: Georgia, serif;
-          font-size: clamp(38px, 4.4vw, 61px);
-          line-height: 1.13;
-          font-weight: 400;
-          margin: 24px 0;
-        }
+  font-family: "Times New Roman", Georgia, serif;
+  font-size: clamp(46px, 5vw, 68px);
+  line-height: 1.05;
+  font-weight: 400;
+  letter-spacing: -1.5px;
+  margin: 24px 0;
+}
+
+h1 em {
+  color: var(--dourado);
+  font-family: Georgia, serif;
+  font-style: italic;
+  font-weight: 400;
+}
         .subtitulo-hero {
   font-family: Georgia, serif;
   font-size: 25px;
@@ -517,6 +525,10 @@ export default function ConstelacaoFamiliar() {
             padding: 55px 7%;
             gap: 35px;
           }
+          h1 {
+  font-size: 43px;
+  line-height: 1.08;
+}
           .hero-imagem { min-height: 350px; }
           .conceito, .temas, .investimento, .faq { padding: 70px 7%; }
           .grade { grid-template-columns: 1fr; }
