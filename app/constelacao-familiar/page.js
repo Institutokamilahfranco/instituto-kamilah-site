@@ -331,17 +331,21 @@ h1 em {
           font-size: 12px;
           margin-top: 17px;
         }
-        .hero-imagem {
-          min-height: 450px;
-          border-radius: 48% 48% 3px 3px;
-          background:
-            linear-gradient(0deg, rgba(50,35,29,.55), rgba(50,35,29,.05)),
-            url("/constelação-raizes.png")
-            center/cover;
-          display: flex;
-          align-items: end;
-          padding: 35px;
-        }
+       
+.hero-imagem {
+  min-height: 450px;
+  border-radius: 48% 48% 3px 3px;
+  background-image:
+    linear-gradient(0deg, rgba(50,35,29,.55), rgba(50,35,29,.05)),
+    url("/constelacao-raizes.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: end;
+  padding: 35px;
+}
+
         .imagem-texto { color: white; }
         .imagem-texto span {
           display: block;
