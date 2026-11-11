@@ -943,7 +943,44 @@ background-repeat: no-repeat;
   font-size: 22px;
   font-weight: 500;
 }
+.investimento {
+  padding: 85px 12%;
+  background: var(--fundo);
+  color: var(--vinho-escuro);
+  text-align: left;
+}
 
+.investimento h2 {
+  max-width: 850px;
+  margin: 18px 0;
+  color: var(--vinho);
+  font-family: Georgia, serif;
+  font-size: clamp(30px, 3.5vw, 43px);
+  line-height: 1.2;
+}
+
+.investimento .linha-dourada {
+  margin: 18px 0 28px;
+}
+
+.investimento-texto,
+.investimento .pagamento {
+  color: var(--texto);
+  font-size: 15px;
+  line-height: 1.8;
+  max-width: 850px;
+}
+
+.investimento .preco {
+  color: var(--vinho);
+  font-family: Georgia, serif;
+  font-size: 27px;
+  margin: 18px 0;
+}
+
+.investimento .nota {
+  margin-top: 12px;
+}
         .faq {
           padding: 85px 12%;
           background: var(--fundo);
