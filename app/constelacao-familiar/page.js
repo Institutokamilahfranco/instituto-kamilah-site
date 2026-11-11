@@ -1252,7 +1252,9 @@ background-repeat: no-repeat;
   width: 100%;
   max-width: 100%;
 }
-
+.hero-imagem-mobile {
+  display: none !important;
+}
 .hero h1 {
   font-size: clamp(34px, 9vw, 44px);
   line-height: 1.1;
