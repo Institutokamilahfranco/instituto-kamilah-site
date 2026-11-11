@@ -240,9 +240,27 @@ export default function ConstelacaoFamiliar() {
       </section>
 
       <footer>
-        <strong>INSTITUTO KAMILAH FRANCO</strong>
-        <p>Atendimento online • Realeza – PR</p>
-        <a href="/">Voltar para a página inicial</a>
+       <strong>INSTITUTO KAMILAH FRANCO</strong>
+
+<p>Atendimento exclusivamente online • Realeza – PR</p>
+
+<div className="contatos-rodape">
+  <p>
+    WhatsApp:{" "}
+    <a href="https://wa.me/5546988042216" target="_blank" rel="noopener noreferrer">
+      (46) 98804-2216
+    </a>
+  </p>
+
+  <p>
+    E-mail:{" "}
+    <a href="mailto:kamilahgomes.comunicacao@gmail.com">
+      kamilahgomes.comunicacao@gmail.com
+    </a>
+  </p>
+</div>
+
+<a href="/">Voltar para a página inicial</a>
       </footer>
 
       <style jsx>{`
