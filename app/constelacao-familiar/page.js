@@ -232,7 +232,7 @@ export default function ConstelacaoFamiliar() {
       </footer>
 
       <style jsx>{`
-     url("/constelacao-raizes.jpg")
+     url("/constelacao-raizes.png")
         .pagina {
           --fundo: #fcfaf7;
           --claro: #f3ede5;
