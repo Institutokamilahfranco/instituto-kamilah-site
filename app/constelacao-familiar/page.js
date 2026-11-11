@@ -332,14 +332,24 @@ h1 em {
           margin-top: 17px;
         }
        
+
 .hero-imagem {
   width: 100%;
   max-width: 600px;
   min-height: 500px;
   justify-self: end;
-  background-size: cover;
+  border-radius: 48% 48% 3px 3px;
+  background-image:
+    linear-gradient(0deg, rgba(50,35,29,.55), rgba(50,35,29,.05)),
+    url("/constelacao-raizes.png");
   background-position: 25% center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: end;
+  padding: 35px;
 }
+
 
         .imagem-texto { color: white; }
         .imagem-texto span {
