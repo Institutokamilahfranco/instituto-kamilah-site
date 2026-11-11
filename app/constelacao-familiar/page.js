@@ -712,12 +712,11 @@ background-repeat: no-repeat;
 .imagem-arvore-vida {
   display: block;
   width: 100%;
-  max-width: 390px;
+  max-width: 460px;
   height: auto;
   object-fit: contain;
-  mix-blend-mode: normal;
+  mix-blend-mode: lighten;
 }
-
         .arvore-decorativa span {
           font-size: 30px;
         }
@@ -730,17 +729,19 @@ background-repeat: no-repeat;
 
         
 .processo {
-  padding: 95px 8%;
-  background: linear-gradient(135deg, #642536, #481b2b);
+  padding: 85px 8%;
+  background: #f8eae4;
+  color: #481b2b;
   text-align: center;
 }
 
 .processo h2 {
-  color: #ffffff;
+  color: #642536;
+  font-family: Georgia, serif;
 }
 
 .processo-intro p {
-  color: #f5e5dc;
+  color: #49343a;
   line-height: 1.8;
   font-size: 15px;
 }
@@ -773,12 +774,12 @@ background-repeat: no-repeat;
   font-family: Georgia, serif;
   font-size: 21px;
   font-weight: 500;
-  color: #ffffff;
+  color: #642536;
   margin: 0 0 12px;
 }
 
 .etapas p {
-  color: #f5e5dc;
+  color: #49343a;
   font-size: 14px;
   line-height: 1.75;
   margin: 0;
@@ -809,20 +810,20 @@ background-repeat: no-repeat;
           padding: 12px 15px;
         }
 
-        .etapa-icone {
-          width: 76px;
-          height: 76px;
-          margin: 0 auto 20px;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          border-radius: 50%;
-          background: #f0ded4;
-          border: 1px solid #e3c6b8;
-          color: var(--dourado);
-          font-family: Georgia, serif;
-          font-size: 26px;
-        }
+      .etapa-icone {
+  width: 76px;
+  height: 76px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #f1ddd2;
+  border: 1px solid #dfc0ae;
+  color: #a96d17;
+  font-family: Georgia, serif;
+  font-size: 26px;
+}
 
         .etapas h3 {
           font-family: Georgia, serif;
@@ -1026,12 +1027,12 @@ background-repeat: no-repeat;
         }
 
        .logo-rodape {
-  width: 125px;
+  width: 135px;
   height: auto;
   object-fit: contain;
+  filter: brightness(0) invert(1);
+  opacity: 0.95;
   display: block;
-  filter: none;
-  mix-blend-mode: multiply;
 }
 
         .rodape-marca strong {
@@ -1088,15 +1089,18 @@ background-repeat: no-repeat;
             min-height: 420px;
           }
 
-          .rodape {
-            grid-template-columns: 1fr 1.5fr;
-          }
-
-          .voltar-inicio {
-            grid-column: 1 / -1;
-            justify-self: center;
-          }
-        }
+        .rodape {
+  display: grid;
+  grid-template-columns: 0.9fr 1.5fr 0.8fr;
+  align-items: center;
+  gap: 30px;
+  padding: 45px 7%;
+  background: #421827;
+  color: #f8eee9;
+  font-size: 13px;
+  line-height: 1.8;
+}
+        
 
         @media (max-width: 760px) {
          .topo {
