@@ -386,15 +386,46 @@ export default function ConstelacaoFamiliar() {
         }
 
         .topo {
-          min-height: 86px;
-          padding: 12px 7%;
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          gap: 25px;
-          background: rgba(251, 242, 237, .96);
-          border-bottom: 1px solid #ead8d0;
-        }
+  min-height: auto;
+  padding: 15px 6%;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 12px;
+}
+
+.marca {
+  justify-self: start;
+}
+
+.logo-instituto {
+  width: 95px;
+  height: auto;
+  display: block;
+}
+
+.botao-topo {
+  width: auto;
+  max-width: none;
+  padding: 12px 17px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.navegacao {
+  grid-column: 1 / -1;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  padding-top: 12px;
+  border-top: 1px solid #ead8d0;
+}
+
+.navegacao a {
+  font-size: 12px;
+}
 
         .marca {
           display: flex;
