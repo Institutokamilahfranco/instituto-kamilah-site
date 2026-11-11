@@ -232,6 +232,7 @@ export default function ConstelacaoFamiliar() {
       </footer>
 
       <style jsx>{`
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap');
         .pagina {
           --fundo: #fcfaf7;
           --claro: #f3ede5;
@@ -294,12 +295,12 @@ export default function ConstelacaoFamiliar() {
           font-weight: 700;
         }
         h1, h2, h3, p { margin-top: 0; }
-        h1 {
-  font-family: "Times New Roman", Georgia, serif;
+       h1 {
+  font-family: "Playfair Display", Georgia, serif;
   font-size: clamp(46px, 5vw, 68px);
-  line-height: 1.05;
-  font-weight: 400;
-  letter-spacing: -1.5px;
+  line-height: 1.08;
+  font-weight: 500;
+  letter-spacing: -1px;
   margin: 24px 0;
 }
 
