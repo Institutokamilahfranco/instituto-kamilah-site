@@ -336,7 +336,7 @@ h1 em {
           border-radius: 48% 48% 3px 3px;
           background:
             linear-gradient(0deg, rgba(50,35,29,.55), rgba(50,35,29,.05)),
-            url("/constelacao-raizes.png")
+            url("/constelação-raizes.png")
             center/cover;
           display: flex;
           align-items: end;
