@@ -549,6 +549,68 @@ h1 em {
 }
           .final { padding: 70px 7%; }
         }
+        
+/* AJUSTES DE IMAGENS E RESPONSIVIDADE */
+
+/* Foto da Kamilah: mostrar melhor o rosto */
+.foto-kamilah {
+  object-position: center top;
+}
+
+/* Paisagem: proporção mais equilibrada no computador */
+.hero-imagem {
+  width: 100%;
+  max-width: 600px;
+  min-height: 500px;
+  justify-self: end;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Seção sobre você: impedir cortes no texto */
+.sobre {
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: 40px;
+}
+
+.sobre > div {
+  min-width: 0;
+}
+
+.sobre h2 {
+  font-size: clamp(28px, 3.1vw, 40px);
+  line-height: 1.2;
+  overflow-wrap: break-word;
+}
+
+.sobre p {
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* Ajustes para celular */
+@media (max-width: 760px) {
+  .hero-imagem {
+    width: 100%;
+    max-width: none;
+    min-height: 350px;
+  }
+
+  .foto-kamilah {
+    height: 280px;
+    object-position: center top;
+  }
+
+  .sobre {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .sobre h2 {
+    font-size: 30px;
+  }
+}
+
       `}</style>
     </main>
   );
