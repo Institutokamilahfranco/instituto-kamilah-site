@@ -462,7 +462,7 @@ background-image:
     rgba(251, 242, 237, 0.55) 55%,
     rgba(251, 242, 237, 0.05) 78%
   ),
-  url("/constela%C3%A7%C3%A3o-ossos.png");
+  url("/constelacao-bonecos.png");
 background-position: center, right center;
 background-size: cover;
 background-repeat: no-repeat;
