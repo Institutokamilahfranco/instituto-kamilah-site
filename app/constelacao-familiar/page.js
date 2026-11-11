@@ -229,9 +229,14 @@ export default function ConstelacaoFamiliar() {
         <span className="sobretitulo">UM NOVO OLHAR PODE COMEÇAR AQUI</span>
         <h2>Você não precisa ter todas as respostas para começar.</h2>
         <p>Permita-se olhar para sua história com acolhimento.</p>
-        <a href={whatsapp} className="botao">
-          Conversar pelo WhatsApp
-        </a>
+       <a
+  href="https://loja.infinitepay.io/luana-kamila-47i/gcx3424-sessao-constelacao-familiar-sistemica"
+  className="botao"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Quero agendar minha constelação
+</a>
       </section>
 
       <footer>
@@ -275,17 +280,25 @@ export default function ConstelacaoFamiliar() {
   display: block;
 }
         .botao {
-          display: inline-block;
-          background: var(--marrom);
-          color: white;
-          text-decoration: none;
-          padding: 16px 28px;
-          border-radius: 3px;
-          font-size: 14px;
-          letter-spacing: .3px;
-          transition: .2s;
-        }
-        .botao:hover { background: var(--dourado); }
+  display: inline-block;
+  background: var(--dourado);
+  color: #ffffff;
+  text-decoration: none;
+  padding: 20px 38px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: .3px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(74, 55, 50, .18);
+  transition: all .3s ease;
+}
+
+.botao:hover {
+  background: var(--marrom);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(74, 55, 50, .22);
+}
         .botao-pequeno { padding: 12px 20px; }
         .hero {
           display: grid;
