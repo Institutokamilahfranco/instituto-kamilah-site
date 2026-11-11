@@ -1,11 +1,6 @@
+"use client";
+
 import Link from "next/link";
-
-export const metadata = {
-  title: "Constelação Familiar Sistêmica Online | Instituto Kamilah Franco",
-  description:
-    "Conheça a Constelação Familiar Sistêmica online e tenha um espaço de acolhimento e autoconhecimento para olhar suas relações e padrões familiares.",
-};
-
 const whatsapp =
   "https://wa.me/5546988042216?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20a%20sess%C3%A3o%20de%20Constela%C3%A7%C3%A3o%20Familiar.";
 
