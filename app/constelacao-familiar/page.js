@@ -40,9 +40,7 @@ export default function ConstelacaoFamiliar() {
   alt="Instituto Kamilah Franco"
   className="logo-instituto"
 />
-        <a href={whatsapp} className="botao botao-pequeno">
-          Fale comigo
-        </a>
+        
       </header>
 
       <section className="hero">
@@ -61,11 +59,17 @@ export default function ConstelacaoFamiliar() {
             para sua história, compreender suas relações e ampliar
             suas possibilidades de escolha.
           </p>
-          <a href={whatsapp} className="botao">
-            Quero conhecer a constelação
-          </a>
+          
           <span className="nota">Atendimento individual e 100% online.</span>
-        </div>
+        <a
+  href="https://loja.infinitepay.io/luana-kamila-47i/gcx3424-sessao-constelacao-familiar-sistemica"
+  className="botao"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Quero agendar minha constelação
+</a>
+              </div>
         <div className="hero-imagem">
           <div className="imagem-texto">
             <span>UM OLHAR PARA SUA HISTÓRIA</span>
@@ -177,9 +181,14 @@ export default function ConstelacaoFamiliar() {
           Pagamento à vista via PIX ou parcelamento em até 12x
           no cartão, com acréscimo das taxas de parcelamento.
         </p>
-        <a href={whatsapp} className="botao">
-          Quero agendar minha sessão
-        </a>
+       <a
+  href="https://loja.infinitepay.io/luana-kamila-47i/gcx3424-sessao-constelacao-familiar-sistemica"
+  className="botao"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  Quero agendar minha Constelação
+</a>
         <span className="nota">Atendimento exclusivamente online.</span>
       </section>
 
