@@ -398,33 +398,16 @@ export default function ConstelacaoFamiliar() {
           overflow: hidden;
         }
 
-        .topo {
-  min-height: auto;
-  padding: 15px 6%;
-  display: grid;
-  grid-template-columns: 1fr auto;
+   .topo {
+  min-height: 86px;
+  padding: 12px 7%;
+  display: flex;
   align-items: center;
-  gap: 12px;
+  justify-content: space-between;
+  gap: 25px;
+  background: rgba(251, 242, 237, .96);
+  border-bottom: 1px solid #ead8d0;
 }
-
-.marca {
-  justify-self: start;
-}
-
-.logo-instituto {
-  width: 95px;
-  height: auto;
-  display: block;
-}
-
-.botao-topo {
-  width: auto;
-  max-width: none;
-  padding: 12px 17px;
-  font-size: 12px;
-  white-space: nowrap;
-}
-
 .navegacao {
   grid-column: 1 / -1;
   width: 100%;
@@ -527,7 +510,17 @@ background-repeat: no-repeat;
   position: relative;
   z-index: 1;
 }
+.hero-imagem-mobile {
+  display: none;
+}
 
+.botao-mobile {
+  display: none;
+}
+
+.botao-desktop {
+  display: inline-block;
+}
         .etiqueta {
           display: inline-block;
           padding: 9px 17px;
@@ -1189,9 +1182,9 @@ background-repeat: no-repeat;
         
 
         @media (max-width: 760px) {
-         .topo {
+        .topo {
   min-height: auto;
-  padding: 15px 6%;
+  padding: 12px 6%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -1199,24 +1192,37 @@ background-repeat: no-repeat;
   gap: 12px;
 }
 
-          .logo-instituto {
-            width: 125px;
-          }
+.marca {
+  order: 1;
+}
 
-          .navegacao {
-            order: 3;
-            width: 100%;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 12px 20px;
-            padding-top: 12px;
-            border-top: 1px solid #ead8d0;
-          }
+.logo-instituto {
+  width: 95px;
+  height: auto;
+}
 
-          .navegacao a {
-            font-size: 11px;
-          }
+.botao-topo {
+  order: 2;
+  width: auto;
+  padding: 11px 15px;
+  font-size: 12px;
+  white-space: nowrap;
+}
 
+.navegacao {
+  order: 3;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px 18px;
+  padding-top: 12px;
+  border-top: 1px solid #ead8d0;
+}
+
+.navegacao a {
+  font-size: 12px;
+}
         .botao-topo {
   order: 2;
   width: auto;
@@ -1226,19 +1232,56 @@ background-repeat: no-repeat;
   font-size: 12px;
 }
 
-         .hero {
+        .hero {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  min-height: 650px;
+  align-items: stretch;
+  min-height: auto;
   padding: 45px 7%;
-  background-position: 65% center;
-  background-size: cover;
+  gap: 24px;
+  background: var(--fundo);
 }
 
 .hero-conteudo {
   width: 100%;
   max-width: 100%;
+}
+
+.hero h1 {
+  font-size: clamp(34px, 9vw, 44px);
+  line-height: 1.1;
+}
+
+.hero-conteudo > p {
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.hero-imagem-mobile {
+  display: block;
+  width: 100%;
+}
+
+.hero-imagem-mobile img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 420px;
+  object-fit: contain;
+  border-radius: 14px;
+}
+
+.botao-desktop {
+  display: none;
+}
+
+.botao-mobile {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  margin-top: 0;
+  padding: 17px;
+  text-align: center;
 }
 
           .hero h1 {
