@@ -1020,12 +1020,12 @@ background-repeat: no-repeat;
           margin: 14px 0 0;
         }
 
-        .final {
-          text-align: center;
-          background: linear-gradient(120deg, #642536, #481b2b);
-          color: white;
-          padding: 85px 20px;
-        }
+       .final {
+  text-align: center;
+  background: linear-gradient(120deg, #a45e68, #824052);
+  color: white;
+  padding: 85px 20px;
+}
 
         .final .sobretitulo {
           color: #e8bd73;
@@ -1063,12 +1063,11 @@ background-repeat: no-repeat;
           text-align: center;
         }
 
-       .logo-rodape {
+      .logo-rodape {
   width: 135px;
   height: auto;
   object-fit: contain;
-  filter: brightness(0) invert(1);
-  opacity: 0.95;
+  opacity: 1;
   display: block;
 }
 
