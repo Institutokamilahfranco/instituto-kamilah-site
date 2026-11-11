@@ -60,9 +60,12 @@ export default function ConstelacaoFamiliar() {
         </a>
       </header>
 
-      <section className="hero" id="inicio">
+     
+<section className="hero" id="inicio">
   <div className="hero-conteudo">
-    <span className="etiqueta">CONSTELAÇÃO FAMILIAR SISTÊMICA</span>
+    <span className="etiqueta">
+      CONSTELAÇÃO FAMILIAR SISTÊMICA
+    </span>
 
     <h1>
       Existem histórias que começaram antes de você.
@@ -78,6 +81,15 @@ export default function ConstelacaoFamiliar() {
     <span className="nota">
       Atendimento individual e 100% online.
     </span>
+
+    <a
+      href={linkAgendamento}
+      className="botao botao-desktop"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Quero agendar minha constelação
+    </a>
   </div>
 
   <div className="hero-imagem-mobile">
@@ -89,13 +101,14 @@ export default function ConstelacaoFamiliar() {
 
   <a
     href={linkAgendamento}
-    className="botao"
+    className="botao botao-mobile"
     target="_blank"
     rel="noopener noreferrer"
   >
     Quero agendar minha constelação
   </a>
 </section>
+
 
       <section className="beneficios">
         <article>
