@@ -89,12 +89,6 @@ export default function ConstelacaoFamiliar() {
           </a>
         </div>
 
-        <div className="hero-imagem">
-          <div className="imagem-texto">
-            <span>UM OLHAR PARA SUA HISTÓRIA</span>
-            <strong>Reconhecer. Compreender. Ressignificar.</strong>
-          </div>
-        </div>
       </section>
 
       <section className="beneficios">
@@ -454,21 +448,33 @@ export default function ConstelacaoFamiliar() {
           white-space: nowrap;
         }
 
-        .hero {
-          display: grid;
-          grid-template-columns: 1fr 1fr;
-          min-height: 590px;
-          align-items: center;
-          padding: 65px 7%;
-          gap: 45px;
-          background:
-            radial-gradient(circle at 50% 50%, rgba(255,255,255,.6), transparent 55%),
-            var(--fundo);
-        }
+    .hero {
+  display: flex;
+  align-items: center;
+  min-height: 590px;
+  padding: 65px 7%;
+ background-color: var(--fundo);
+background-image:
+  linear-gradient(
+    90deg,
+    #fbf2ed 0%,
+    rgba(251, 242, 237, 0.96) 32%,
+    rgba(251, 242, 237, 0.55) 55%,
+    rgba(251, 242, 237, 0.05) 78%
+  ),
+  url("/constelação-ossos.png");
+background-position: center, right center;
+background-size: cover;
+background-repeat: no-repeat;
+  position: relative;
+}
 
-        .hero-conteudo {
-          max-width: 590px;
-        }
+.hero-conteudo {
+  max-width: 590px;
+  width: 55%;
+  position: relative;
+  z-index: 1;
+}
 
         .etiqueta {
           display: inline-block;
@@ -1036,11 +1042,20 @@ export default function ConstelacaoFamiliar() {
             font-size: 12px;
           }
 
-          .hero {
-            grid-template-columns: 1fr;
-            padding: 48px 7%;
-            gap: 32px;
-          }
+         .hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  min-height: 650px;
+  padding: 45px 7%;
+  background-position: 65% center;
+  background-size: cover;
+}
+
+.hero-conteudo {
+  width: 100%;
+  max-width: 100%;
+}
 
           .hero h1 {
             font-size: clamp(39px, 10vw, 49px);
@@ -1049,14 +1064,6 @@ export default function ConstelacaoFamiliar() {
 
           .hero-conteudo > p {
             font-size: 15px;
-          }
-
-          .hero-imagem {
-            width: 100%;
-            min-height: 350px;
-            max-width: none;
-            border-radius: 45% 45% 7px 7px;
-            background-position: center;
           }
 
           .beneficios {
