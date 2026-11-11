@@ -333,17 +333,12 @@ h1 em {
         }
        
 .hero-imagem {
-  min-height: 450px;
-  border-radius: 48% 48% 3px 3px;
-  background-image:
-    linear-gradient(0deg, rgba(50,35,29,.55), rgba(50,35,29,.05)),
-    url("/constelacao-raizes.png");
-  background-position: center;
+  width: 100%;
+  max-width: 600px;
+  min-height: 500px;
+  justify-self: end;
   background-size: cover;
-  background-repeat: no-repeat;
-  display: flex;
-  align-items: end;
-  padding: 35px;
+  background-position: 25% center;
 }
 
         .imagem-texto { color: white; }
@@ -568,7 +563,7 @@ h1 em {
   min-height: 500px;
   justify-self: end;
   background-size: cover;
-  background-position: center;
+ background-position: 25% center;
 }
 
 /* Seção sobre você: impedir cortes no texto */
