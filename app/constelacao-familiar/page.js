@@ -211,8 +211,9 @@ export default function ConstelacaoFamiliar() {
         <details>
           <summary>A constelação garante a solução do meu problema?</summary>
           <p>
-            Não. A sessão é uma experiência de reflexão e autoconhecimento.
-            Não há garantia de resultados específicos.
+           A Constelação Familiar não oferece garantias ou resultados iguais para todas as pessoas. Cada experiência é única, e os desdobramentos podem variar de acordo com a forma como cada pessoa acolhe, compreende e integra as percepções vivenciadas durante a sessão.
+
+O processo não termina no encontro: a reflexão, a abertura para novos olhares e a disposição para reconhecer e construir novas possibilidades também fazem parte dessa caminhada. Cada pessoa tem seu próprio tempo e sua própria maneira de vivenciar esse processo.
           </p>
         </details>
         <details>
