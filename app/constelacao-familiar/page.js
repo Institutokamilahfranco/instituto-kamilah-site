@@ -35,9 +35,11 @@ export default function ConstelacaoFamiliar() {
   return (
     <main className="pagina">
       <header className="topo">
-        <Link href="/" className="marca">
-          INSTITUTO <span>KAMILAH FRANCO</span>
-        </Link>
+       <img
+  src="/logo.jpeg"
+  alt="Instituto Kamilah Franco"
+  className="logo-instituto"
+/>
         <a href={whatsapp} className="botao botao-pequeno">
           Fale comigo
         </a>
@@ -142,7 +144,11 @@ export default function ConstelacaoFamiliar() {
       </section>
 
       <section className="sobre">
-        <div className="sobre-detalhe">K</div>
+       <img
+  src="/kamilah.png"
+  alt="Kamilah Franco"
+  className="foto-kamilah"
+/>
         <div>
           <span className="sobretitulo">INSTITUTO KAMILAH FRANCO</span>
           <h2>Um espaço para olhar sua história com acolhimento.</h2>
@@ -249,6 +255,12 @@ export default function ConstelacaoFamiliar() {
           font-weight: 600;
         }
         .marca span { color: var(--dourado); }
+        .logo-instituto {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
         .botao {
           display: inline-block;
           background: var(--marrom);
@@ -411,16 +423,14 @@ export default function ConstelacaoFamiliar() {
           align-items: center;
           gap: 55px;
         }
-        .sobre-detalhe {
-          height: 240px;
-          display: grid;
-          place-items: center;
-          background: var(--claro);
-          color: var(--dourado);
-          font-family: Georgia, serif;
-          font-size: 110px;
-          border-radius: 48% 48% 3px 3px;
-        }
+        .foto-kamilah {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center 35%;
+  border-radius: 48% 48% 3px 3px;
+  display: block;
+}
         .sobre h2 { margin-left: 0; }
         .sobre p {
           color: var(--texto);
@@ -485,7 +495,10 @@ export default function ConstelacaoFamiliar() {
         footer a { color: var(--dourado); }
         @media (max-width: 760px) {
           .topo { padding: 16px 6%; }
-          .marca { font-size: 10px; letter-spacing: 1px; }
+          .logo-instituto {
+  width: 125px;
+  height: auto;
+}
           .botao-pequeno { padding: 10px 13px; font-size: 12px; }
           .hero {
             grid-template-columns: 1fr;
@@ -505,7 +518,11 @@ export default function ConstelacaoFamiliar() {
             padding: 70px 8%;
             gap: 30px;
           }
-          .sobre-detalhe { height: 180px; font-size: 85px; }
+         .foto-kamilah {
+  height: 280px;
+  max-width: 320px;
+  margin: 0 auto;
+}
           .final { padding: 70px 7%; }
         }
       `}</style>
