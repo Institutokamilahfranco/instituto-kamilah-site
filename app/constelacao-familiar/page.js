@@ -146,11 +146,13 @@ export default function ConstelacaoFamiliar() {
             </div>
           </div>
 
-          <div className="arvore-decorativa" aria-hidden="true">
-            <span>✧</span>
-            <div className="arvore-tronco">♧</div>
-            <span>✧</span>
-          </div>
+         <div className="arvore-decorativa" aria-hidden="true">
+  <img
+    src="/arvore-da-vida.png"
+    alt=""
+    className="imagem-arvore-vida"
+  />
+</div>
         </div>
       </section>
 
@@ -713,11 +715,62 @@ background-repeat: no-repeat;
           opacity: .8;
         }
 
-        .processo {
-          padding: 95px 8%;
-          background: #f7eae4;
-          text-align: center;
-        }
+        
+.processo {
+  padding: 95px 8%;
+  background: linear-gradient(135deg, #642536, #481b2b);
+  text-align: center;
+}
+
+.processo h2 {
+  color: #ffffff;
+}
+
+.processo-intro p {
+  color: #f5e5dc;
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+.processo .sobretitulo {
+  color: #f0c77e;
+}
+
+.etapas article {
+  text-align: center;
+  padding: 12px 15px;
+}
+
+.etapa-icone {
+  width: 76px;
+  height: 76px;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, .10);
+  border: 1px solid #d5a65d;
+  color: #f0c77e;
+  font-family: Georgia, serif;
+  font-size: 26px;
+}
+
+.etapas h3 {
+  font-family: Georgia, serif;
+  font-size: 21px;
+  font-weight: 500;
+  color: #ffffff;
+  margin: 0 0 12px;
+}
+
+.etapas p {
+  color: #f5e5dc;
+  font-size: 14px;
+  line-height: 1.75;
+  margin: 0;
+}
+
 
         .processo-intro {
           max-width: 680px;
@@ -797,14 +850,44 @@ background-repeat: no-repeat;
           box-shadow: 0 12px 30px rgba(90, 43, 54, .13);
         }
 
-        .sobre-conteudo h2 {
-          margin: 18px 0;
-          font-size: clamp(30px, 3vw, 40px);
-        }
+.sobre-conteudo {
+  background: linear-gradient(135deg, #a45e68, #642536);
+  padding: 42px;
+  border-radius: 18px;
+  color: #ffffff;
+  box-shadow: 0 12px 30px rgba(90, 43, 54, .13);
+}
 
-        .sobre-conteudo .linha-dourada {
-          margin-left: 0;
-        }
+.sobre-conteudo .sobretitulo {
+  color: #f0c77e;
+}
+
+    
+.sobre-conteudo h2 {
+  margin: 18px 0;
+  font-size: clamp(30px, 3vw, 40px);
+  color: #ffffff;
+}
+
+.sobre-conteudo p {
+  color: #f7e8e5;
+  line-height: 1.9;
+  font-size: 15px;
+}
+
+.sobre-conteudo .linha-dourada {
+  margin-left: 0;
+}
+
+.sobre-conteudo strong {
+  display: block;
+  margin-top: 25px;
+  color: #f0c77e;
+  font-family: Georgia, serif;
+  font-size: 22px;
+  font-weight: 500;
+}
+
 
         .sobre p {
           color: var(--texto);
@@ -821,42 +904,31 @@ background-repeat: no-repeat;
           font-weight: 500;
         }
 
-        .investimento {
-          background: linear-gradient(140deg, #f5e5dc, #efdad2);
-          text-align: center;
-          padding: 90px 20px;
-        }
+       
+.sobre-conteudo h2 {
+  margin: 18px 0;
+  font-size: clamp(30px, 3vw, 40px);
+  color: #ffffff;
+}
 
-        .investimento h2 {
-          max-width: 680px;
-          margin-bottom: 12px;
-        }
+.sobre-conteudo p {
+  color: #f7e8e5;
+  line-height: 1.9;
+  font-size: 15px;
+}
 
-        .investimento-texto {
-          color: var(--texto);
-          line-height: 1.8;
-          max-width: 520px;
-          margin: 0 auto;
-        }
+.sobre-conteudo .linha-dourada {
+  margin-left: 0;
+}
 
-        .preco {
-          color: var(--vinho);
-          font-family: Georgia, serif;
-          font-size: clamp(48px, 6vw, 62px);
-          margin: 25px 0 8px;
-        }
-
-        .pagamento {
-          max-width: 480px;
-          margin: 0 auto 28px;
-          color: var(--texto);
-          font-size: 13px;
-          line-height: 1.7;
-        }
-
-        .investimento .nota {
-          margin-top: 17px;
-        }
+.sobre-conteudo strong {
+  display: block;
+  margin-top: 25px;
+  color: #f0c77e;
+  font-family: Georgia, serif;
+  font-size: 22px;
+  font-weight: 500;
+}
 
         .faq {
           padding: 85px 12%;
@@ -940,12 +1012,14 @@ background-repeat: no-repeat;
           text-align: center;
         }
 
-        .logo-rodape {
-          width: 125px;
-          height: auto;
-          object-fit: contain;
-          filter: brightness(0) invert(1);
-        }
+       .logo-rodape {
+  width: 125px;
+  height: auto;
+  object-fit: contain;
+  display: block;
+  filter: none;
+  mix-blend-mode: multiply;
+}
 
         .rodape-marca strong {
           letter-spacing: 1.5px;
@@ -1012,12 +1086,15 @@ background-repeat: no-repeat;
         }
 
         @media (max-width: 760px) {
-          .topo {
-            min-height: auto;
-            padding: 15px 6%;
-            flex-wrap: wrap;
-            justify-content: space-between;
-          }
+         .topo {
+  min-height: auto;
+  padding: 15px 6%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
 
           .logo-instituto {
             width: 125px;
@@ -1037,10 +1114,14 @@ background-repeat: no-repeat;
             font-size: 11px;
           }
 
-          .botao-topo {
-            padding: 11px 15px;
-            font-size: 12px;
-          }
+        .botao-topo {
+  order: 2;
+  width: auto;
+  max-width: none;
+  flex-shrink: 0;
+  padding: 11px 15px;
+  font-size: 12px;
+}
 
          .hero {
   display: flex;
