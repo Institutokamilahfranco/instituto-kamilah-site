@@ -1181,7 +1181,13 @@ background-repeat: no-repeat;
 }
         
 
-        @media (max-width: 760px) {
+       @media (max-width: 760px) {
+
+  .marca,
+  .botao-topo {
+    display: none !important;
+  }
+
         .topo {
   min-height: auto;
   padding: 12px 6%;
