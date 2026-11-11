@@ -711,9 +711,9 @@ background-repeat: no-repeat;
 
 .imagem-arvore-vida {
   display: block;
-  width: 100%;
-  max-width: 460px;
-  height: auto;
+  width: 360px;
+  max-width: none;
+  height: 360px;
   object-fit: contain;
   mix-blend-mode: lighten;
 }
