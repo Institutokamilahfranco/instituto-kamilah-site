@@ -1238,14 +1238,27 @@ background-repeat: no-repeat;
   font-size: 12px;
 }
 
-        .hero {
+       .hero {
   display: flex;
   flex-direction: column;
-  align-items: stretch;
-  min-height: auto;
+  align-items: flex-start;
+  min-height: 750px;
   padding: 45px 7%;
-  gap: 24px;
-  background: var(--fundo);
+
+  background-color: var(--fundo);
+  background-image:
+    linear-gradient(
+      180deg,
+      #fbf2ed 0%,
+      rgba(251, 242, 237, 0.96) 38%,
+      rgba(251, 242, 237, 0.65) 58%,
+      rgba(251, 242, 237, 0.12) 100%
+    ),
+    url("/constelacao-bonecos.png");
+
+  background-position: center, center bottom;
+  background-size: 100% 100%, cover;
+  background-repeat: no-repeat;
 }
 
 .hero-conteudo {
