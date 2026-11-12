@@ -6,27 +6,27 @@ const linkAgendamento =
 const temas = [
   {
     titulo: "Relacionamentos",
-    texto: "Observar padrões que se repetem nas relações amorosas e familiares.",
+    texto: "Por que algumas dificuldades parecem se repetir nas relações amorosas?",
   },
   {
     titulo: "Vínculos familiares",
-    texto: "Explorar sentimentos e experiências relacionados à história familiar.",
+    texto: "Como experiências e relações familiares podem influenciar a forma como você se relaciona hoje?",
   },
   {
     titulo: "Pertencimento",
-    texto: "Refletir sobre seu lugar na família e os vínculos que fazem parte da sua história.",
+    texto: "Você sente que não encontra seu lugar ou que precisa fazer tudo para ser aceita?",
   },
   {
     titulo: "Vida financeira",
-    texto: "Investigar crenças, sentimentos e percepções relacionados ao dinheiro.",
+    texto: "Quais sentimentos, crenças e padrões podem estar influenciando sua relação com o dinheiro?",
   },
   {
     titulo: "Conflitos internos",
-    texto: "Olhar para questões que podem estar influenciando suas escolhas e decisões.",
+    texto: "Dificuldade de decidir, culpa, insegurança ou sensação de estar dividida entre caminhos?",
   },
   {
     titulo: "Padrões repetitivos",
-    texto: "Reconhecer situações que parecem se repetir e ampliar suas possibilidades de escolha.",
+    texto: "Você percebe que muda de cenário, mas acaba vivendo situações semelhantes?",
   },
 ];
 
@@ -67,18 +67,16 @@ export default function ConstelacaoFamiliar() {
     </span>
 
     <h1>
-      Existem histórias que começaram antes de você.
-      <em> E padrões que merecem um novo olhar.</em>
+     Você percebe que algumas situações se repetem na sua vida.
+      <em>Mesmo quando tenta fazer diferente?</em>
     </h1>
 
     <p>
-      Um espaço de acolhimento e autoconhecimento para olhar
-      para sua história, compreender suas relações e ampliar
-      suas possibilidades de escolha.
+     Relações que seguem o mesmo padrão, conflitos familiares, sentimentos que parecem difíceis de compreender... A Constelação Familiar Sistêmica oferece um espaço para olhar essas questões por uma nova perspectiva e ampliar sua compreensão sobre a própria história.
     </p>
 
     <span className="nota">
-      Atendimento individual e 100% online.
+      Sessões individuais, com atendimento 100% online.
     </span>
 
     <a
@@ -112,15 +110,15 @@ export default function ConstelacaoFamiliar() {
       <section className="beneficios">
         <article>
           <span className="beneficio-icone">✧</span>
-          <strong>Clareza sobre padrões repetitivos</strong>
+          <strong>Reconhecer situações que parecem se repetir na sua história.</strong>
         </article>
         <article>
           <span className="beneficio-icone">♡</span>
-          <strong>Um novo olhar para os relacionamentos</strong>
+          <strong>Compreender melhor os vínculos e conflitos familiares.</strong>
         </article>
         <article>
           <span className="beneficio-icone">✦</span>
-          <strong>Mais consciência sobre suas escolhas</strong>
+          <strong>Ampliar a percepção sobre suas escolhas e relações.</strong>
         </article>
       </section>
 
@@ -131,10 +129,11 @@ export default function ConstelacaoFamiliar() {
         <div className="linha-dourada" />
 
         <p>
-          A Constelação Familiar Sistêmica é uma abordagem de
-          autoconhecimento que convida a observar os vínculos,
-          as relações e as dinâmicas familiares que fazem parte
-          da nossa história.
+         A Constelação Familiar Sistêmica é uma abordagem que permite observar as relações, os vínculos e as dinâmicas familiares sob uma nova perspectiva.
+
+Muitas vezes, vivemos conflitos, dificuldades nos relacionamentos ou situações que parecem se repetir sem compreender completamente como nos relacionamos com nossa própria história.
+
+Na sessão, partimos de uma questão importante para você e exploramos diferentes perspectivas sobre ela, em um espaço de escuta, acolhimento e reflexão.
         </p>
 
         <p>
@@ -174,212 +173,283 @@ export default function ConstelacaoFamiliar() {
         </div>
       </section>
 
-      <section className="processo" id="processo">
-        <div className="processo-intro">
-          <span className="sobretitulo">SUA EXPERIÊNCIA</span>
-          <h2>Como funciona a sessão?</h2>
-          <div className="linha-dourada" />
-          <p>
-            O atendimento é individual, realizado online, em um
-            ambiente reservado e acolhedor.
-          </p>
-        </div>
+     
+<section className="processo" id="processo">
+  <div className="processo-intro">
+    <span className="sobretitulo">SUA EXPERIÊNCIA</span>
+    <h2>Como funciona sua sessão?</h2>
+    <div className="linha-dourada" />
+    <p>
+      Um encontro individual e online, conduzido a partir da
+      questão que você deseja explorar, com respeito à sua
+      história e ao seu momento.
+    </p>
+  </div>
 
-        <div className="etapas">
-          <article>
-            <div className="etapa-icone">01</div>
-            <h3>Você apresenta sua questão</h3>
-            <p>
-              Conversamos sobre o que você deseja olhar e compreender.
-            </p>
-          </article>
+  <div className="etapas">
+    <article>
+      <div className="etapa-icone">01</div>
+      <h3>Conversamos sobre sua questão</h3>
+      <p>
+        Você compartilha o que deseja olhar na sessão.
+        Não precisa conhecer todos os detalhes da sua
+        história familiar nem saber exatamente por onde começar.
+      </p>
+    </article>
 
-          <article>
-            <div className="etapa-icone">02</div>
-            <h3>Condução da sessão</h3>
-            <p>
-              A experiência é conduzida respeitando seu momento,
-              seus limites e sua disponibilidade emocional.
-            </p>
-          </article>
+    <article>
+      <div className="etapa-icone">02</div>
+      <h3>Vivenciamos a experiência</h3>
+      <p>
+        A condução acontece a partir da questão apresentada,
+        respeitando seu momento, seus limites e o que fizer
+        sentido explorar.
+      </p>
+    </article>
 
-          <article>
-            <div className="etapa-icone">03</div>
-            <h3>Integração e reflexão</h3>
-            <p>
-              Ao final, você terá espaço para refletir sobre o que
-              vivenciou e os próximos passos que fazem sentido para você.
-            </p>
-          </article>
-        </div>
+    <article>
+      <div className="etapa-icone">03</div>
+      <h3>Integramos as percepções</h3>
+      <p>
+        Ao final, temos um momento para conversar sobre a
+        experiência, acolher suas percepções e refletir
+        sobre os possíveis próximos passos.
+      </p>
+    </article>
+  </div>
 
-        <a
-          href={linkAgendamento}
-          className="botao"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Quero agendar minha constelação
-        </a>
-      </section>
+  <p>
+    O atendimento acontece por videochamada, em um ambiente
+    reservado. Você precisa apenas de conexão com a internet
+    e privacidade durante a sessão.
+  </p>
 
-      <section className="sobre">
-        <div className="sobre-foto">
-          <img
-            src="/kamilah.png"
-            alt="Kamilah Franco"
-            className="foto-kamilah"
-          />
-        </div>
+  <a
+    href={linkAgendamento}
+    className="botao"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Quero agendar minha constelação
+  </a>
+</section>
+      
+      
+<section className="sobre">
+  <div className="sobre-foto">
+    <img
+      src="/kamilah.png"
+      alt="Kamilah Franco"
+      className="foto-kamilah"
+    />
+  </div>
 
-        <div className="sobre-conteudo">
-          <span className="sobretitulo">INSTITUTO KAMILAH FRANCO</span>
-          <h2>Um espaço para olhar sua história com acolhimento.</h2>
-          <div className="linha-dourada" />
+  <div className="sobre-conteudo">
+    <span className="sobretitulo">
+      INSTITUTO KAMILAH FRANCO
+    </span>
 
-          <p>
-            Meu propósito é oferecer um espaço de escuta, cuidado
-            e reflexão, onde você possa olhar para suas questões
-            com respeito à sua trajetória e ao seu próprio tempo.
-          </p>
+    <h2>
+      Um olhar acolhedor para histórias que merecem ser compreendidas.
+    </h2>
 
-          <strong>Kamilah Franco</strong>
-        </div>
-      </section>
+    <div className="linha-dourada" />
 
-      <section className="investimento" id="agendamento">
-        <span className="sobretitulo">COMECE POR VOCÊ</span>
-        <h2>Um encontro para olhar sua história com atenção.</h2>
-        <div className="linha-dourada" />
+    <p>
+      Sou Kamilah Franco e acredito que cada história merece
+      ser escutada sem julgamentos, respeitando o tempo e a
+      individualidade de cada pessoa.
+    </p>
 
-        <p className="investimento-texto">
-          Sessão individual de Constelação Familiar Sistêmica,
-          realizada exclusivamente online.
-        </p>
+    <p>
+      Meu trabalho é oferecer um espaço de acolhimento e
+      reflexão, no qual você possa olhar para suas relações,
+      reconhecer percepções e ampliar a compreensão sobre
+      sua própria trajetória.
+    </p>
 
-        <div className="preco">R$ 250,00</div>
+    <p>
+      Na Constelação Familiar Sistêmica, conduzo cada encontro
+      com respeito à história, aos sentimentos e aos limites
+      de quem chega até mim.
+    </p>
 
-        <p className="pagamento">
-          Pagamento via PIX ou cartão de crédito, com parcelamento
-          em até 12x e taxas de parcelamento repassadas à cliente.
-        </p>
+    <strong>Kamilah Franco</strong>
+  </div>
+</section>
 
-        <a
-          href={linkAgendamento}
-          className="botao"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Quero agendar minha constelação
-        </a>
 
-        <span className="nota">
-          Escolha seu dia e horário diretamente na plataforma de agendamento.
-        </span>
-      </section>
+    
+<section className="investimento" id="agendamento">
+  <span className="sobretitulo">COMECE POR VOCÊ</span>
 
-      <section className="faq" id="duvidas">
-        <span className="sobretitulo">DÚVIDAS FREQUENTES</span>
-        <h2>O que você precisa saber</h2>
-        <div className="linha-dourada" />
+  <h2>
+    Reserve um momento para olhar com atenção para sua história.
+  </h2>
 
-        <details>
-          <summary>A sessão é presencial?</summary>
-          <p>
-            Não. Os atendimentos são realizados exclusivamente online.
-          </p>
-        </details>
+  <div className="linha-dourada" />
 
-        <details>
-          <summary>Preciso conhecer minha história familiar?</summary>
-          <p>
-            Não é necessário conhecer todos os detalhes da história
-            familiar. Você pode começar pela questão que deseja olhar.
-          </p>
-        </details>
+  <p className="investimento-texto">
+    Uma sessão individual de Constelação Familiar Sistêmica,
+    conduzida online, a partir da questão que você deseja explorar.
+  </p>
 
-        <details>
-          <summary>A constelação garante a solução do meu problema?</summary>
-          <p>
-            A Constelação Familiar não oferece garantias ou resultados
-            iguais para todas as pessoas. Cada experiência é única,
-            e os desdobramentos podem variar de acordo com a forma
-            como cada pessoa acolhe, compreende e integra as percepções
-            vivenciadas durante a sessão.
+  <p className="investimento-texto">
+    Um encontro reservado, com escuta e acolhimento, respeitando
+    seu momento e sua disponibilidade emocional.
+  </p>
 
-            O processo não termina no encontro: a reflexão, a abertura
-            para novos olhares e a disposição para reconhecer e construir
-            novas possibilidades também fazem parte dessa caminhada.
-            Cada pessoa tem seu próprio tempo e sua própria maneira
-            de vivenciar esse processo.
-          </p>
-        </details>
+  <div className="preco">R$ 250,00</div>
 
-        <details>
-          <summary>
-            Posso fazer a sessão mesmo morando em outra cidade?
-          </summary>
-          <p>
-            Sim. Por ser online, você pode participar de qualquer
-            localidade, desde que tenha conexão com a internet e
-            privacidade durante o atendimento.
-          </p>
-        </details>
-      </section>
+  <p className="pagamento">
+    Pagamento via PIX ou cartão de crédito. Parcelamento em até
+    12 vezes, com taxas da plataforma.
+  </p>
 
-      <section className="final">
-        <span className="sobretitulo">UM NOVO OLHAR PODE COMEÇAR AQUI</span>
-        <h2>Você não precisa ter todas as respostas para começar.</h2>
-        <p>
-          Permita-se olhar para sua história com acolhimento.
-        </p>
+  <a
+    href={linkAgendamento}
+    className="botao"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Quero agendar minha sessão
+  </a>
 
-        <a
-          href={linkAgendamento}
-          className="botao"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Quero agendar minha constelação
-        </a>
-      </section>
+  <span className="nota">
+    Escolha seu dia e horário e finalize o agendamento diretamente
+    pela plataforma.
+  </span>
+</section>
 
-      <footer className="rodape">
-        <div className="rodape-marca">
-          <img
-            src="/logo.jpeg"
-            alt="Instituto Kamilah Franco"
-            className="logo-rodape"
-          />
-          <strong>INSTITUTO KAMILAH FRANCO</strong>
-        </div>
 
-        <div className="rodape-contatos">
-          <p>Atendimento exclusivamente online • Realeza – PR</p>
+     
+<section className="faq" id="duvidas">
+  <span className="sobretitulo">DÚVIDAS FREQUENTES</span>
 
-          <p>
-            WhatsApp:{" "}
-            <a
-              href="https://wa.me/5546988042216"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              (46) 98804-2216
-            </a>
-          </p>
+  <h2>O que você precisa saber antes de agendar</h2>
 
-          <p>
-            E-mail:{" "}
-            <a href="mailto:kamilahgomes.comunicacao@gmail.com">
-              kamilahgomes.comunicacao@gmail.com
-            </a>
-          </p>
-        </div>
+  <div className="linha-dourada" />
 
-        <a href="/" className="voltar-inicio">
-          Voltar para a página inicial
-        </a>
-      </footer>
+  <details>
+    <summary>A sessão é presencial?</summary>
+    <p>
+      Não. Os atendimentos são realizados exclusivamente online,
+      permitindo que você participe de qualquer cidade ou região.
+    </p>
+  </details>
+
+  <details>
+    <summary>Preciso conhecer minha história familiar?</summary>
+    <p>
+      Não. Você não precisa conhecer todos os detalhes da sua
+      história familiar. Podemos começar pela questão que deseja
+      explorar e pelo que você conhece da sua trajetória.
+    </p>
+  </details>
+
+  <details>
+    <summary>A constelação garante a solução do meu problema?</summary>
+    <p>
+      Não existe garantia de resultados ou de mudanças específicas.
+      Cada experiência é individual. A sessão oferece uma
+      oportunidade de observar sua questão sob uma nova perspectiva,
+      mas as percepções e os desdobramentos variam de pessoa para pessoa.
+    </p>
+  </details>
+
+  <details>
+    <summary>Posso fazer a sessão morando em outra cidade?</summary>
+    <p>
+      Sim. Como o atendimento é 100% online, você pode participar
+      de qualquer lugar, desde que tenha conexão com a internet
+      e privacidade durante a sessão.
+    </p>
+  </details>
+
+  <details>
+    <summary>Como acontece a sessão online?</summary>
+    <p>
+      O encontro acontece por videochamada, em um ambiente reservado.
+      Você receberá as orientações necessárias para acessar a sessão
+      no horário agendado.
+    </p>
+  </details>
+
+  <details>
+    <summary>Preciso ter experiência com Constelação Familiar?</summary>
+    <p>
+      Não. Você não precisa conhecer a abordagem ou já ter participado
+      de uma constelação. Durante o encontro, explicarei como será
+      a condução e acompanharei você ao longo da experiência.
+    </p>
+  </details>
+</section>
+
+
+     
+<section className="final">
+  <span className="sobretitulo">
+    UM NOVO OLHAR PODE COMEÇAR AQUI
+  </span>
+
+  <h2>
+    Talvez seja hora de olhar para aquilo que você ainda não conseguiu compreender.
+  </h2>
+
+  <p>
+    Sua história merece ser olhada com respeito, consciência
+    e acolhimento. Comece pela questão que hoje pede sua atenção.
+  </p>
+
+  <a
+    href={linkAgendamento}
+    className="botao"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    Quero agendar minha sessão
+  </a>
+</section>
+
+
+      
+<footer className="rodape">
+  <div className="rodape-marca">
+    <img
+      src="/logo.jpeg"
+      alt="Instituto Kamilah Franco"
+      className="logo-rodape"
+    />
+    <strong>INSTITUTO KAMILAH FRANCO</strong>
+    <p>Constelação Familiar Sistêmica</p>
+  </div>
+
+  <div className="rodape-contatos">
+    <p>Atendimento exclusivamente online</p>
+
+    <p>
+      WhatsApp:{" "}
+      <a
+        href="https://wa.me/5546988042216"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        (46) 98804-2216
+      </a>
+    </p>
+
+    <p>
+      E-mail:{" "}
+      <a href="mailto:kamilahgomes.comunicacao@gmail.com">
+        kamilahgomes.comunicacao@gmail.com
+      </a>
+    </p>
+  </div>
+
+  <a href="/" className="voltar-inicio">
+    Voltar para a página inicial
+  </a>
+</footer>
 
       <style jsx>{`
         .pagina {
