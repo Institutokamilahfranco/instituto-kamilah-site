@@ -1084,9 +1084,11 @@ background-repeat: no-repeat;
 
 .investimento .preco {
   color: var(--vinho);
-  font-family: Georgia, serif;
-  font-size: 27px;
+  font-family: Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
   margin: 18px 0;
+  line-height: 1.4;
 }
 
 .investimento .nota {
