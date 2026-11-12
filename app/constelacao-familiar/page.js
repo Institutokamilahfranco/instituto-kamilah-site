@@ -1237,7 +1237,7 @@ background-repeat: no-repeat;
   font-size: 12px;
 }
 
-       .hero {
+   .hero {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -1255,9 +1255,9 @@ background-repeat: no-repeat;
     ),
     url("/constelacao-bonecos.png");
 
-  background-position: center, right center;
-background-size: cover;
-background-repeat: no-repeat;
+  background-position: center, center bottom;
+  background-size: 100% 100%, 100% 85%;
+  background-repeat: no-repeat;
 }
 
 .hero-conteudo {
@@ -1275,20 +1275,7 @@ background-repeat: no-repeat;
 .hero-conteudo > p {
   font-size: 15px;
   line-height: 1.7;
-}
 
-.hero-imagem-mobile {
-  display: block;
-  width: 100%;
-}
-
-.hero-imagem-mobile img {
-  display: block;
-  width: 100%;
-  height: auto;
-  max-height: 420px;
-  object-fit: contain;
-  border-radius: 14px;
 }
 
 .botao-desktop {
