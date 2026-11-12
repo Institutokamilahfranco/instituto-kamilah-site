@@ -299,11 +299,10 @@ Na sessão, partimos de uma questão importante para você e exploramos diferent
     seu momento e sua disponibilidade emocional.
   </p>
 
-  <div className="preco">R$ 250,00</div>
+  <div className="preco"> 12 x R$ 25,00</div>
 
   <p className="pagamento">
-    Pagamento via PIX ou cartão de crédito. Parcelamento em até
-    12 vezes, com taxas da plataforma.
+    OU avista R$250,00 
   </p>
 
   <a
