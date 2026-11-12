@@ -1,4 +1,3 @@
-
 "use client";
 
 const linkAgendamento =
@@ -1257,7 +1256,7 @@ background-repeat: no-repeat;
     url("/constelacao-bonecos.png");
 
   background-position: center, center bottom;
- background-size: 100% 100%, 100% auto;
+ background-size: 100% 100%, 80% auto;
   background-repeat: no-repeat;
 }
 
