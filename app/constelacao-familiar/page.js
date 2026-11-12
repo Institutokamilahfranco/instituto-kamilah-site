@@ -299,11 +299,13 @@ Na sessão, partimos de uma questão importante para você e exploramos diferent
     seu momento e sua disponibilidade emocional.
   </p>
 
-  <div className="preco"> 12 x R$ 25,00</div>
+ <div className="preco">12 x R$ 25,00</div>
 
-  <p className="pagamento">
-    OU avista R$250,00 
-  </p>
+<div className="ou-separador">OU</div>
+
+<p className="pagamento">
+  À vista R$ 250,00
+</p>
 
   <a
     href={linkAgendamento}
