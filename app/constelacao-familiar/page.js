@@ -1255,9 +1255,10 @@ background-repeat: no-repeat;
     ),
     url("/constelacao-bonecos.png");
 
-  background-position: center, bottom;
- background-size: 100% 100%, 100% auto;
+  background-position: center, right center;
+ background-size: cover;
   background-repeat: no-repeat;
+  position: relative;
 }
 
 .hero-conteudo {
