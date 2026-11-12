@@ -1255,8 +1255,8 @@ background-repeat: no-repeat;
     ),
     url("/constelacao-bonecos.png");
 
-  background-position: center, center bottom;
- background-size: 100% 100%, 80% auto;
+  background-position: center, center 65%;
+ background-size: 100% 100%, 85% auto;
   background-repeat: no-repeat;
 }
 
