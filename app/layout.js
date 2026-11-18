@@ -1,39 +1,50 @@
 import "./globals.css";
 import Script from "next/script";
+
 export const metadata = {
+  metadataBase: new URL("https://www.institutokamilahfranco.com.br"),
+
   title:
-    "Instituto Kamilah Franco | Desenvolvimento emocional e autoestima feminina",
+    "Instituto Kamilah Franco | Constelação Familiar Sistêmica",
 
   description:
-    "Atendimento terapêutico online para mulheres que desejam fortalecer a autoestima, superar a autossabotagem, desenvolver confiança e construir uma vida emocional mais equilibrada.",
+    "Constelação Familiar Sistêmica individual, 100% online. Um espaço para olhar padrões familiares e relacionais, reconhecer dinâmicas sistêmicas e ampliar possibilidades de solução.",
 
   keywords: [
-    "autoestima feminina",
-    "autossabotagem",
-    "dependência emocional",
-    "ansiedade",
-    "terapia online",
-    "desenvolvimento emocional",
+    "constelação familiar",
+    "constelação familiar sistêmica",
+    "constelação familiar online",
+    "consteladora familiar",
+    "ordens do amor",
+    "padrões familiares",
+    "emaranhamentos sistêmicos",
+    "relacionamentos familiares",
     "autoconhecimento",
-    "confiança feminina",
-    "terapeuta integrativa",
-    "fortalecimento emocional",
+    "Instituto Kamilah Franco",
   ],
 
   openGraph: {
     title:
-      "Instituto Kamilah Franco | Desenvolvimento emocional feminino",
+      "Instituto Kamilah Franco | Constelação Familiar Sistêmica",
 
     description:
-      "Atendimento terapêutico online para mulheres que desejam fortalecer a autoestima e transformar padrões emocionais.",
+      "Constelação Familiar Sistêmica individual, 100% online. Compreenda padrões familiares e relacionais e amplie suas possibilidades de solução.",
 
-    url: "https://www.institutokamilahfranco.com.br",
+    url: "https://www.institutokamilahfranco.com.br/constelacao-familiar",
 
     siteName: "Instituto Kamilah Franco",
 
     locale: "pt_BR",
 
     type: "website",
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title:
+      "Instituto Kamilah Franco | Constelação Familiar Sistêmica",
+    description:
+      "Constelação Familiar Sistêmica individual, 100% online. Um olhar para os padrões familiares e relacionais.",
   },
 };
 
