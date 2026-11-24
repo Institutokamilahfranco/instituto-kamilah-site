@@ -106,6 +106,49 @@ export default function ConstelacaoFamiliar() {
   </a>
 </section>
 
+{/* APRESENTAÇÃO EM VÍDEO */}
+<section className="video-apresentacao" id="apresentacao">
+  <div className="video-conteudo">
+    <span className="sobretitulo">
+      UM CONVITE PARA VOCÊ
+    </span>
+
+    <h2>
+      Antes de dar o próximo passo, conheça melhor este trabalho.
+    </h2>
+
+    <div className="linha-dourada" />
+
+    <p>
+      Preparei esta apresentação para explicar como funciona
+      a Constelação Familiar Sistêmica e como podemos olhar
+      para a questão que você deseja explorar.
+    </p>
+
+    <div className="video-wrapper">
+      <iframe
+        src="https://www.youtube-nocookie.com/embed/ndhVDTXmKV4"
+        title="Apresentação de Kamilah Franco sobre Constelação Familiar"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerPolicy="strict-origin-when-cross-origin"
+        allowFullScreen
+      />
+    </div>
+
+    <p className="video-legenda">
+      Assista com tranquilidade e conheça a proposta do atendimento.
+    </p>
+
+    <a
+      href={linkAgendamento}
+      className="botao"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Quero agendar minha sessão
+    </a>
+  </div>
+</section>
 
       <section className="beneficios">
         <article>
@@ -453,6 +496,77 @@ Na sessão, partimos de uma questão importante para você e exploramos diferent
 </footer>
 
       <style jsx>{`
+      
+.video-apresentacao {
+  padding: 85px 7%;
+  background: #f8eae4;
+  text-align: center;
+  scroll-margin-top: 20px;
+}
+
+.video-conteudo {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.video-apresentacao h2 {
+  max-width: 760px;
+  margin: 18px auto;
+  color: #642536;
+  font-family: Georgia, serif;
+  font-size: clamp(30px, 3.5vw, 43px);
+  line-height: 1.2;
+}
+
+.video-apresentacao p {
+  max-width: 720px;
+  margin: 15px auto 30px;
+  color: #49343a;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  border-radius: 14px;
+  background: #481b2b;
+  box-shadow: 0 15px 35px rgba(72, 27, 43, .16);
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-apresentacao .video-legenda {
+  margin: 20px auto;
+  font-size: 13px;
+}
+
+.video-apresentacao .botao {
+  margin-top: 8px;
+}
+
+@media (max-width: 760px) {
+  .video-apresentacao {
+    padding: 65px 6%;
+  }
+
+  .video-apresentacao h2 {
+    font-size: 31px;
+  }
+
+  .video-wrapper {
+    border-radius: 9px;
+  }
+}
+
         .pagina {
           --fundo: #fbf2ed;
           --claro: #f5e5dd;
