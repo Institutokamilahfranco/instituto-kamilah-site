@@ -125,15 +125,18 @@ export default function ConstelacaoFamiliar() {
       para a questão que você deseja explorar.
     </p>
 
-    <div className="video-wrapper">
-      <iframe
-        src="https://www.youtube-nocookie.com/embed/ndhVDTXmKV4"
-        title="Apresentação de Kamilah Franco sobre Constelação Familiar"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerPolicy="strict-origin-when-cross-origin"
-        allowFullScreen
-      />
-    </div>
+  
+<div className="video-wrapper">
+  <video
+    src="/apresentacao-constelacao.mp4"
+    controls
+    playsInline
+    preload="metadata"
+  >
+    Seu navegador não suporta a reprodução deste vídeo.
+  </video>
+</div>
+
 
     <p className="video-legenda">
       Assista com tranquilidade e conheça a proposta do atendimento.
@@ -526,13 +529,16 @@ Na sessão, partimos de uma questão importante para você e exploramos diferent
   line-height: 1.8;
 }
 
+
 .video-wrapper {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 9;
+  max-width: 420px;
+  aspect-ratio: 9 / 16;
+  margin: 0 auto;
   overflow: hidden;
   border-radius: 14px;
-  background: #481b2b;
+  background: #000;
   box-shadow: 0 15px 35px rgba(72, 27, 43, .16);
 }
 
@@ -542,6 +548,15 @@ Na sessão, partimos de uma questão importante para você e exploramos diferent
   width: 100%;
   height: 100%;
   border: 0;
+}
+
+.video-wrapper video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
 }
 
 .video-apresentacao .video-legenda {
