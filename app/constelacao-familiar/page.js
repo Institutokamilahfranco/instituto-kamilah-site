@@ -1,7 +1,9 @@
 "use client";
 
+
 const linkAgendamento =
-  "https://loja.infinitepay.io/luana-kamila-47i/gcx3424-sessao-constelacao-familiar-sistemica";
+  "https://wa.me/5546988042216?text=Ol%C3%A1%2C%20Kamilah!%20Assisti%20%C3%A0%20sua%20apresenta%C3%A7%C3%A3o%20sobre%20Constela%C3%A7%C3%A3o%20Familiar%20e%20gostaria%20de%20saber%20mais%20sobre%20como%20funciona%20o%20atendimento%20individual%20e%20como%20posso%20agendar%20uma%20sess%C3%A3o.";
+
 
 const temas = [
   {
